@@ -1,0 +1,654 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is Linked Data? &#8212; Nalt Shapes Resource Guide on Cotton</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="RDF: The Good Parts" href="benefits.html" />
+    <link rel="prev" title="Introduction to Linked Data" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Nalt Shapes Resource Guide on Cotton</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    Towards NALT shapes`
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Introduction to Linked Data
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     What is Linked Data?
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="benefits.html">
+     RDF: The Good Parts
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="challenges.html">
+     Challenges for RDF Adoption
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../semantic-modelling/index.html">
+   Semantic Modelling
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../semantic-modelling/ontologies.html">
+     Ontologies and Controlled Vocabularies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../semantic-modelling/schemas.html">
+     Schemas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../creating-rdf/index.html">
+   Example linked-data pipeline on Glioblastoma data
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../creating-rdf/primary_data.html">
+     Example (synthetic) data sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../creating-rdf/convert2rdf.html">
+     Example workflow on Cotton data
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/german-bioimaging/dtbook"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/german-bioimaging/dtbook/issues/new?title=Issue%20on%20page%20%2Fintroduction/linked-data.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/introduction/linked-data.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   What is Linked Data?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toy-example">
+   Toy Example
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terminology">
+     Terminology
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>What is Linked Data?</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   What is Linked Data?
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#toy-example">
+   Toy Example
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#questions">
+   Questions
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#terminology">
+     Terminology
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <p>A major challenge of any data-related endeavor is the integration of
+disparate sources of information. German BioImaging (GerBI;
+<a class="reference external" href="https://gerbi-gmb.de/">https://gerbi-gmb.de/</a>) is currently involved in a project to link all German
+research outputs at the national level in the National Research Data
+Infrastructure (<a class="reference external" href="https://www.nfdi.de/">NFDI</a>). ΔTissue has solicited GerBI to
+provide a searchable, linked data graph for the program. Along with our
+Belgium-based partner, Micelio (<a class="reference external" href="https://micelio.be/">https://micelio.be/</a>), we introduce below the
+linked data framework as well as the proposed steps to bring the same
+infrastructure to the ΔTissue program.</p>
+<div class="section" id="what-is-linked-data">
+<h1>What is Linked Data?<a class="headerlink" href="#what-is-linked-data" title="Permalink to this headline">#</a></h1>
+<p>Linked data builds upon web technologies such as HTTP, RDF and URIs to connect
+machine-readable representations of research outputs. A very straight-forward
+introduction can be found at <a class="reference external" href="https://ontola.io/what-is-linked-data/">https://ontola.io/what-is-linked-data/</a> .</p>
+<p>The process of formatting one’s data (here we do not differentiate between
+“data” and “metadata”) into linked data with well-defined identifiers and
+semantics exposes inconsistencies early in the data acquisition process,
+leaving one with cleaner, more interoperable <em>graphs</em> of data. Graphs produced
+from a single research team can then be connected to others through common,
+matching URIs, providing a single program-spanning, searchable resource. This
+linked data graph:</p>
+<ul class="simple">
+<li><p>provides a central clearing house for exposing inconsistencies and differences in naming;</p></li>
+<li><p>drives the conversation of maximizing the FAIRness of data; and</p></li>
+<li><p>serves as a portal through which disparate research areas can communicate</p></li>
+</ul>
+</div>
+<div class="section" id="toy-example">
+<h1>Toy Example<a class="headerlink" href="#toy-example" title="Permalink to this headline">#</a></h1>
+<p>To give a simple, toy example:</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Patient</p></th>
+<th class="head"><p>Observation</p></th>
+<th class="head"><p>Disease State</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Sample#1</p></td>
+<td><p>Patient#A</p></td>
+<td><p>N/A</p></td>
+<td><p>Early</p></td>
+</tr>
+<tr class="row-odd"><td><p>Sample#2</p></td>
+<td><p>Patient#A</p></td>
+<td><p>Elevated count</p></td>
+<td><p>Late</p></td>
+</tr>
+<tr class="row-even"><td><p>Sample#3</p></td>
+<td><p>Patient#B</p></td>
+<td><p>Prevalent</p></td>
+<td><p>Post-Mortem</p></td>
+</tr>
+</tbody>
+</table>
+<p>A typical checklist that one would go through while trying to convert the above
+spreadsheet into a linked data graph might contain:</p>
+<ol class="simple">
+<li><p>How will the local identifiers in each cell be converted into unique
+identifiers (URIs)? Is the same scheme used everywhere? Or are the
+identifiers only unique to the current spreadsheet table?</p></li>
+<li><p>What is the <em>exact</em> name of the property represented by the column heading?
+Again, is there a single URI for all uses of, e.g., “Disease State” or are
+there slight differences or perhaps restrictions between tables?</p></li>
+<li><p>What are the possible values for a given property? Do they come from an
+existing ontology? Is a new ontology needed?</p></li>
+<li><p>Are there any further semantics, limitations that can be captured? Is a
+given column of a type that is a sub-type or a super-type of another
+category?</p></li>
+</ol>
+<p>Once this checklist has been applied to all spreadsheets, the table can be
+written with clickable links (which is of course where the name “Linked Data”
+comes from).</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/samples/acquired-from">https://wellcomeleap.org/delta-tissue/samples/acquired-from</a></p></th>
+<th class="head"><p></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/samples/10584">https://wellcomeleap.org/delta-tissue/samples/10584</a></p></td>
+<td><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/patients/49602">https://wellcomeleap.org/delta-tissue/patients/49602</a></p></td>
+<td><p>Etc.</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/samples/40592">https://wellcomeleap.org/delta-tissue/samples/40592</a></p></td>
+<td><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/patients/49602">https://wellcomeleap.org/delta-tissue/patients/49602</a></p></td>
+<td><p>Etc.</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/samples/96049">https://wellcomeleap.org/delta-tissue/samples/96049</a></p></td>
+<td><p><a class="reference external" href="https://wellcomeleap.org/delta-tissue/patients/99999">https://wellcomeleap.org/delta-tissue/patients/99999</a></p></td>
+<td><p>Etc.</p></td>
+</tr>
+</tbody>
+</table>
+<p>By using a namespace prefix, we can simplify this text and represent it
+equivalently as statements in a graph:</p>
+<div class="highlight-ttl notranslate"><div class="highlight"><pre><span></span>@<span class="nv">prefix</span> <span class="nv">sample</span>: <span class="o">&lt;</span><span class="nv">https</span>:<span class="o">//</span><span class="nv">wellcomeleap</span>.<span class="nv">org</span><span class="o">/</span><span class="nv">delta</span><span class="o">-</span><span class="nv">tissue</span><span class="o">/</span><span class="nv">samples</span><span class="o">/&gt;</span>.
+@<span class="nv">prefix</span> <span class="nv">patient</span>: <span class="o">&lt;</span><span class="nv">https</span>:<span class="o">//</span><span class="nv">wellcomeleap</span>.<span class="nv">org</span><span class="o">/</span><span class="nv">delta</span><span class="o">-</span><span class="nv">tissue</span><span class="o">/</span><span class="nv">patients</span><span class="o">/&gt;</span>.
+@<span class="nv">prefix</span> <span class="nv">obs</span>: <span class="o">&lt;</span><span class="nv">https</span>:<span class="o">//</span><span class="nv">wellcomeleap</span>.<span class="nv">org</span><span class="o">/</span><span class="nv">delta</span><span class="o">-</span><span class="nv">tissue</span><span class="o">/</span><span class="nv">observations</span><span class="o">/&gt;</span>.
+<span class="nv">sample</span>:<span class="mi">10584</span> <span class="nv">sample</span>:<span class="nv">acquired</span><span class="o">-</span><span class="nv">from</span> <span class="nv">patient</span>:<span class="mi">49602</span> .
+<span class="nv">sample</span>:<span class="mi">40592</span> <span class="nv">sample</span>:<span class="nv">acquired</span><span class="o">-</span><span class="nv">from</span> <span class="nv">patient</span>:<span class="mi">49602</span> .
+<span class="nv">sample</span>:<span class="mi">96049</span> <span class="nv">sample</span>:<span class="nv">acquired</span><span class="o">-</span><span class="nv">from</span> <span class="nv">patient</span>:<span class="mi">99999</span> .
+<span class="nv">sample</span>:<span class="mi">96049</span> <span class="nv">obs</span>:<span class="nv">observed</span><span class="o">-</span><span class="nv">with</span> <span class="nv">obj</span>:<span class="nv">prevalent</span> .
+<span class="nv">sample</span>:<span class="mi">96049</span> <span class="nv">obs</span>:<span class="nv">evidence</span> <span class="nv">https</span>:<span class="o">//</span><span class="nv">wellcomeleap</span>.<span class="nv">org</span><span class="o">/</span><span class="nv">delta</span><span class="o">-</span><span class="nv">tissue</span><span class="o">/</span><span class="nv">images</span><span class="o">/</span><span class="mi">123</span> .
+</pre></div>
+</div>
+<p>This process of cleaning the input data, assigning unique global identifiers,
+and identifying or building ontologies also enables the use of a standardized
+query language, SPARQL,
+(<a class="reference external" href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/">https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/</a>):</p>
+<div class="highlight-sparql notranslate"><div class="highlight"><pre><span></span><span class="k">PREFIX</span> <span class="nn">foaf</span><span class="p">:</span>  <span class="nl">&lt;http://xmlns.com/foaf/0.1/&gt;</span>
+<span class="k">PREFIX</span> <span class="nn">leap</span><span class="p">:</span>  <span class="nl">&lt;http://wellcomeleap.org/vocabulary/0.1/&gt;</span>
+<span class="k">SELECT</span> <span class="nv">?patientName</span><span class="p">,</span> <span class="nv">?sampleAge</span>
+	<span class="k">WHERE</span> <span class="p">{</span>
+		<span class="nv">?patient</span> <span class="k">a</span> <span class="nn">leap</span><span class="p">:</span><span class="nt">Patient</span> <span class="p">.</span>
+		<span class="nv">?patient</span> <span class="nn">foaf</span><span class="p">:</span><span class="nt">name</span> <span class="nv">?patientName</span> <span class="p">.</span>
+		<span class="nv">?sample</span> <span class="nn">leap</span><span class="p">:</span><span class="nt">came_from</span> <span class="nv">?patient</span> <span class="p">.</span>
+		<span class="nv">?sample</span> <span class="nn">leap</span><span class="p">:</span><span class="nt">sample_age</span> <span class="nv">?sampleAge</span> <span class="p">.</span>
+	<span class="p">}</span>
+</pre></div>
+</div>
+<p>The sophistication of what is queryable is primarily limited by how well
+the data is structured. See the example below from
+<a class="reference external" href="https://docs.google.com/presentation/d/1j5h5IwYM3ybRfU6T4E90UiqmNB23qQImQr5lvqRwP7g/edit#slide=id.g2dfcfa5dd2_0_107">Wikidata for biomedical knowledge integration and curation (Gregory Stupp)</a>
+for a query which “finds drugs for cancers that target genes related to
+cell proliferation”:</p>
+<p><img src="{{site.baseurl}}/images/drugs-slide.png"
+    alt="Slide titled 'What drugs interact with proteins that interact with other proteins that are known to be genetically associated to cancer?'"/></p>
+</div>
+<div class="section" id="questions">
+<h1>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">#</a></h1>
+<p>Please raise all your questions and issues <span class="xref myst">here</span></p>
+<div class="section" id="terminology">
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Graph: or more formally, a labeled, directed, multi-graph, consists of a collection of RDF statements, or triples.</p></li>
+<li><p>Linked Data: “LD”, for “large scale integration of, and reasoning on, data on the web”. See <a class="reference external" href="https://www.w3.org/standards/semanticweb/data">https://www.w3.org/standards/semanticweb/data</a> .</p></li>
+<li><p>Ontology: For linked data, a vocabulary that defines concepts and relationships which describe and represent an area of concern. In general, “[t]here is no clear division between ‘vocabularies’ and ‘ontologies’” though “the trend is to use the world ‘ontology’ for a more complex, and possibly quite formal collection of terms”. See <a class="reference external" href="https://www.w3.org/standards/semanticweb/ontology">https://www.w3.org/standards/semanticweb/ontology</a> .</p></li>
+<li><p>RDF: “Resource Description Framework”, a standard model of data interchange and a W3C recommendation. See <a class="reference external" href="https://www.w3.org/RDF/">https://www.w3.org/RDF/</a></p></li>
+<li><p>Sparql: specifications for languages and protocols for querying RDF graphs and a W3C recommendation. See <a class="reference external" href="https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/">https://www.w3.org/TR/2013/REC-sparql11-overview-20130321/</a></p></li>
+<li><p>Triples: The basic unit of an RDF graph consisting of (resource, predicate, object).</p></li>
+<li><p>URI: universal resource identifier, a standardized representation of web resources. See <a class="reference external" href="https://www.w3.org/Addressing/URL/uri-spec.html">https://www.w3.org/Addressing/URL/uri-spec.html</a></p></li>
+</ul>
+<p>{% include_relative <a class="reference external" href="http://navigation.md">navigation.md</a> %}</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./introduction"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction to Linked Data</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="benefits.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">RDF: The Good Parts</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Andra Waagmeester<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

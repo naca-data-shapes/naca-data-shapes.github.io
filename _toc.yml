@@ -1,0 +1,30 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: introduction/index.md
+  sections:
+  - file: introduction/intro
+  - file: introduction/linkeddata_rdf_web_of_data
+  - file: introduction/benefits
+  - file: introduction/challenges
+
+- file: semantic-modelling/index.md
+  sections:
+  - file: semantic-modelling/tabular2rdf
+  - file: semantic-modelling/ontologies
+  - file: semantic-modelling/schemas
+
+- file: creating-rdf/index.md
+  sections:
+  - file: creating-rdf/primary_data
+  - file: creating-rdf/convert2rdf
+
+- file: queries/index.md
+  sections:
+  - file: queries/cotton_wikidata
+  - file: queries/cotton_example
+
+

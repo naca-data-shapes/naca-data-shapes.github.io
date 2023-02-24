@@ -1,0 +1,2169 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example (synthetic) data sets &#8212; Nal Shapes Resource Guide on Cotton</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Example workflow on Cotton shape" href="convert2rdf.html" />
+    <link rel="prev" title="Example linked-data pipeline on Glioblastoma data" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Nal Shapes Resource Guide on Cotton</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../index.html">
+                    The NAL Shapes program demonostration area
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../semantic-modelling/index.html">
+   Semantic Modelling
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../semantic-modelling/ontologies.html">
+     Ontologies and Controlled Vocabularies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../semantic-modelling/schemas.html">
+     Schemas
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Example linked-data pipeline on Glioblastoma data
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Example (synthetic) data sets
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="convert2rdf.html">
+     Example workflow on Cotton shape
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../queries/index.html">
+   Query and visualization examples
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../queries/cotton_example.html">
+     Cotton: Use cases: queries and visualizations
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<div class="menu-dropdown menu-dropdown-launch-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Launch interactive content">
+      <i class="fas fa-rocket"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://mybinder.org/v2/gh/german-bioimaging/dtbook/main?urlpath=tree/./creating-rdf/primary_data.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Launch on Binder"
+>
+  
+
+<span class="headerbtn__icon-container">
+  
+    <img src="../_static/images/logo_binder.svg">
+  </span>
+<span class="headerbtn__text-container">Binder</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/german-bioimaging/dtbook"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/german-bioimaging/dtbook/issues/new?title=Issue%20on%20page%20%2Fcreating-rdf/primary_data.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../_sources/creating-rdf/primary_data.ipynb"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.ipynb</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataset-1-on-cotton">
+   Dataset 1 on Cotton
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nalt-shapes-and-codebook">
+   NALT shapes and  codebook
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Example (synthetic) data sets</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#dataset-1-on-cotton">
+   Dataset 1 on Cotton
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#nalt-shapes-and-codebook">
+   NALT shapes and  codebook
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="example-synthetic-data-sets">
+<h1>Example (synthetic) data sets<a class="headerlink" href="#example-synthetic-data-sets" title="Permalink to this headline">#</a></h1>
+<p>For the purpose of this effort to create a common data shape on Glioblastoma, two synthetic data sets were provided. Synthetic datasets contain fabricated data that is represtable of actual data on the topic.</p>
+<p>In this chapter we will inspect the provided datasets and prepare them to by converted into linked data. As described earlier, linked data is data that follows a linked-data format consisting of triples where the individual parts consists of either values or identifiers (IRIs) pointing to concept definitions.</p>
+<p>The proces of converting data to linked data is rather straightforwards and can be summed up as follows:</p>
+<ol class="simple">
+<li><p>Inspect the data</p></li>
+<li><p>Clean the data headers</p></li>
+<li><p>Align the data with common controlled vocabularies or ontologies</p></li>
+<li><p>Design linked-data shapes using the IRIs from the controlled vocabularies and ontologies</p></li>
+<li><p>Transform the data into RDF</p></li>
+</ol>
+<p>In this chapter we will focus on the first two steps.</p>
+<div class="section" id="dataset-1-on-cotton">
+<h2>Dataset 1 on Cotton<a class="headerlink" href="#dataset-1-on-cotton" title="Permalink to this headline">#</a></h2>
+<p>The first dataset is a provided csv file (Legacy_Cotton_VT_data.csv) ## TODO add a link.
+It contains legacy data on cotton harvests.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/85/6rr6j2113qx4d9synl4rnc9r0000gn/T/ipykernel_6867/2222806445.py:2: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  gdb1 = pd.read_csv(&quot;data/Legacy_Cotton_VT_data.csv&quot;,index_col=False)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>LocationName</th>
+      <th>LatLong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th>County</th>
+      <th>State</th>
+      <th>Name</th>
+      <th>TestType</th>
+      <th>...</th>
+      <th>Strength</th>
+      <th>UI</th>
+      <th>Turnout</th>
+      <th>GrossIncome</th>
+      <th>Irrigated</th>
+      <th>IrrigationType</th>
+      <th>Year</th>
+      <th>ZIP Code</th>
+      <th>Test Result ID</th>
+      <th>Test ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>29.3</td>
+      <td>82.0</td>
+      <td>25.8</td>
+      <td>796.496</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46899</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.1</td>
+      <td>81.2</td>
+      <td>23.8</td>
+      <td>705.159</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46900</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>26.0</td>
+      <td>80.1</td>
+      <td>24.0</td>
+      <td>884.780</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46901</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.8</td>
+      <td>81.8</td>
+      <td>24.2</td>
+      <td>733.869</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46902</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.2</td>
+      <td>81.4</td>
+      <td>27.9</td>
+      <td>972.725</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46903</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>43469</th>
+      <td>43470</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.5</td>
+      <td>82.8</td>
+      <td>33.1</td>
+      <td>950.982</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30074</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43470</th>
+      <td>43471</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.6</td>
+      <td>82.4</td>
+      <td>34.8</td>
+      <td>922.315</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30075</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43471</th>
+      <td>43472</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.3</td>
+      <td>82.8</td>
+      <td>32.4</td>
+      <td>817.002</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30076</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43472</th>
+      <td>43473</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.2</td>
+      <td>83.2</td>
+      <td>29.6</td>
+      <td>816.542</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30077</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43473</th>
+      <td>43474</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>30.0</td>
+      <td>82.3</td>
+      <td>33.1</td>
+      <td>775.964</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30078</td>
+      <td>2196</td>
+    </tr>
+  </tbody>
+</table>
+<p>43474 rows × 40 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">set</span><span class="p">(</span><span class="n">gdb1</span><span class="o">.</span><span class="n">LintFraction</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{0.25,
+ 0.375,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.218,
+ 0.436,
+ 0.311,
+ 0.343,
+ 0.468,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.404,
+ 0.279,
+ 0.247,
+ 0.372,
+ 0.497,
+ 0.561,
+ 0.529,
+ 0.215,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.34,
+ 0.465,
+ 0.308,
+ 0.433,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.244,
+ 0.369,
+ 0.494,
+ 0.558,
+ 0.276,
+ 0.401,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.212,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.18,
+ 0.43,
+ 0.305,
+ 0.337,
+ 0.462,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.273,
+ 0.523,
+ 0.398,
+ 0.241,
+ 0.366,
+ 0.491,
+ 0.555,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.209,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.459,
+ 0.334,
+ 0.427,
+ 0.302,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.27,
+ 0.395,
+ 1.924,
+ 0.238,
+ 0.363,
+ 0.488,
+ 1.741,
+ 2.241,
+ 1.892,
+ 0.552,
+ 0.206,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.456,
+ 0.331,
+ 0.299,
+ 0.424,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.392,
+ 0.267,
+ 0.36,
+ 0.235,
+ 0.485,
+ 0.549,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.453,
+ 0.328,
+ 0.296,
+ 0.421,
+ 0.203,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.546,
+ 0.264,
+ 0.389,
+ 0.514,
+ 0.357,
+ 0.482,
+ 0.232,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.45,
+ 0.325,
+ 0.2,
+ 0.293,
+ 0.418,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.543,
+ 0.511,
+ 0.386,
+ 0.261,
+ 0.354,
+ 0.479,
+ 0.229,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.447,
+ 0.322,
+ 0.29,
+ 0.415,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.258,
+ 0.351,
+ 0.476,
+ 1.755,
+ 0.54,
+ 0.569,
+ 0.383,
+ 0.508,
+ 0.226,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.287,
+ 0.412,
+ 0.444,
+ 0.319,
+ 0.194,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.255,
+ 0.38,
+ 0.505,
+ 0.348,
+ 0.473,
+ 0.537,
+ 0.566,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.223,
+ 0.441,
+ 0.316,
+ 0.284,
+ 0.409,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.252,
+ 0.345,
+ 0.47,
+ 0.563,
+ 0.377,
+ 0.502,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.22,
+ nan,
+ nan,
+ 0.313,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.438,
+ 0.249,
+ 0.374,
+ 0.499,
+ 0.281,
+ 0.406,
+ 0.217,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.31,
+ 0.185,
+ 0.435,
+ 0.342,
+ 0.467,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.371,
+ 0.496,
+ 1.871,
+ 0.246,
+ 0.278,
+ 0.403,
+ 0.528,
+ 0.56,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.214,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.432,
+ 0.307,
+ 0.339,
+ 0.464,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.557,
+ 0.243,
+ 0.368,
+ 0.493,
+ 0.275,
+ 0.4,
+ 0.525,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.211,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.304,
+ 0.429,
+ 0.336,
+ 0.461,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.365,
+ 0.49,
+ 0.24,
+ 0.272,
+ 0.397,
+ 0.522,
+ 0.208,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.301,
+ 0.426,
+ 0.458,
+ 0.333,
+ 0.269,
+ 0.394,
+ 0.237,
+ 0.487,
+ 0.362,
+ 0.205,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.455,
+ 0.33,
+ 0.423,
+ 0.298,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.251,
+ 0.376,
+ 0.501,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.266,
+ 0.484,
+ 0.577,
+ 2.231,
+ 0.391,
+ 0.359,
+ 2.013,
+ 0.548,
+ 0.516,
+ 0.234,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.42,
+ 0.295,
+ 0.452,
+ 0.327,
+ 0.17,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.545,
+ 0.356,
+ 0.574,
+ 0.263,
+ 0.388,
+ 0.481,
+ 0.231,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.449,
+ 0.292,
+ 0.417,
+ 0.324,
+ 0.199,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.353,
+ 0.26,
+ 0.385,
+ 1.914,
+ 0.571,
+ 0.51,
+ 0.478,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.228,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.289,
+ 0.414,
+ 0.446,
+ 0.321,
+ 0.196,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.539,
+ 0.35,
+ 0.475,
+ 0.257,
+ 0.382,
+ 0.507,
+ 2.224,
+ 0.225,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.443,
+ 0.411,
+ 0.286,
+ 0.318,
+ 0.193,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.347,
+ 0.472,
+ 0.536,
+ 0.254,
+ 0.379,
+ 0.504,
+ 0.565,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.222,
+ 0.323,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ 0.408,
+ 0.315,
+ 0.283,
+ 0.44,
+ 0.19,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ nan,
+ ...}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 43474 entries, 0 to 43473
+Data columns (total 40 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   OBJECTID            43474 non-null  int64  
+ 1   LocationName        43474 non-null  object 
+ 2   LatLong             43474 non-null  object 
+ 3   Latitude            43474 non-null  float64
+ 4   Longitude           43474 non-null  float64
+ 5   City                29623 non-null  object 
+ 6   County              43474 non-null  object 
+ 7   State               43474 non-null  object 
+ 8   Name                43474 non-null  object 
+ 9   TestType            43474 non-null  object 
+ 10  EntryNumber         43474 non-null  int64  
+ 11  Brand               43474 non-null  object 
+ 12  Trait               43473 non-null  object 
+ 13  Product             43474 non-null  object 
+ 14  Soil                32971 non-null  object 
+ 15  Tillage             32971 non-null  object 
+ 16  PlantingDate        11914 non-null  float64
+ 17  HarvestDate         11743 non-null  object 
+ 18  ValuePerac          43474 non-null  float64
+ 19  SeedingRatePerAcre  836 non-null    float64
+ 20  PercentBollOpened   1235 non-null   float64
+ 21  StormTolerance      595 non-null    float64
+ 22  Yield               43474 non-null  int64  
+ 23  Elongation          11341 non-null  float64
+ 24  HVIColor            43474 non-null  int64  
+ 25  Leaf                43474 non-null  int64  
+ 26  Length              38837 non-null  float64
+ 27  LintFraction        42391 non-null  float64
+ 28  LoanValue           38761 non-null  float64
+ 29  Mic                 39394 non-null  float64
+ 30  Strength            39364 non-null  float64
+ 31  UI                  39330 non-null  float64
+ 32  Turnout             42391 non-null  float64
+ 33  GrossIncome         43474 non-null  float64
+ 34  Irrigated           43474 non-null  object 
+ 35  IrrigationType      17429 non-null  object 
+ 36  Year                43474 non-null  int64  
+ 37  ZIP Code            32971 non-null  float64
+ 38  Test Result ID      43474 non-null  int64  
+ 39  Test ID             43474 non-null  int64  
+dtypes: float64(17), int64(8), object(15)
+memory usage: 13.3+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<p>This dataset contains 26 fields of various datatypes. In one of the next steps this field names will be alligned with various controlled vocabularies and ontologies. For this to be succesful the fieldnames need to be as expressive as it can be.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_86e6a">
+  <thead>
+    <tr>
+      <th class="blank level0" >&nbsp;</th>
+      <th id="T_86e6a_level0_col0" class="col_heading level0 col0" >original_field</th>
+      <th id="T_86e6a_level0_col1" class="col_heading level0 col1" >prepared_field</th>
+      <th id="T_86e6a_level0_col2" class="col_heading level0 col2" >change</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th id="T_86e6a_level0_row0" class="row_heading level0 row0" >0</th>
+      <td id="T_86e6a_row0_col0" class="data row0 col0" >OBJECTID</td>
+      <td id="T_86e6a_row0_col1" class="data row0 col1" >OBJECTID</td>
+      <td id="T_86e6a_row0_col2" class="data row0 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row1" class="row_heading level0 row1" >1</th>
+      <td id="T_86e6a_row1_col0" class="data row1 col0" >LocationName</td>
+      <td id="T_86e6a_row1_col1" class="data row1 col1" >LocationName</td>
+      <td id="T_86e6a_row1_col2" class="data row1 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row2" class="row_heading level0 row2" >2</th>
+      <td id="T_86e6a_row2_col0" class="data row2 col0" >LatLong</td>
+      <td id="T_86e6a_row2_col1" class="data row2 col1" >LatLong</td>
+      <td id="T_86e6a_row2_col2" class="data row2 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row3" class="row_heading level0 row3" >3</th>
+      <td id="T_86e6a_row3_col0" class="data row3 col0" >Latitude</td>
+      <td id="T_86e6a_row3_col1" class="data row3 col1" >Latitude</td>
+      <td id="T_86e6a_row3_col2" class="data row3 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row4" class="row_heading level0 row4" >4</th>
+      <td id="T_86e6a_row4_col0" class="data row4 col0" >Longitude</td>
+      <td id="T_86e6a_row4_col1" class="data row4 col1" >Longitude</td>
+      <td id="T_86e6a_row4_col2" class="data row4 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row5" class="row_heading level0 row5" >5</th>
+      <td id="T_86e6a_row5_col0" class="data row5 col0" >City</td>
+      <td id="T_86e6a_row5_col1" class="data row5 col1" >City</td>
+      <td id="T_86e6a_row5_col2" class="data row5 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row6" class="row_heading level0 row6" >6</th>
+      <td id="T_86e6a_row6_col0" class="data row6 col0" >County</td>
+      <td id="T_86e6a_row6_col1" class="data row6 col1" >County</td>
+      <td id="T_86e6a_row6_col2" class="data row6 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row7" class="row_heading level0 row7" >7</th>
+      <td id="T_86e6a_row7_col0" class="data row7 col0" >State</td>
+      <td id="T_86e6a_row7_col1" class="data row7 col1" >State</td>
+      <td id="T_86e6a_row7_col2" class="data row7 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row8" class="row_heading level0 row8" >8</th>
+      <td id="T_86e6a_row8_col0" class="data row8 col0" >Name</td>
+      <td id="T_86e6a_row8_col1" class="data row8 col1" >Name</td>
+      <td id="T_86e6a_row8_col2" class="data row8 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row9" class="row_heading level0 row9" >9</th>
+      <td id="T_86e6a_row9_col0" class="data row9 col0" >TestType</td>
+      <td id="T_86e6a_row9_col1" class="data row9 col1" >TestType</td>
+      <td id="T_86e6a_row9_col2" class="data row9 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row10" class="row_heading level0 row10" >10</th>
+      <td id="T_86e6a_row10_col0" class="data row10 col0" >EntryNumber</td>
+      <td id="T_86e6a_row10_col1" class="data row10 col1" >EntryNumber</td>
+      <td id="T_86e6a_row10_col2" class="data row10 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row11" class="row_heading level0 row11" >11</th>
+      <td id="T_86e6a_row11_col0" class="data row11 col0" >Brand</td>
+      <td id="T_86e6a_row11_col1" class="data row11 col1" >Brand</td>
+      <td id="T_86e6a_row11_col2" class="data row11 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row12" class="row_heading level0 row12" >12</th>
+      <td id="T_86e6a_row12_col0" class="data row12 col0" >Trait</td>
+      <td id="T_86e6a_row12_col1" class="data row12 col1" >Trait</td>
+      <td id="T_86e6a_row12_col2" class="data row12 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row13" class="row_heading level0 row13" >13</th>
+      <td id="T_86e6a_row13_col0" class="data row13 col0" >Product</td>
+      <td id="T_86e6a_row13_col1" class="data row13 col1" >Product</td>
+      <td id="T_86e6a_row13_col2" class="data row13 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row14" class="row_heading level0 row14" >14</th>
+      <td id="T_86e6a_row14_col0" class="data row14 col0" >Soil</td>
+      <td id="T_86e6a_row14_col1" class="data row14 col1" >Soil</td>
+      <td id="T_86e6a_row14_col2" class="data row14 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row15" class="row_heading level0 row15" >15</th>
+      <td id="T_86e6a_row15_col0" class="data row15 col0" >Tillage</td>
+      <td id="T_86e6a_row15_col1" class="data row15 col1" >Tillage</td>
+      <td id="T_86e6a_row15_col2" class="data row15 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row16" class="row_heading level0 row16" >16</th>
+      <td id="T_86e6a_row16_col0" class="data row16 col0" >PlantingDate</td>
+      <td id="T_86e6a_row16_col1" class="data row16 col1" >PlantingDate</td>
+      <td id="T_86e6a_row16_col2" class="data row16 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row17" class="row_heading level0 row17" >17</th>
+      <td id="T_86e6a_row17_col0" class="data row17 col0" >HarvestDate</td>
+      <td id="T_86e6a_row17_col1" class="data row17 col1" >HarvestDate</td>
+      <td id="T_86e6a_row17_col2" class="data row17 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row18" class="row_heading level0 row18" >18</th>
+      <td id="T_86e6a_row18_col0" class="data row18 col0" >ValuePerac</td>
+      <td id="T_86e6a_row18_col1" class="data row18 col1" >ValuePerac</td>
+      <td id="T_86e6a_row18_col2" class="data row18 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row19" class="row_heading level0 row19" >19</th>
+      <td id="T_86e6a_row19_col0" class="data row19 col0" >SeedingRatePerAcre</td>
+      <td id="T_86e6a_row19_col1" class="data row19 col1" >SeedingRatePerAcre</td>
+      <td id="T_86e6a_row19_col2" class="data row19 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row20" class="row_heading level0 row20" >20</th>
+      <td id="T_86e6a_row20_col0" class="data row20 col0" >PercentBollOpened</td>
+      <td id="T_86e6a_row20_col1" class="data row20 col1" >PercentBollOpened</td>
+      <td id="T_86e6a_row20_col2" class="data row20 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row21" class="row_heading level0 row21" >21</th>
+      <td id="T_86e6a_row21_col0" class="data row21 col0" >StormTolerance</td>
+      <td id="T_86e6a_row21_col1" class="data row21 col1" >StormTolerance</td>
+      <td id="T_86e6a_row21_col2" class="data row21 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row22" class="row_heading level0 row22" >22</th>
+      <td id="T_86e6a_row22_col0" class="data row22 col0" >Yield</td>
+      <td id="T_86e6a_row22_col1" class="data row22 col1" >Yield</td>
+      <td id="T_86e6a_row22_col2" class="data row22 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row23" class="row_heading level0 row23" >23</th>
+      <td id="T_86e6a_row23_col0" class="data row23 col0" >Elongation</td>
+      <td id="T_86e6a_row23_col1" class="data row23 col1" >Elongation</td>
+      <td id="T_86e6a_row23_col2" class="data row23 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row24" class="row_heading level0 row24" >24</th>
+      <td id="T_86e6a_row24_col0" class="data row24 col0" >HVIColor</td>
+      <td id="T_86e6a_row24_col1" class="data row24 col1" >HVIColor</td>
+      <td id="T_86e6a_row24_col2" class="data row24 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row25" class="row_heading level0 row25" >25</th>
+      <td id="T_86e6a_row25_col0" class="data row25 col0" >Leaf</td>
+      <td id="T_86e6a_row25_col1" class="data row25 col1" >Leaf</td>
+      <td id="T_86e6a_row25_col2" class="data row25 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row26" class="row_heading level0 row26" >26</th>
+      <td id="T_86e6a_row26_col0" class="data row26 col0" >Length</td>
+      <td id="T_86e6a_row26_col1" class="data row26 col1" >Length</td>
+      <td id="T_86e6a_row26_col2" class="data row26 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row27" class="row_heading level0 row27" >27</th>
+      <td id="T_86e6a_row27_col0" class="data row27 col0" >LintFraction</td>
+      <td id="T_86e6a_row27_col1" class="data row27 col1" >LintFraction</td>
+      <td id="T_86e6a_row27_col2" class="data row27 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row28" class="row_heading level0 row28" >28</th>
+      <td id="T_86e6a_row28_col0" class="data row28 col0" >LoanValue</td>
+      <td id="T_86e6a_row28_col1" class="data row28 col1" >LoanValue</td>
+      <td id="T_86e6a_row28_col2" class="data row28 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row29" class="row_heading level0 row29" >29</th>
+      <td id="T_86e6a_row29_col0" class="data row29 col0" >Mic</td>
+      <td id="T_86e6a_row29_col1" class="data row29 col1" >Mic</td>
+      <td id="T_86e6a_row29_col2" class="data row29 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row30" class="row_heading level0 row30" >30</th>
+      <td id="T_86e6a_row30_col0" class="data row30 col0" >Strength</td>
+      <td id="T_86e6a_row30_col1" class="data row30 col1" >Strength</td>
+      <td id="T_86e6a_row30_col2" class="data row30 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row31" class="row_heading level0 row31" >31</th>
+      <td id="T_86e6a_row31_col0" class="data row31 col0" >UI</td>
+      <td id="T_86e6a_row31_col1" class="data row31 col1" >UI</td>
+      <td id="T_86e6a_row31_col2" class="data row31 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row32" class="row_heading level0 row32" >32</th>
+      <td id="T_86e6a_row32_col0" class="data row32 col0" >Turnout</td>
+      <td id="T_86e6a_row32_col1" class="data row32 col1" >Turnout</td>
+      <td id="T_86e6a_row32_col2" class="data row32 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row33" class="row_heading level0 row33" >33</th>
+      <td id="T_86e6a_row33_col0" class="data row33 col0" >GrossIncome</td>
+      <td id="T_86e6a_row33_col1" class="data row33 col1" >GrossIncome</td>
+      <td id="T_86e6a_row33_col2" class="data row33 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row34" class="row_heading level0 row34" >34</th>
+      <td id="T_86e6a_row34_col0" class="data row34 col0" >Irrigated</td>
+      <td id="T_86e6a_row34_col1" class="data row34 col1" >Irrigated</td>
+      <td id="T_86e6a_row34_col2" class="data row34 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row35" class="row_heading level0 row35" >35</th>
+      <td id="T_86e6a_row35_col0" class="data row35 col0" >IrrigationType</td>
+      <td id="T_86e6a_row35_col1" class="data row35 col1" >IrrigationType</td>
+      <td id="T_86e6a_row35_col2" class="data row35 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row36" class="row_heading level0 row36" >36</th>
+      <td id="T_86e6a_row36_col0" class="data row36 col0" >Year</td>
+      <td id="T_86e6a_row36_col1" class="data row36 col1" >Year</td>
+      <td id="T_86e6a_row36_col2" class="data row36 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row37" class="row_heading level0 row37" >37</th>
+      <td id="T_86e6a_row37_col0" class="data row37 col0" >ZIP Code</td>
+      <td id="T_86e6a_row37_col1" class="data row37 col1" >ZIP Code</td>
+      <td id="T_86e6a_row37_col2" class="data row37 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row38" class="row_heading level0 row38" >38</th>
+      <td id="T_86e6a_row38_col0" class="data row38 col0" >Test Result ID</td>
+      <td id="T_86e6a_row38_col1" class="data row38 col1" >Test Result ID</td>
+      <td id="T_86e6a_row38_col2" class="data row38 col2" ></td>
+    </tr>
+    <tr>
+      <th id="T_86e6a_level0_row39" class="row_heading level0 row39" >39</th>
+      <td id="T_86e6a_row39_col0" class="data row39 col0" >Test ID</td>
+      <td id="T_86e6a_row39_col1" class="data row39 col1" >Test ID</td>
+      <td id="T_86e6a_row39_col2" class="data row39 col2" ></td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+</div>
+<p>In this chapter we have reviewed and possibly cleaned the source data. In the next chapter these terms will be use to identify IRIs that unambiguously point to the definitions of these field labels. In this stage of the project we need to be a bit creative here. Some crucial information such as conditionals or units have been removed, but these are needed in the semantic models that will be derived.</p>
+<p>Moving forward the project should design a common tabular format that, next to field labels, also captures these conditionals, units and cardinality.</p>
+<p>Eventually this book should contain a chapter that describes this tabular format.</p>
+<p>Eventually the steps described in this chapter will be redundant. Moving forward performers in the different PDAs, ideally will build on a predefined tabular format where the field names are selected from the provided codebook.</p>
+</div>
+<div class="section" id="nalt-shapes-and-codebook">
+<h2>NALT shapes and  codebook<a class="headerlink" href="#nalt-shapes-and-codebook" title="Permalink to this headline">#</a></h2>
+<p>The DT codebook will be a listing of selected field names. Data curators will be able to select field names from this codebook. Non-existing field names can be requested.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./creating-rdf"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Example linked-data pipeline on Glioblastoma data</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="convert2rdf.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Example workflow on Cotton shape</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Andra Waagmeester<br/>
+  
+      &copy; Copyright 2023.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

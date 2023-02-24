@@ -1,0 +1,260 @@
+# source: https://docs.google.com/document/d/1tuUCQOkYUREcS2BgkD5qtdCOVdCr-zko/edit
+
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX qudt: <http://qudt.org/schema/qudt/>
+PREFIX nalt: <https://lod.nal.usda.gov/nalt/>
+PREFIX unit: <http://qudt.org/vocab/unit/>
+PREFIX schema: <http://schema.org/>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX example: <http://www.example.org/rdf#>
+PREFIX : <http://nal.example/schema#>
+PREFIX agschema: <http://agschemas.org/>
+
+start = @:productionShape
+
+:productionShape {
+    dct:identifier xsd:integer ;
+    agschema:plantingDate xsd:date ;
+    agschema:harvestDate xsd:date ;
+    agschema:seedingRatePerAcre @:SeedingRatePerAcre ;
+    agschema:percentBallOpened @:PercentBallOpened ;
+}
+
+:SeedingRatePerAcre {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind [nalt:X1234] ; # TODO mint in nalt
+    qudt:unit [nalt:Y1234] ; # TODO mint in nalt
+    qudt:value xsd:decimal minInclusive 1.2 ;
+}
+
+:PercentBallOpened {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind [nalt:X1235] ; # TODO mint in nalt
+    qudt:unit [nalt:Y1254] ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:ProductionCrop {
+    agschema:Staple            @:staple ;     # (1/32 in.)
+    agschema:Length            @:length ;               # (in.)
+    agschema:Strength          @:strength ;              # (g/tex)
+    agschema:Micronaire        @:micronaire ;            # (microns)
+    agschema:Leaf              @:leaf ;                  # (leaf/1000)
+    agschema:Ext               @:ext ;                   # (ext/1000)
+    agschema:HVIColor          @:hviColor ;              # (HVI Color)
+    agschema:ColorRd           @:colorRd ;               # (Color Rd)
+    agschema:Colorb            @:colorb ;                # (Color b)
+    agschema:TrashArea         @:trasharea ;             # (%)
+    agschema:LengthUniformity  @:lengthuniformity ;      # (%)
+    agschema:LintTurnout       @:lintturnout ;           # (%)
+    agschema:LintYield         @:lintyield ;             # (lb/ac)
+    agschema:valueperac        @:valueperac ;            # ($/ac)
+    }
+
+:staple {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1236 ; # TODO mint in nalt
+    qudt:unit nalt:Y1236 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:length {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1237 ; # TODO mint in nalt
+    qudt:unit unit:Inch ;
+    qudt:value xsd:decimal ;
+}
+
+:strength {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1238 ; # TODO mint in nalt
+    qudt:unit nalt:Y1238 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:micronaire {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1239 ; # TODO mint in nalt
+    qudt:unit nalt:Y1239 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:leaf {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1240 ; # TODO mint in nalt
+    qudt:unit nalt:Y1240 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:ext {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1241 ; # TODO mint in nalt
+    qudt:unit nalt:Y1241 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:hviColor [
+   example:hviColorNameA
+   example:hviColorNameB
+   example:hviColorNameC
+   example:hviColorNameN
+]
+
+:colorRd {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1243 ; # TODO mint in nalt
+    qudt:unit nalt:Y1243 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:colorb {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1244 ; # TODO mint in nalt
+    qudt:unit nalt:Y1244 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:trasharea {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1245 ; # TODO mint in nalt
+    qudt:unit nalt:Y1245 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:lengthuniformity {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1246 ; # TODO mint in nalt
+    qudt:unit nalt:Y1246 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:lintturnout {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1247 ; # TODO mint in nalt
+    qudt:unit nalt:Y1247 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:lintyield {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1248 ; # TODO mint in nalt
+    qudt:unit nalt:Y1248 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:valueperac {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:X1249 ; # TODO mint in nalt
+    qudt:unit nalt:Y1249 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:productionLocationShape {
+    schema:latitude xsd:decimal ;
+    schema:longitude xsd:decimal ;
+    schema:isPartOf [schema:City schema:County schema:State] ;
+    example:hasWeatherMeasurement @:weatherShape + ;
+}
+
+:varietyShape {
+    schema:yield @:yield ;
+    agschema:elognation @:elongation ;
+    agschema:hviColor @:hviColor ;
+    agschema:leaf @:leaf ;
+    agschema:staple @:staple ;
+    agschema:length @:length ;
+    agschema:lintFraction @:lintFraction ;
+    agschema:strength @:strength ;
+    agschema:micronaire @:micronaire ;
+    agschema:lengthUniformity @:lengthUniformity ;
+    agschema:stormtolerance @:basfstormTolerance OR @:bayerDeltapineStormTolerance ;
+}
+
+:yield {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:30142 ;
+    qudt:unit ["lb. lint/acre"] ;
+    qudt:value xsd:decimal ;
+}
+
+:elongation {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:XXXX ; # TODO mint in nalt ;
+    qudt:unit nalt:Y1251 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:lintFraction {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:XXXX ; # TODO mint in nalt ;
+    qudt:unit nalt:Y1252 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:lengthUniformity {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:XXXX ; # TODO mint in nalt ;
+    qudt:unit nalt:Y1253 ; # TODO mint in nalt
+    qudt:value xsd:decimal ;
+}
+
+:basfstormTolerance {
+    a [qudt:Category] ? ;
+    qudt:hasCategory {
+      qudt:categoryName ["tight, stripper-like boll"] ;
+      qudt:categoryCode ["1"]
+    } ;
+}
+
+:stormToleranceCateogries [0 1 2.718 3.14]
+
+:bayerDeltapineStormTolerance {
+    a [qudt:Category] ? ;
+    qudt:hasCategory nalt:XXXX ; # TODO mint in nalt ;
+}
+
+
+:experimentShape {
+    rdfs:label xsd:string ;
+    agschema:testtype xsd:string ;
+    dct:identifer xsd:integer ;
+    agschema:brand xsd:string ;
+}
+
+:soilshape {
+    example:product xsd:string ;
+    example:trait xsd:string ;
+    example:soil iri ;
+    example:dateOfTillage xsd:date ;
+}
+
+:lotShape {
+    example:dateOfIrrigation xsd:date ;
+    example:irrigationType [nalt:LotType1 nalt:LotType2 nalt:LotType3 nalt:LotType4 nalt:LotTypen]
+}
+
+:weatherShape {
+    example:minTemp @:tempMeasurement ;
+    example:maxTemp @:tempMeasurement ;
+    example:precipitation @:precipitation ;
+    example:cloudCover @:cloudCover ;
+}
+
+:cloudCover .
+
+:tempMeasurement {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:5859 ; # Air temperature
+    qudt:unit unit:DEG_F ;
+    qudt:value xsd:decimal ;
+}
+
+:precipitation {
+    a [qudt:Quantity] ? ;
+    qudt:hasQuantityKind nalt:44298 ; # TODO mint in nalt ;
+    qudt:unit unit:INCH ;
+    qudt:value xsd:decimal ;
+}
+
