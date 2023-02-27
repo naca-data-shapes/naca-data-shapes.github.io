@@ -23,6 +23,9 @@ chapters:
   - file: creating-rdf/convert2rdf
 
 - file: creating-rdf/weather/index.md
+  sections:
+    - file: creating-rdf/weather/primary_data
+    - file: creating-rdf/weather/convert2rdf
 
 - file: queries/index.md
   sections:
