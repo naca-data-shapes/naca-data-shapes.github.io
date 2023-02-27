@@ -1,12 +1,11 @@
-Example linked-data pipeline on Glioblastoma data
+Example linked-data pipeline on Cotton data
 =======
-Glioblastoma is one of the program demonstration area's of the ΔTissue project. In this chapter we demonstrate how
-tabular data on glioblastoma can be converted to RDF and linked to other data sources.
-We use synthetic data provided to us by the two teams working on Glioblastoma as an example.
+Cotton is one of the program demonstration area's project. In this chapter we demonstrate how
+tabular data on cotton can be converted to RDF and linked to other data sources.
+We use synthetic data on Cotton as an example.
 
 These are:
-- [dataset on Glioblastoma by the team of Stéphane Pagès](data/glioblastoma-pagès.csv)
-- [dataset on Glioblastoma by the team of Omer Bayraktar](data/glioblastoma-bayraktar.csv)
+## TODO: add links to the data sources
 
 This pipeline towards linked data on Glioblastoma is based on the following steps:
 1. Inspecting the data and initial data cleaning
