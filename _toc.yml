@@ -22,6 +22,8 @@ chapters:
   - file: creating-rdf/primary_data
   - file: creating-rdf/convert2rdf
 
+- file: creating-rdf/weather/index.md
+
 - file: queries/index.md
   sections:
   - file: queries/cotton_wikidata
