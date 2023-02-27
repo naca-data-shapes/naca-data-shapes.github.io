@@ -8,6 +8,7 @@ jupyter-build:
   script:
     - pip install -U jupyter-book
     - pip install -U sphinxcontrib-mermaid
+    - pip install -U pandas
     - jupyter-book clean .
     - jupyter-book build .
   artifacts:
