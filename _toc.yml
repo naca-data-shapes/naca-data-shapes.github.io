@@ -17,10 +17,10 @@ chapters:
   - file: semantic-modelling/ontologies
   - file: semantic-modelling/schemas
 
-- file: creating-rdf/index.md
+- file: creating-rdf/cotton/index.md
   sections:
-  - file: creating-rdf/primary_data
-  - file: creating-rdf/convert2rdf
+  - file: creating-rdf/cotton/primary_data
+  - file: creating-rdf/cotton/convert2rdf
 
 - file: creating-rdf/weather/index.md
   sections:

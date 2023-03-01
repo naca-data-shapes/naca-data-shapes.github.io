@@ -1,4 +1,4 @@
-Example linked-data pipeline on Cotton data
+Cotton data
 =======
 Cotton is one of the program demonstration area's project. In this chapter we demonstrate how
 tabular data on cotton can be converted to RDF and linked to other data sources.
