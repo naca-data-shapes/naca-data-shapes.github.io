@@ -1,4 +1,4 @@
-The NAL Shapes program demonostration area
+The NAL Shapes program demonstration area
 ======
 
 This [JupyterBook](https://jupyterbook.org/)  aims at providing various program demonstration areas that can lead

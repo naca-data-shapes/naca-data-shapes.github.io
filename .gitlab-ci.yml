@@ -10,6 +10,7 @@ jupyter-build:
     - pip install -U sphinxcontrib-mermaid
     - pip install -U pandas
     - pip install -U shexviz
+    - pip install -U graphviz
     - jupyter-book clean .
     - jupyter-book build .
   artifacts:
