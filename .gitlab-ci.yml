@@ -9,6 +9,7 @@ jupyter-build:
     - pip install -U jupyter-book
     - pip install -U sphinxcontrib-mermaid
     - pip install -U pandas
+    - pip install -U shexviz
     - jupyter-book clean .
     - jupyter-book build .
   artifacts:
