@@ -5,6 +5,9 @@ stages:
 jupyter-build:
   stage: build
   image: python:slim
+  before_script:
+    - apt-get update -qq && apt-get install wget bzip2 psmisc git graphviz -y
+
   script:
     - pip install -U jupyter-book
     - pip install -U sphinxcontrib-mermaid
