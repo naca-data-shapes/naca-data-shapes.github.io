@@ -2,7 +2,7 @@ Introduction
 ============
 The NAL Shapes project is a program commisioned by the USDA National Agricultural Library (NAL) to show and extract example data shapes
 to drive towards better integration of agricultural data. 
-The project is a collaboration between the NAL and the [WESO research group](https://www.weso.es/) from the [University of Oviedo](https://www.uniovi.es/).
+The project is a collaboration between the NAL and the [WESO research group](https://www.weso.es/) from the [University of Oviedo]().
 
 Team members are:
 - [Jose Emilio Labra Gayo](https://scholia.toolforge.org/author/Q51602692)
