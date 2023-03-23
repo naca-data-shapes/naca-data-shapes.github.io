@@ -6,7 +6,7 @@ root: index
 chapters:
 - file: introduction/index.md
   sections:
-  - file: introduction/intro
+  - file: introduction/intro.md
   - file: introduction/linkeddata_rdf_web_of_data
   - file: introduction/benefits
   - file: introduction/challenges
