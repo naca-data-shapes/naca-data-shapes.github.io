@@ -1,5 +1,6 @@
 # Cotton shapes
 
+Executable book deployed at: https://naca-data-shapes.gitlab.io/cotton-shapes/
 
 
 ## Getting started
