@@ -1,0 +1,872 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Example (synthetic) data sets &#8212; Nal Shapes Resource Guide on Cotton</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
+    <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'creating-rdf/cotton/primary_data';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Example workflow on Cotton shape" href="convert2rdf.html" />
+    <link rel="prev" title="Cotton data" href="index.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    The NAL Shapes program demonstration area
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semantic-modelling/index.html">Semantic Modelling</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semantic-modelling/ontologies.html">Ontologies and Controlled Vocabularies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semantic-modelling/schemas.html">Schemas</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Cotton data</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Example (synthetic) data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="convert2rdf.html">Example workflow on Cotton shape</a></li>
+
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../weather/index.html">Weather data</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../weather/primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weather/convert2rdf.html">Example workflow on Cotton shape</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../queries/index.html">Query and visualization examples</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../queries/cotton_example.html">Cotton: Use cases: queries and visualizations</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/cotton/primary_data.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button"
+   title="Suggest edit"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/creating-rdf/cotton/primary_data.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Example (synthetic) data sets</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-on-cotton">Dataset on Cotton</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="example-synthetic-data-sets">
+<h1>Example (synthetic) data sets<a class="headerlink" href="#example-synthetic-data-sets" title="Permalink to this heading">#</a></h1>
+<p>For the purpose of this effort to create a common data shape on Glioblastoma, two synthetic data sets were provided. Synthetic datasets contain fabricated data that is represtable of actual data on the topic.</p>
+<p>In this chapter we will inspect the provided datasets and prepare them to by converted into linked data. As described earlier, linked data is data that follows a linked-data format consisting of triples where the individual parts consists of either values or identifiers (IRIs) pointing to concept definitions.</p>
+<p>The proces of converting data to linked data is rather straightforwards and can be summed up as follows:</p>
+<ol class="arabic simple">
+<li><p>Inspect the data</p></li>
+<li><p>Clean the data headers</p></li>
+<li><p>Align the data with common controlled vocabularies or ontologies</p></li>
+<li><p>Design linked-data shapes using the IRIs from the controlled vocabularies and ontologies</p></li>
+<li><p>Transform the data into RDF</p></li>
+</ol>
+<p>In this chapter we will focus on the first two steps.</p>
+<section id="dataset-on-cotton">
+<h2>Dataset on Cotton<a class="headerlink" href="#dataset-on-cotton" title="Permalink to this heading">#</a></h2>
+<p>The first dataset is a provided csv file (Legacy_Cotton_VT_data.csv) ## TODO add a link.
+It contains legacy data on cotton harvests.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_488444/2413312554.py:2: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  cotton = pd.read_csv(&quot;data/Legacy_Cotton_VT_data.csv&quot;,index_col=False, on_bad_lines = &#39;skip&#39;)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>LocationName</th>
+      <th>LatLong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th>County</th>
+      <th>State</th>
+      <th>Name</th>
+      <th>TestType</th>
+      <th>...</th>
+      <th>Strength</th>
+      <th>UI</th>
+      <th>Turnout</th>
+      <th>GrossIncome</th>
+      <th>Irrigated</th>
+      <th>IrrigationType</th>
+      <th>Year</th>
+      <th>ZIP Code</th>
+      <th>Test Result ID</th>
+      <th>Test ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>29.3</td>
+      <td>82.0</td>
+      <td>25.8</td>
+      <td>796.496</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46899</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.1</td>
+      <td>81.2</td>
+      <td>23.8</td>
+      <td>705.159</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46900</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>26.0</td>
+      <td>80.1</td>
+      <td>24.0</td>
+      <td>884.780</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46901</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.8</td>
+      <td>81.8</td>
+      <td>24.2</td>
+      <td>733.869</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46902</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.2</td>
+      <td>81.4</td>
+      <td>27.9</td>
+      <td>972.725</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46903</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>43469</th>
+      <td>43470</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.5</td>
+      <td>82.8</td>
+      <td>33.1</td>
+      <td>950.982</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30074</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43470</th>
+      <td>43471</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.6</td>
+      <td>82.4</td>
+      <td>34.8</td>
+      <td>922.315</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30075</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43471</th>
+      <td>43472</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.3</td>
+      <td>82.8</td>
+      <td>32.4</td>
+      <td>817.002</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30076</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43472</th>
+      <td>43473</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.2</td>
+      <td>83.2</td>
+      <td>29.6</td>
+      <td>816.542</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30077</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43473</th>
+      <td>43474</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>30.0</td>
+      <td>82.3</td>
+      <td>33.1</td>
+      <td>775.964</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30078</td>
+      <td>2196</td>
+    </tr>
+  </tbody>
+</table>
+<p>43474 rows × 40 columns</p>
+</div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 43474 entries, 0 to 43473
+Data columns (total 40 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   OBJECTID            43474 non-null  int64  
+ 1   LocationName        43474 non-null  object 
+ 2   LatLong             43474 non-null  object 
+ 3   Latitude            43474 non-null  float64
+ 4   Longitude           43474 non-null  float64
+ 5   City                29623 non-null  object 
+ 6   County              43474 non-null  object 
+ 7   State               43474 non-null  object 
+ 8   Name                43474 non-null  object 
+ 9   TestType            43474 non-null  object 
+ 10  EntryNumber         43474 non-null  int64  
+ 11  Brand               43474 non-null  object 
+ 12  Trait               43473 non-null  object 
+ 13  Product             43474 non-null  object 
+ 14  Soil                32971 non-null  object 
+ 15  Tillage             32971 non-null  object 
+ 16  PlantingDate        11914 non-null  float64
+ 17  HarvestDate         11743 non-null  object 
+ 18  ValuePerac          43474 non-null  float64
+ 19  SeedingRatePerAcre  836 non-null    float64
+ 20  PercentBollOpened   1235 non-null   float64
+ 21  StormTolerance      595 non-null    float64
+ 22  Yield               43474 non-null  int64  
+ 23  Elongation          11341 non-null  float64
+ 24  HVIColor            43474 non-null  int64  
+ 25  Leaf                43474 non-null  int64  
+ 26  Length              38837 non-null  float64
+ 27  LintFraction        42391 non-null  float64
+ 28  LoanValue           38761 non-null  float64
+ 29  Mic                 39394 non-null  float64
+ 30  Strength            39364 non-null  float64
+ 31  UI                  39330 non-null  float64
+ 32  Turnout             42391 non-null  float64
+ 33  GrossIncome         43474 non-null  float64
+ 34  Irrigated           43474 non-null  object 
+ 35  IrrigationType      17429 non-null  object 
+ 36  Year                43474 non-null  int64  
+ 37  ZIP Code            32971 non-null  float64
+ 38  Test Result ID      43474 non-null  int64  
+ 39  Test ID             43474 non-null  int64  
+dtypes: float64(17), int64(8), object(15)
+memory usage: 13.3+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<p>This dataset contains 39 fields of various datatypes. In one of the next steps this field names will be alligned with various controlled vocabularies and ontologies.</p>
+<p>In this chapter we have reviewed and possibly cleaned the source data. In the next chapter these terms will be use to identify IRIs that unambiguously point to the definitions of these field labels. In this stage of the project we need to be a bit creative here. Some crucial information such as conditionals or units have been removed, but these are needed in the semantic models that will be derived.</p>
+<p>Moving forward the project should design a common tabular format that, next to field labels, also captures these conditionals, units and cardinality.</p>
+<p>Eventually this book should contain a chapter that describes this tabular format.</p>
+<p>Eventually the steps described in this chapter will be redundant. Moving forward performers in the different PDAs, ideally will build on a predefined tabular format where the field names are selected from the provided codebook.</p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./creating-rdf/cotton"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="index.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Cotton data</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="convert2rdf.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Example workflow on Cotton shape</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset-on-cotton">Dataset on Cotton</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By A. Waagmeester, J. Labra, E. Prud'hommeaux, K. Thornton, J. Moore, J. Woodward, T. Baker
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

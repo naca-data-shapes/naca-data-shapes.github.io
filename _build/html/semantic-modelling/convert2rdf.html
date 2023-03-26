@@ -1,47 +1,59 @@
 
+
 <!DOCTYPE html>
 
-<html>
+
+<html lang="en" >
+
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Example Fairification of synthetic sample dataset on Glioblastome. &#8212; Nal Shapes Resource Guide on Cotton</title>
-    
-  <!-- Loaded before other Sphinx assets -->
-  <link href="../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
-<link href="../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+    <title>Example Fairification of synthetic sample dataset on Glioblastome. &#8212; Nal Shapes Resource Guide on Cotton</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=12da95d707ffb74b382d" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
 
     <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
     <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
-    
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
   <!-- Pre-loaded scripts that we'll load fully later -->
-  <link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
     <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
-    <script src="../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
     <script>let toggleHintShow = 'Click to show';</script>
     <script>let toggleHintHide = 'Click to hide';</script>
     <script>let toggleOpenOnPrint = 'true';</script>
     <script src="../_static/togglebutton.js"></script>
-    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script src="../_static/design-tabs.js"></script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
 const thebe_selector = ".thebe,.cell"
@@ -49,582 +61,355 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../_static/sphinx-thebe.js"></script>
-    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script src="https://unpkg.com/mermaid@9.4.0/dist/mermaid.min.js"></script>
     <script>mermaid.initialize({startOnLoad:true});</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'semantic-modelling/convert2rdf';</script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="None">
-    
-
-    <!-- Google Analytics -->
-    
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
   </head>
-  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
-<!-- Checkboxes to toggle the left sidebar -->
-<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
-<label class="overlay overlay-navbar" for="__navigation">
-    <div class="visually-hidden">Toggle navigation sidebar</div>
-</label>
-<!-- Checkboxes to toggle the in-page toc -->
-<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
-<label class="overlay overlay-pagetoc" for="__page-toc">
-    <div class="visually-hidden">Toggle in-page Table of Contents</div>
-</label>
-<!-- Headers at the top -->
-<div class="announcement header-item noprint"></div>
-<div class="header header-item noprint"></div>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
 
-    
-    <div class="container-fluid" id="banner"></div>
-
-    
-
-    <div class="container-xl">
-      <div class="row">
-          
-<!-- Sidebar -->
-<div class="bd-sidebar noprint" id="site-navigation">
-    <div class="bd-sidebar__content">
-        <div class="bd-sidebar__top"><div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="../index.html">
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
       
-        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+      <div class="bd-sidebar-primary bd-sidebar">
         
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../index.html">
+  
+  
+  
+  
+    
+    
       
-      
-      <img src="../_static/logo.png" class="logo" alt="logo">
-      
-      
-      <h1 class="site-logo" id="site-title">Nal Shapes Resource Guide on Cotton</h1>
-      
-    </a>
-</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
-    <div class="bd-toc-item active">
+    
+    
+    <img src="../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="../index.html">
-                    The NAL Shapes program demonostration area
+                    The NAL Shapes program demonstration area
                 </a>
             </li>
         </ul>
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="index.html">
-   Semantic Modelling
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
-  <label for="toctree-checkbox-1">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="ontologies.html">
-     Ontologies and Controlled Vocabularies
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="schemas.html">
-     Schemas
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../creating-rdf/index.html">
-   Example linked-data pipeline on Glioblastoma data
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
-  <label for="toctree-checkbox-2">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../creating-rdf/primary_data.html">
-     Example (synthetic) data sets
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../creating-rdf/convert2rdf.html">
-     Example workflow on Cotton shape
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../queries/index.html">
-   Query and visualization examples
-  </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
-  <label for="toctree-checkbox-3">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../queries/cotton_example.html">
-     Cotton: Use cases: queries and visualizations
-    </a>
-   </li>
-  </ul>
- </li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="index.html">Semantic Modelling</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="ontologies.html">Ontologies and Controlled Vocabularies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="schemas.html">Schemas</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../creating-rdf/cotton/index.html">Cotton data</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating-rdf/cotton/primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating-rdf/cotton/convert2rdf.html">Example workflow on Cotton shape</a></li>
+
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../creating-rdf/weather/index.html">Weather data</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../creating-rdf/weather/primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../creating-rdf/weather/convert2rdf.html">Example workflow on Cotton shape</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../queries/index.html">Query and visualization examples</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../queries/cotton_example.html">Cotton: Use cases: queries and visualizations</a></li>
+</ul>
+</li>
 </ul>
 
     </div>
 </nav></div>
-        <div class="bd-sidebar__bottom">
-             <!-- To handle the deprecated key -->
-            
-            <div class="navbar_extra_footer">
-            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
-            </div>
-            
-        </div>
     </div>
-    <div id="rtd-footer-container"></div>
-</div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
 
 
-          
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
 
-
-          
-<!-- A tiny helper pixel to detect if we've scrolled -->
 <div class="sbt-scroll-pixel-helper"></div>
-<!-- Main content -->
-<div class="col py-0 content-container">
-    
-    <div class="header-article row sticky-top noprint">
-        
 
-
-
-<div class="col py-1 d-flex header-article-main">
-    <div class="header-article__left">
-        
-        <label for="__navigation"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="right"
-title="Toggle navigation"
->
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
   
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-bars"></i>
-  </span>
-
-</label>
-
-        
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
     </div>
-    <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/german-bioimaging/dtbook/main?urlpath=tree/./semantic-modelling/convert2rdf.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./semantic-modelling/convert2rdf.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button"
+   title="Suggest edit"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
-  
-    <img src="../_static/images/logo_binder.svg">
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
   </span>
-<span class="headerbtn__text-container">Binder</span>
+
 </a>
 
-      </li>
-      
-    </ul>
-  </div>
-</div>
 
-<button onclick="toggleFullScreen()"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="bottom"
-title="Fullscreen mode"
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/semantic-modelling/convert2rdf.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
-<span class="headerbtn__icon-container">
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
   <i class="fas fa-expand"></i>
   </span>
 
 </button>
 
-<div class="menu-dropdown menu-dropdown-repository-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Source repositories">
-      <i class="fab fa-github"></i>
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://github.com/german-bioimaging/dtbook"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Source repository"
->
-  
+`);
+</script>
 
-<span class="headerbtn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="headerbtn__text-container">repository</span>
-</a>
-
-      </li>
-      
-      <li>
-        <a href="https://github.com/german-bioimaging/dtbook/issues/new?title=Issue%20on%20page%20%2Fsemantic-modelling/convert2rdf.html&body=Your%20issue%20content%20here."
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Open an issue"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="headerbtn__text-container">open issue</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
-<div class="menu-dropdown menu-dropdown-download-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Download this page">
-      <i class="fas fa-download"></i>
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
   </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="../_sources/semantic-modelling/convert2rdf.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Download source file"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file"></i>
-  </span>
-<span class="headerbtn__text-container">.ipynb</span>
-</a>
-
-      </li>
-      
-      <li>
-        
-<button onclick="printPdf(this)"
-  class="headerbtn"
-  data-toggle="tooltip"
-data-placement="left"
-title="Print to PDF"
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-file-pdf"></i>
-  </span>
-<span class="headerbtn__text-container">.pdf</span>
-</button>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-<label for="__page-toc"
-  class="headerbtn headerbtn-page-toc"
-  
->
-  
-
-<span class="headerbtn__icon-container">
-  <i class="fas fa-list"></i>
-  </span>
-
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
 </label>
-
+</div></div>
+      
     </div>
+  
 </div>
-
-<!-- Table of contents -->
-<div class="col-md-3 bd-toc show noprint">
-    <div class="tocsection onthispage pt-5 pb-3">
-        <i class="fas fa-list"></i> Contents
-    </div>
-    <nav id="bd-toc-nav" aria-label="Page">
-        <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Example Fairification of synthetic sample dataset on Glioblastome.
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fair-data">
-   FAIR data
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#converting-into-rdf">
-     Converting into RDF
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-ontologies-and-identifiers">
-     Selecting ontologies and identifiers
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fairification-of-data-in-the-delta-tissue-project">
-   FAIRification of data in the Delta Tissue project.
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-original-data">
-   The original data
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#schema-of-meta-data-on-synthetic-dataset-1">
-     Schema of meta data on synthetic dataset 1
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-synthetic-data">
-       Load (synthetic) data
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#schema-modelling">
-   Schema modelling
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#care-provider">
-     care provider
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#uri">
-       URI
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#subjectproperties">
-     Subjectproperties
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pathology">
-   Pathology
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#archived-specimen">
-   Archived specimen
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rdf-generation">
-   RDF generation
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shex-design">
-   ShEx design
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#extract-schema">
-   Extract schema
-  </a>
- </li>
-</ul>
-
-    </nav>
 </div>
-    </div>
-    <div class="article row">
-        <div class="col pl-md-3 pl-lg-5 content-container">
-            <!-- Table of contents that is only displayed when printing the page -->
-            <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Example Fairification of synthetic sample dataset on Glioblastome.</h1>
-                <!-- Table of contents -->
-                <div id="print-main-content">
-                    <div id="jb-print-toc">
-                        
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Example Fairification of synthetic sample dataset on Glioblastome.
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fair-data">
-   FAIR data
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#converting-into-rdf">
-     Converting into RDF
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#selecting-ontologies-and-identifiers">
-     Selecting ontologies and identifiers
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#fairification-of-data-in-the-delta-tissue-project">
-   FAIRification of data in the Delta Tissue project.
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#the-original-data">
-   The original data
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#schema-of-meta-data-on-synthetic-dataset-1">
-     Schema of meta data on synthetic dataset 1
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#load-synthetic-data">
-       Load (synthetic) data
-      </a>
-     </li>
-    </ul>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#schema-modelling">
-   Schema modelling
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#care-provider">
-     care provider
-    </a>
-    <ul class="nav section-nav flex-column">
-     <li class="toc-h3 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#uri">
-       URI
-      </a>
-     </li>
-    </ul>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#subjectproperties">
-     Subjectproperties
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#pathology">
-   Pathology
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#archived-specimen">
-   Archived specimen
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#rdf-generation">
-   RDF generation
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#shex-design">
-   ShEx design
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#extract-schema">
-   Extract schema
-  </a>
- </li>
-</ul>
+              
+              
 
-                        </nav>
-                    </div>
-                </div>
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Example Fairification of synthetic sample dataset on Glioblastome.</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
             </div>
-            <main id="main-content" role="main">
-                
-              <div>
-                
-  <div class="tex2jax_ignore mathjax_ignore section" id="example-fairification-of-synthetic-sample-dataset-on-glioblastome">
-<h1>Example Fairification of <a class="reference external" href="https://en.wikipedia.org/wiki/Synthetic_data">synthetic sample dataset</a> on Glioblastome.<a class="headerlink" href="#example-fairification-of-synthetic-sample-dataset-on-glioblastome" title="Permalink to this headline">#</a></h1>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Example Fairification of synthetic sample dataset on Glioblastome.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-data">FAIR data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-into-rdf">Converting into RDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-ontologies-and-identifiers">Selecting ontologies and identifiers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fairification-of-data-in-the-delta-tissue-project">FAIRification of data in the Delta Tissue project.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-original-data">The original data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-of-meta-data-on-synthetic-dataset-1">Schema of meta data on synthetic dataset 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-synthetic-data">Load (synthetic) data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-modelling">Schema modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#care-provider">care provider</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uri">URI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subjectproperties">Subjectproperties</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pathology">Pathology</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#archived-specimen">Archived specimen</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rdf-generation">RDF generation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shex-design">ShEx design</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-schema">Extract schema</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
 </div>
-<div class="tex2jax_ignore mathjax_ignore section" id="fair-data">
-<h1>FAIR data<a class="headerlink" href="#fair-data" title="Permalink to this headline">#</a></h1>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="example-fairification-of-synthetic-sample-dataset-on-glioblastome">
+<h1>Example Fairification of <a class="reference external" href="https://en.wikipedia.org/wiki/Synthetic_data">synthetic sample dataset</a> on Glioblastome.<a class="headerlink" href="#example-fairification-of-synthetic-sample-dataset-on-glioblastome" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fair-data">
+<h1>FAIR data<a class="headerlink" href="#fair-data" title="Permalink to this heading">#</a></h1>
 <p>This is a FAIRification pipeline that aims at making data Findable Accessible Interoperable and Reusable (<a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/26978244/">FAIR</a>). This generated FAIR will be ingested into a Delta-Tissue linked-data platform which is in the process of being installed and configurated.</p>
 <p>This notebook works towards the FAIRification of data by doing two steps:</p>
-<ol class="simple">
+<ol class="arabic simple">
 <li><p>Unifying the underlying data format by conversion to RDF</p></li>
 <li><p>Selecting ontologies and identifiers to represents the concepts embedded in the data.</p></li>
 <li><p>Describe the underlying schema of the FAIRified data.</p></li>
 </ol>
-<div class="section" id="converting-into-rdf">
-<h2>Converting into RDF<a class="headerlink" href="#converting-into-rdf" title="Permalink to this headline">#</a></h2>
+<section id="converting-into-rdf">
+<h2>Converting into RDF<a class="headerlink" href="#converting-into-rdf" title="Permalink to this heading">#</a></h2>
 <p><a class="reference external" href="https://en.wikipedia.org/wiki/Resource_Description_Framework">RDF</a> is a linked-data format, where the data is unified by expressing the data as so-called <a class="reference external" href="https://en.wikipedia.org/wiki/Semantic_triple">semantic triples</a>. Legacy data formats, such as excel sheets, allow the user to define its own arbitrary structure using human language descriptors to describe the underlying data. This freedom comes with a cost when different relevant datasets need to be combined or aggregated upon. Since we want to combine data from different partners within the project this can lead to many challenges.
 By storing data as semantic triples, this is solved since there is only one format and that is this semantic triple, that can also be seen as a table of three columns. From a syntactical perspective this makes combining data from heterogenous sources straightforward.</p>
-</div>
-<div class="section" id="selecting-ontologies-and-identifiers">
-<h2>Selecting ontologies and identifiers<a class="headerlink" href="#selecting-ontologies-and-identifiers" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="selecting-ontologies-and-identifiers">
+<h2>Selecting ontologies and identifiers<a class="headerlink" href="#selecting-ontologies-and-identifiers" title="Permalink to this heading">#</a></h2>
 <p>Where RDF semantic triples solved the jumble of data structures, the reason for the different data structure is not solved, This is that the underlying structure also reflects the meaning of the data. With semantic triple data, this is catered by uing <a class="reference external" href="https://en.wikipedia.org/wiki/Internationalized_Resource_Identifier">unified identifiers</a>. These are identifiers identifying concepts by using a standard that is closely related to the world wide web. By using these identifiers, another issue of various spelling variations of concepts in data is solved. Often data is currently missed because of misspellings or spelling variations. With unified identifiers this is not the case.</p>
 <p>Next to choosing  identifiers, having a unified data structure like RDF, also requires to capture the relationships between the identifiers. This is provided by so-called  <a class="reference external" href="https://en.wikipedia.org/wiki/Ontology_(information_science)">ontologies</a> and <a class="reference external" href="https://op.europa.eu/en/web/eu-vocabularies/controlled-vocabularies">contolled vocabularies</a>.</p>
 <p>We use services like the <a class="reference external" href="https://www.ebi.ac.uk/ols/index">Ontology Lookup Service</a> or <a class="reference external" href="https://bioportal.bioontology.org/">Bioportal</a> to identify appropriate ontologies.</p>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="fairification-of-data-in-the-delta-tissue-project">
-<h1>FAIRification of data in the Delta Tissue project.<a class="headerlink" href="#fairification-of-data-in-the-delta-tissue-project" title="Permalink to this headline">#</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="fairification-of-data-in-the-delta-tissue-project">
+<h1>FAIRification of data in the Delta Tissue project.<a class="headerlink" href="#fairification-of-data-in-the-delta-tissue-project" title="Permalink to this heading">#</a></h1>
 <p>We would like to engage with the domain experts from the three selected disease, Tuberculosis, Triple-Negative Breast Cancer and Glioblastoma in the FAIRification of the applicable datasets. This requires an initial exploration of (1) the unified identifier space, (2) the appropriate ontologies and controlled vocabularies.</p>
 <p>This notebook is an example workflow where the FAIRification process is done by analyzing the synthetic clinical data on Glioblastoma. In it we have dissected the columns from the spreadsheet containing synthetic data in logical groups and selected arbitrary relevant ontologies for the terms. It is worth emphasizing that is done by a non-expert who judged the appropriateness of a term by its definition and the curators understanding of the matter. It is crucial to do this step in close collaboration with real domain experts.</p>
 <p>Once the appropriate ontological terms and identifiers have been selected, the synthetic data is being converted into RDF and loaded in a semantic FAIR data store.</p>
@@ -634,33 +419,33 @@ By storing data as semantic triples, this is solved since there is only one form
 </div>
 <div class="cell tag_remove-input docutils container">
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="the-original-data">
-<h1>The original data<a class="headerlink" href="#the-original-data" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="the-original-data">
+<h1>The original data<a class="headerlink" href="#the-original-data" title="Permalink to this heading">#</a></h1>
 <p>In this chapter the tabular data from the previous chapter will be converted into linked data. As we discussed earlier, in linked data the data is mainly represented by using IRIs and placing those URIs in data shapes.</p>
 <p>This already starts with describing the data itself.</p>
-<div class="section" id="schema-of-meta-data-on-synthetic-dataset-1">
-<h2>Schema of meta data on synthetic dataset 1<a class="headerlink" href="#schema-of-meta-data-on-synthetic-dataset-1" title="Permalink to this headline">#</a></h2>
+<section id="schema-of-meta-data-on-synthetic-dataset-1">
+<h2>Schema of meta data on synthetic dataset 1<a class="headerlink" href="#schema-of-meta-data-on-synthetic-dataset-1" title="Permalink to this heading">#</a></h2>
 <p>Below is graph representation on the metadata on dataset 1. The following symbols are used.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<img alt="../_images/convert2rdf_5_01.svg" src="../_images/convert2rdf_5_01.svg" /></div>
+<img alt="../_images/3f1968773ced0de496e1cf383846fe2c095be381507866c64b2d2d3e0d27079f.svg" src="../_images/3f1968773ced0de496e1cf383846fe2c095be381507866c64b2d2d3e0d27079f.svg" /></div>
 </div>
 <p>Below it the (proposed) shape for the metadata.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
 <span class="ne">FileNotFoundError</span><span class="g g-Whitespace">                         </span>Traceback (most recent call last)
-<span class="nn">Input In [4],</span> in <span class="ni">&lt;cell line: 36&gt;</span><span class="nt">()</span>
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="n">line</span> <span class="mi">36</span>
 <span class="g g-Whitespace">     </span><span class="mi">34</span> <span class="n">rdf</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="n">WD</span><span class="o">.</span><span class="n">Q63082925</span><span class="p">,</span> <span class="n">RDFS</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="n">Literal</span><span class="p">(</span><span class="s2">&quot;Office Open XML Spreadsheet Document&quot;</span><span class="p">,</span> <span class="n">lang</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">)))</span>
 <span class="g g-Whitespace">     </span><span class="mi">35</span> <span class="n">rdf</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="n">fileURI</span><span class="p">,</span> <span class="n">RDFS</span><span class="o">.</span><span class="n">label</span><span class="p">,</span> <span class="n">Literal</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span> <span class="n">datatype</span><span class="o">=</span><span class="n">XSD</span><span class="o">.</span><span class="n">string</span><span class="p">)))</span>
 <span class="ne">---&gt; </span><span class="mi">36</span> <span class="n">datecreated</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getctime</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 <span class="g g-Whitespace">     </span><span class="mi">37</span> <span class="n">rdf</span><span class="o">.</span><span class="n">add</span><span class="p">((</span><span class="n">fileURI</span><span class="p">,</span> <span class="n">DCTERMS</span><span class="o">.</span><span class="n">issued</span><span class="p">,</span> <span class="n">Literal</span><span class="p">(</span><span class="n">datetime</span><span class="o">.</span><span class="n">fromtimestamp</span><span class="p">(</span><span class="n">datecreated</span><span class="p">)</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s1">&#39;%Y-%m-</span><span class="si">%d</span><span class="s1">T%H:%M:%SZ&#39;</span><span class="p">),</span> <span class="n">datatype</span><span class="o">=</span><span class="n">XSD</span><span class="o">.</span><span class="n">dateTime</span><span class="p">)))</span>
 <span class="g g-Whitespace">     </span><span class="mi">38</span> <span class="n">datemodified</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">getmtime</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
 
-<span class="nn">File /Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.8/lib/python3.8/genericpath.py:65,</span> in <span class="ni">getctime</span><span class="nt">(filename)</span>
+<span class="nn">File /usr/lib/python3.10/genericpath.py:65,</span> in <span class="ni">getctime</span><span class="nt">(filename)</span>
 <span class="g g-Whitespace">     </span><span class="mi">63</span> <span class="k">def</span> <span class="nf">getctime</span><span class="p">(</span><span class="n">filename</span><span class="p">):</span>
-<span class="g g-Whitespace">     </span><span class="mi">64</span>     <span class="sd">&quot;&quot;&quot;Return the metadata change time of a file, reported by os.stat().&quot;&quot;&quot;</span>
+<span class="g g-Whitespace">     </span><span class="mi">64</span><span class="w">     </span><span class="sd">&quot;&quot;&quot;Return the metadata change time of a file, reported by os.stat().&quot;&quot;&quot;</span>
 <span class="ne">---&gt; </span><span class="mi">65</span>     <span class="k">return</span> <span class="n">os</span><span class="o">.</span><span class="n">stat</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span><span class="o">.</span><span class="n">st_ctime</span>
 
 <span class="ne">FileNotFoundError</span>: [Errno 2] No such file or directory: &#39;../creating-rdf/data/Sample clinical data_July 2022.xlsx&#39;
@@ -668,8 +453,8 @@ By storing data as semantic triples, this is solved since there is only one form
 </div>
 </div>
 </div>
-<div class="section" id="load-synthetic-data">
-<h3>Load (synthetic) data<a class="headerlink" href="#load-synthetic-data" title="Permalink to this headline">#</a></h3>
+<section id="load-synthetic-data">
+<h3>Load (synthetic) data<a class="headerlink" href="#load-synthetic-data" title="Permalink to this heading">#</a></h3>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
@@ -1282,16 +1067,16 @@ By storing data as semantic triples, this is solved since there is only one form
 </table>
 </div></div></div>
 </div>
-</div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="schema-modelling">
-<h1>Schema modelling<a class="headerlink" href="#schema-modelling" title="Permalink to this headline">#</a></h1>
-<div class="section" id="care-provider">
-<h2>care provider<a class="headerlink" href="#care-provider" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="schema-modelling">
+<h1>Schema modelling<a class="headerlink" href="#schema-modelling" title="Permalink to this heading">#</a></h1>
+<section id="care-provider">
+<h2>care provider<a class="headerlink" href="#care-provider" title="Permalink to this heading">#</a></h2>
 <p>The data contains two collumns capturing institutional codes. On for the lab site and one for the clinical site. These fields are named <code class="docutils literal notranslate"><span class="pre">ID</span> <span class="pre">Lab</span> <span class="pre">site</span></code> and <code class="docutils literal notranslate"><span class="pre">ID</span> <span class="pre">clinical</span> <span class="pre">site</span></code>. In the schema model these fields are used to build a unique identifier for the subject. Since multiple subjects can exist with the same lab site and clinical site combination. A random and unique number is generated to add to the lab and clinical site combination, to create a unique identifier for the subject.</p>
-<div class="section" id="uri">
-<h3>URI<a class="headerlink" href="#uri" title="Permalink to this headline">#</a></h3>
+<section id="uri">
+<h3>URI<a class="headerlink" href="#uri" title="Permalink to this heading">#</a></h3>
 <p>To complete the Uniform Resource Identifier (URI), we have a minted a temporary namespace <code class="docutils literal notranslate"><span class="pre">http://subjects.semscape.org/</span></code>. Currently, given it is mockup data, this is fine,moving forward a final namespace needs to be selected.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
@@ -1345,12 +1130,12 @@ By storing data as semantic triples, this is solved since there is only one form
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/convert2rdf_12_0.svg" src="../_images/convert2rdf_12_0.svg" /></div>
+<img alt="../_images/e91ec027bc307a7c9b4a235356d2724391fb7fe65a47721f13dae212b5108fe8.svg" src="../_images/e91ec027bc307a7c9b4a235356d2724391fb7fe65a47721f13dae212b5108fe8.svg" /></div>
 </div>
-</div>
-</div>
-<div class="section" id="subjectproperties">
-<h2>Subjectproperties<a class="headerlink" href="#subjectproperties" title="Permalink to this headline">#</a></h2>
+</section>
+</section>
+<section id="subjectproperties">
+<h2>Subjectproperties<a class="headerlink" href="#subjectproperties" title="Permalink to this heading">#</a></h2>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">localviz</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Digraph</span><span class="p">()</span>
@@ -1395,12 +1180,12 @@ By storing data as semantic triples, this is solved since there is only one form
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/convert2rdf_14_0.svg" src="../_images/convert2rdf_14_0.svg" /></div>
+<img alt="../_images/879e1132c0e149c0ea9283365e4fa78ea37aeeed12fbaccbd2f6132a8fbee1e1.svg" src="../_images/879e1132c0e149c0ea9283365e4fa78ea37aeeed12fbaccbd2f6132a8fbee1e1.svg" /></div>
 </div>
-</div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="pathology">
-<h1>Pathology<a class="headerlink" href="#pathology" title="Permalink to this headline">#</a></h1>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="pathology">
+<h1>Pathology<a class="headerlink" href="#pathology" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">localviz</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Digraph</span><span class="p">()</span>
@@ -1547,11 +1332,11 @@ By storing data as semantic triples, this is solved since there is only one form
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/convert2rdf_16_0.svg" src="../_images/convert2rdf_16_0.svg" /></div>
+<img alt="../_images/b2d84b5994c8b487d0016f99fb54d1e871ca56e6f2c0bc720b279173b201ebcc.svg" src="../_images/b2d84b5994c8b487d0016f99fb54d1e871ca56e6f2c0bc720b279173b201ebcc.svg" /></div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="archived-specimen">
-<h1>Archived specimen<a class="headerlink" href="#archived-specimen" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="archived-specimen">
+<h1>Archived specimen<a class="headerlink" href="#archived-specimen" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">localviz</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Digraph</span><span class="p">()</span>
@@ -1580,11 +1365,11 @@ By storing data as semantic triples, this is solved since there is only one form
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/convert2rdf_18_0.svg" src="../_images/convert2rdf_18_0.svg" /></div>
+<img alt="../_images/6b7d65c40b4aea247e3ccb1056de56d5584dfdfe71c88368872a821582566d98.svg" src="../_images/6b7d65c40b4aea247e3ccb1056de56d5584dfdfe71c88368872a821582566d98.svg" /></div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="rdf-generation">
-<h1>RDF generation<a class="headerlink" href="#rdf-generation" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="rdf-generation">
+<h1>RDF generation<a class="headerlink" href="#rdf-generation" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">subjects</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
@@ -3087,11 +2872,11 @@ obo:NCIT_C81246 rdfs:label &quot;drug use history&quot;,
 </div>
 </div>
 <div class="cell_output docutils container">
-<img alt="../_images/convert2rdf_22_0.svg" src="../_images/convert2rdf_22_0.svg" /></div>
+<img alt="../_images/933a60a79d5961f9040d84631578f2af3b3b2e124a496cbf2559bf7198577917.svg" src="../_images/933a60a79d5961f9040d84631578f2af3b3b2e124a496cbf2559bf7198577917.svg" /></div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="shex-design">
-<h1>ShEx design<a class="headerlink" href="#shex-design" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="shex-design">
+<h1>ShEx design<a class="headerlink" href="#shex-design" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataexpressions</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3186,9 +2971,9 @@ http://clinicalsite.semscape.org/UAG
 </div>
 </div>
 </div>
-</div>
-<div class="tex2jax_ignore mathjax_ignore section" id="extract-schema">
-<h1>Extract schema<a class="headerlink" href="#extract-schema" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="extract-schema">
+<h1>Extract schema<a class="headerlink" href="#extract-schema" title="Permalink to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">shexer.shaper</span> <span class="kn">import</span> <span class="n">Shaper</span>
@@ -3213,7 +2998,7 @@ http://clinicalsite.semscape.org/UAG
 </div>
 </div>
 </div>
-</div>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -3227,7 +3012,7 @@ http://clinicalsite.semscape.org/UAG
             mode: "python"
         },
         kernelOptions: {
-            kernelName: "python3",
+            name: "python3",
             path: "./semantic-modelling"
         },
         predefinedOutput: true
@@ -3235,36 +3020,108 @@ http://clinicalsite.semscape.org/UAG
     </script>
     <script>kernelName = 'python3'</script>
 
-              </div>
+                </article>
               
-            </main>
-            <footer class="footer-article noprint">
-                
-    <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+
+              
+              
+                <footer class="bd-footer-article">
+                  <!-- Previous / next buttons -->
+<div class="prev-next-area">
 </div>
-            </footer>
-        </div>
-    </div>
-    <div class="footer-content row">
-        <footer class="col footer"><p>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Example Fairification of synthetic sample dataset on Glioblastome.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fair-data">FAIR data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#converting-into-rdf">Converting into RDF</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#selecting-ontologies-and-identifiers">Selecting ontologies and identifiers</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#fairification-of-data-in-the-delta-tissue-project">FAIRification of data in the Delta Tissue project.</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-original-data">The original data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-of-meta-data-on-synthetic-dataset-1">Schema of meta data on synthetic dataset 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-synthetic-data">Load (synthetic) data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-modelling">Schema modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#care-provider">care provider</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#uri">URI</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subjectproperties">Subjectproperties</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#pathology">Pathology</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#archived-specimen">Archived specimen</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rdf-generation">RDF generation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shex-design">ShEx design</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-schema">Extract schema</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner">
+<div class="bd-footer-content__inner container">
   
-    By Andra Waagmeester<br/>
-  
-      &copy; Copyright 2023.<br/>
-</p>
-        </footer>
-    </div>
+  <div class="footer-item">
     
-</div>
+<p class="component-author">
+By A. Waagmeester, J. Labra, E. Prud'hommeaux, K. Thornton, J. Moore, J. Woodward, T. Baker
+</p>
 
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
 
-      </div>
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div></div>
+          </footer>
+        
+
+      </main>
     </div>
+  </div>
   
   <!-- Scripts loaded after <body> so the DOM is not blocked -->
-  <script src="../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+  <script src="../_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
-
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>

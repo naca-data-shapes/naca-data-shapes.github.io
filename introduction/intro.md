@@ -5,11 +5,14 @@ to drive towards better integration of agricultural data.
 The project is a collaboration between the NAL and the [WESO research group](https://www.weso.es/) from the [University of Oviedo]().
 
 Team members are:
+- [Andra Waagmeester](https://scholia.toolforge.org/author/Q19845625)
+- [Katherine Thornton](https://scholia.toolforge.org/author/Q41533116)
 - [Jose Emilio Labra Gayo](https://scholia.toolforge.org/author/Q51602692)
 - [Eric Prud'hommeaux](https://scholia.toolforge.org/author/Q28914639)
-- [Katherine Thornton](https://scholia.toolforge.org/author/Q41533116)
 - [Nishad Thalhath](https://scholia.toolforge.org/author/Q95616366)
-- [Andra Waagmeester](https://scholia.toolforge.org/author/Q19845625)
+- [Josh Moore](https://orcid.org/0000-0003-4028-811X)
+- [Jennifer Woodward-Greene](https://orcid.org/0000-0003-3236-2711)
+
 
 # Objective
 The objective of the project is to lead towards the creation of agricultural linked data by identifying data shapes.
