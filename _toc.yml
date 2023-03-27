@@ -31,5 +31,6 @@ chapters:
   sections:
   - file: queries/cotton_wikidata
   - file: queries/cotton_example
-
+- file: glossary/index.md
+- file: references/index.md
 
