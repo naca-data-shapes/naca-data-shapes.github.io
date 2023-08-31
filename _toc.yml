@@ -7,15 +7,11 @@ chapters:
 - file: introduction/index.md
   sections:
   - file: introduction/intro.md
-  - file: introduction/linkeddata_rdf_web_of_data
-  - file: introduction/benefits
-  - file: introduction/challenges
+  - file: introduction/linkeddata_rdf_web_of_data.md
+  - file: introduction/benefits.md
+  - file: introduction/challenges.md
 
 - file: semantic-modelling/index.md
-  sections:
-  - file: semantic-modelling/tabular2rdf
-  - file: semantic-modelling/ontologies
-  - file: semantic-modelling/schemas
 
 - file: creating-rdf/cotton/index.md
 
