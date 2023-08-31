@@ -1,3 +1,6 @@
 jupyter-book
 sphinxcontrib-mermaid
 pandas
+rdflib
+graphviz
+shexviz
