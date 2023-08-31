@@ -15,67 +15,162 @@ Traceback (most recent call last):
     raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
 nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
 ------------------
-import pandas as pd
-from rdflib import Namespace, Graph, URIRef, Literal, BNode
-from rdflib.namespace import DCTERMS, DC, XSD, RDFS, DCAT, RDF, FOAF, NamespaceManager, SKOS
-import os
-import urllib.parse
-from datetime import datetime
-import uuid
-import graphviz
-from ShExJSG import Schema, ShExC, ShExJ
-from ShExJSG.ShExJ import Shape, IRIREF, TripleConstraint, NodeConstraint, ShapeOr, EachOf, ShapeExternal, ShapeDecl, Annotation, ObjectLiteral
-
-symbol = dict()
-symbol["class"] = "oval"
-symbol["datatype"] = "octagon"
-symbol["literal"] = "rectangle"
-symbol["iri"]="diamond"
-symbol["bnode"]='point'
-symbol["oneof"]='record'
-
 rdf = Graph()
+for index, row in subjects.iterrows():
+    # Row Subject
+    SubjectId = str(row["OBJECTID"])
+    rdf.add((SUBJECT[SubjectId], DCTERMS.isPartOf, fileURI))
+    rdf.add((SUBJECT[SubjectId], DCTERMS.identifier, Literal(row["OBJECTID"], datatype=XSD.string)))
 
-AGSCHEMAS = Namespace("https://agschemas.org/")
-AGUNITS = Namespace("https://agunits.org")
-WD = Namespace("http://www.wikidata.org/entity/")
-WDT = Namespace("http://www.wikidata.org/prop/direct/")
-SUBJECT = Namespace("http://cottonexample.org/")
-HARVESTLOCATION = Namespace("http://cottonexample.org/location/")
-NALT = Namespace("https://lod.nal.usda.gov/nalt/")
+    rdf.add((SUBJECT[SubjectId], AGSCHEMAS.harvested, NALT["4418"]))
+    LocationUri = HARVESTLOCATION[row["LocationName"].replace(" ", "_").strip()]
+    rdf.add((SUBJECT[SubjectId], AGSCHEMAS.harvestedAt, LocationUri))
+    rdf.add((SUBJECT[SubjectId], AGSCHEMAS.harvestedIn, Literal(row["Year"])))
+    rdf.add((LocationUri, SKOS.prefLabel, Literal(row["LocationName"].replace(" ", "_").strip(), datatype=XSD.string)))
+    rdf.add((LocationUri, SCHEMA.postalCode, Literal(row["ZIP Code"], datatype=XSD.string)))
+    rdf.add((LocationUri, SCHEMA.latitude, Literal(row["Latitude"])))
+    rdf.add((LocationUri, SCHEMA.longitude, Literal(row["Longitude"])))
+    if row["City"] != None:
+        if row["City"] in placeqids["city"].keys():
+            rdf.add((LocationUri, SCHEMA.isPartOf, WD[placeqids["city"][row["City"]]] ))
+    else:
+        rdf.add((LocationUri, SCHEMA.isPartOf, WD[placeqids["county"][row["County"]]]))
 
-OBO = Namespace("http://purl.obolibrary.org/obo/")
-rdf.bind("obo", "http://purl.obolibrary.org/obo/")
-SCHEMA = Namespace("https://schema.org/")
-QUDT = Namespace("http://qudt.org/schema/qudt/")
-UNIT = Namespace("http://qudt.org/schema/qudt/Unit/")
-AGUNIT = Namespace("https://agschemas.org/units/")
+    rdf.add((SUBJECT[SubjectId], AGSCHEMAS.plantingDate, Literal(row["PlantingDate"])))
+    rdf.add((SUBJECT[SubjectId], AGSCHEMAS.harvestDate, Literal(row["HarvestDate"])))
+    valuePerAcre = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, valuePerAcre))
+    rdf.add((valuePerAcre, RDF.type, QUDT.Quantity))
+    rdf.add((valuePerAcre, QUDT.hasQuantityKind, AGUNITS["ValuePerac"]))
+    rdf.add((valuePerAcre, QUDT.unit, AGUNITS["USD-PER-ACRE"]))
+    rdf.add((valuePerAcre, QUDT.value, Literal(row["ValuePerac"])))
+    seedingRatePerAcre = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, seedingRatePerAcre))
+    rdf.add((seedingRatePerAcre, RDF.type, QUDT.Quantity))
+    rdf.add((seedingRatePerAcre, QUDT.hasQuantityKind, AGUNITS["SeedingRatePerAcre"]))
+    rdf.add((seedingRatePerAcre, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((seedingRatePerAcre, QUDT.value, Literal(row["SeedingRatePerAcre"])))
+    percentBollOpened = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, percentBollOpened))
+    rdf.add((percentBollOpened, RDF.type, QUDT.Quantity))
+    rdf.add((percentBollOpened, QUDT.hasQuantityKind, AGUNITS["PercentBollOpened"]))
+    rdf.add((percentBollOpened, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((percentBollOpened, QUDT.value, Literal(row["PercentBollOpened"])))
+    stormTolerance = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, stormTolerance))
+    rdf.add((stormTolerance, QUDT.hasQuantityKind, AGUNITS["StormTolerance"]))
+    rdf.add((stormTolerance, RDF.type, QUDT.Quantity))
+    rdf.add((stormTolerance, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((stormTolerance, QUDT.value, Literal(row["StormTolerance"])))
+    cottonyield = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, cottonyield))
+    rdf.add((cottonyield, RDF.type, QUDT.Quantity))
+    rdf.add((cottonyield, QUDT.hasQuantityKind, AGUNITS["Yield"]))
+    rdf.add((cottonyield, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((cottonyield, QUDT.value, Literal(row["Yield"])))
+    elongation = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, elongation))
+    rdf.add((elongation, RDF.type, QUDT.Quantity))
+    rdf.add((elongation, QUDT.hasQuantityKind, AGUNITS["Elongation"]))
+    rdf.add((elongation, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((elongation, QUDT.value, Literal(row["Elongation"])))
+    hvicolor = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, hvicolor))
+    rdf.add((hvicolor, QUDT.hasQuantityKind, AGUNITS["HVIColor"]))
+    rdf.add((hvicolor, RDF.type, QUDT.Quantity))
+    rdf.add((hvicolor, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((hvicolor, QUDT.value, Literal(row["HVIColor"])))
+    leaf = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, leaf))
+    rdf.add((leaf, QUDT.hasQuantityKind, AGUNITS["Leaf"]))
+    rdf.add((leaf, RDF.type, QUDT.Quantity))
+    rdf.add((leaf, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((leaf, QUDT.value, Literal(row["Leaf"])))
+
+    length = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, length))
+    rdf.add((length, QUDT.hasQuantityKind, AGUNITS["Length"]))
+    rdf.add((length, RDF.type, QUDT.Quantity))
+    rdf.add((length, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((length, QUDT.value, Literal(row["Length"])))
+
+    lintfraction = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, lintfraction))
+    rdf.add((lintfraction, RDF.type, QUDT.Quantity))
+    rdf.add((lintfraction, QUDT.hasQuantityKind, AGUNITS["LintFraction"]))
+    rdf.add((lintfraction, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((lintfraction, QUDT.value, Literal(row["LintFraction"])))
+
+    loanvalue = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, loanvalue))
+    rdf.add((loanvalue, RDF.type, QUDT.Quantity))
+    rdf.add((loanvalue, QUDT.hasQuantityKind, AGUNITS["LoanValue"]))
+    rdf.add((loanvalue, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((loanvalue, QUDT.value, Literal(row["LoanValue"])))
+
+    mic = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, mic))
+    rdf.add((mic, RDF.type, QUDT.Quantity))
+    rdf.add((mic, QUDT.hasQuantityKind, AGUNITS["Mic"]))
+    rdf.add((mic, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((mic, QUDT.value, Literal(row["Mic"])))
+
+    strength = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, strength))
+    rdf.add((strength, RDF.type, QUDT.Quantity))
+    rdf.add((strength, QUDT.hasQuantityKind, AGUNITS["Strength"]))
+    rdf.add((strength, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((strength, QUDT.value, Literal(row["Strength"])))
+
+    ui = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, ui))
+    rdf.add((ui, RDF.type, QUDT.Quantity))
+    rdf.add((ui, QUDT.hasQuantityKind, AGUNITS["UI"]))
+    rdf.add((ui, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((ui, QUDT.value, Literal(row["UI"])))
+
+    turnout = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, turnout))
+    rdf.add((turnout, RDF.type, QUDT.Quantity))
+    rdf.add((turnout, QUDT.hasQuantityKind, AGUNITS["Turnout"]))
+    rdf.add((turnout, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((turnout, QUDT.value, Literal(row["Turnout"])))
+
+    grossincome = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, grossincome))
+    rdf.add((grossincome, RDF.type, QUDT.Quantity))
+    rdf.add((grossincome, QUDT.hasQuantityKind, AGUNITS["GrossIncome"]))
+    rdf.add((grossincome, QUDT.unit, AGUNITS["TBD"]))
+    rdf.add((grossincome, QUDT.value, Literal(row["GrossIncome"])))
 
 
-rdf.bind("sio", "http://semanticscience.org/resource/")
-rdf.bind("wd", "http://www.wikidata.org/entity/")
-rdf.bind("wdt", "http://www.wikidata.org/prop/direct/")
 
-def add2graphviz(command=None, arg1=None, arg2=None, shape=None, label=None):
-    if command == "attr":
-        localviz.attr(arg1, shape=shape)
-        schema.attr(arg1, shape=shape)
-    if command == "node":
-        localviz.node(arg1,label=label)
-        schema.node(arg1,label=label)
-    if command == "edge":
-        localviz.edge(arg1, arg2, label=label)
-        schema.edge(arg1, arg2, label=label)
+
+
+
+
+
+
+
+
+    ui = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, ui))
+    turnout = BNode()
+    rdf.add((SUBJECT[SubjectId], SCHEMA.variableMeasured, turnout))
+
+
+
 ------------------
 
 
 [0;31m---------------------------------------------------------------------------[0m
-[0;31mModuleNotFoundError[0m                       Traceback (most recent call last)
-Cell [0;32mIn[1], line 2[0m
-[1;32m      1[0m [38;5;28;01mimport[39;00m [38;5;21;01mpandas[39;00m [38;5;28;01mas[39;00m [38;5;21;01mpd[39;00m
-[0;32m----> 2[0m [38;5;28;01mfrom[39;00m [38;5;21;01mrdflib[39;00m [38;5;28;01mimport[39;00m Namespace, Graph, URIRef, Literal, BNode
-[1;32m      3[0m [38;5;28;01mfrom[39;00m [38;5;21;01mrdflib[39;00m[38;5;21;01m.[39;00m[38;5;21;01mnamespace[39;00m [38;5;28;01mimport[39;00m DCTERMS, DC, XSD, RDFS, DCAT, RDF, FOAF, NamespaceManager, SKOS
-[1;32m      4[0m [38;5;28;01mimport[39;00m [38;5;21;01mos[39;00m
+[0;31mNameError[0m                                 Traceback (most recent call last)
+Cell [0;32mIn[9], line 17[0m
+[1;32m     15[0m rdf[38;5;241m.[39madd((LocationUri, SCHEMA[38;5;241m.[39mlongitude, Literal(row[[38;5;124m"[39m[38;5;124mLongitude[39m[38;5;124m"[39m])))
+[1;32m     16[0m [38;5;28;01mif[39;00m row[[38;5;124m"[39m[38;5;124mCity[39m[38;5;124m"[39m] [38;5;241m!=[39m [38;5;28;01mNone[39;00m:
+[0;32m---> 17[0m     [38;5;28;01mif[39;00m row[[38;5;124m"[39m[38;5;124mCity[39m[38;5;124m"[39m] [38;5;129;01min[39;00m [43mplaceqids[49m[[38;5;124m"[39m[38;5;124mcity[39m[38;5;124m"[39m][38;5;241m.[39mkeys():
+[1;32m     18[0m         rdf[38;5;241m.[39madd((LocationUri, SCHEMA[38;5;241m.[39misPartOf, WD[placeqids[[38;5;124m"[39m[38;5;124mcity[39m[38;5;124m"[39m][row[[38;5;124m"[39m[38;5;124mCity[39m[38;5;124m"[39m]]] ))
+[1;32m     19[0m [38;5;28;01melse[39;00m:
 
-[0;31mModuleNotFoundError[0m: No module named 'rdflib'
+[0;31mNameError[0m: name 'placeqids' is not defined
 
