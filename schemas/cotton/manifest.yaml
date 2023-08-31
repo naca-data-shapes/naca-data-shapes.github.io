@@ -1,9 +1,0 @@
-# use with e.g. https://shex.io/webapps/shex.js/doc/shex-simple?manifestURL=/checkouts/weso/NALShapes_internal/nalShapesPDA/schemas/cotton/manifest.yaml
-
-- schemaLabel: production schema
-  schemaURL: productionShape.shex
-  dataLabel: stawman examples
-  dataURL: strawman-examples.ttl
-  queryMap: |-
-    <prod1>@:productionShape
-

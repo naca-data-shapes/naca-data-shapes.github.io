@@ -1,0 +1,2702 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Example workflow on Cotton shape &#8212; NAL Shapes Resource Guide on Cotton</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'creating-rdf/cotton/convert2rdf';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Weather data" href="../weather/index.html" />
+    <link rel="prev" title="Example (synthetic) data sets" href="primary_data.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    The NAL Shapes program demonstration area
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../introduction/index.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/intro.html">Introduction</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/linkeddata_rdf_web_of_data.html">Linked data, RDF and the web of data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/benefits.html">RDF: The Good Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/challenges.html">Challenges for RDF Adoption</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semantic-modelling/index.html">Semantic Modelling</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semantic-modelling/ontologies.html">Ontologies and Controlled Vocabularies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semantic-modelling/schemas.html">Schemas</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Cotton data</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Example workflow on Cotton shape</a></li>
+
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../weather/index.html">Weather data</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../weather/primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../weather/convert2rdf.html">Example workflow on Cotton shape</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../queries/index.html">Query and visualization examples</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../queries/cotton_wikidata.html">Wikidata queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../queries/cotton_example.html">Cotton: Use cases: queries and visualizations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references/index.html">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/cotton/convert2rdf.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button"
+   title="Suggest edit"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/creating-rdf/cotton/convert2rdf.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Example workflow on Cotton shape</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Example workflow on Cotton shape</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-original-data">The original data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-of-meta-data-on-synthetic-dataset-1">Schema of meta data on synthetic dataset 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-synthetic-data">Load (synthetic) data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file">File</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#production-shape">Production Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#productioncrop">ProductionCrop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#productionlocation-shape">ProductionLocation Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variety-shape">Variety Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-shape">Experiment Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soil-shape">Soil Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lot-shape">Lot Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-shape">Weather Shape</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-modelling">Schema modelling</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Production Shape</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Production Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ProductionCrop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agricultural-experiment">Agricultural experiment</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rdf-generation">RDF generation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shex-design">ShEx design</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-schema">Extract schema</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="example-workflow-on-cotton-shape">
+<h1>Example workflow on Cotton shape<a class="headerlink" href="#example-workflow-on-cotton-shape" title="Permalink to this heading">#</a></h1>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">from</span> <span class="nn">rdflib</span> <span class="kn">import</span> <span class="n">Namespace</span><span class="p">,</span> <span class="n">Graph</span><span class="p">,</span> <span class="n">URIRef</span><span class="p">,</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">BNode</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">rdflib.namespace</span> <span class="kn">import</span> <span class="n">DCTERMS</span><span class="p">,</span> <span class="n">DC</span><span class="p">,</span> <span class="n">XSD</span><span class="p">,</span> <span class="n">RDFS</span><span class="p">,</span> <span class="n">DCAT</span><span class="p">,</span> <span class="n">RDF</span><span class="p">,</span> <span class="n">FOAF</span><span class="p">,</span> <span class="n">NamespaceManager</span><span class="p">,</span> <span class="n">SKOS</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="the-original-data">
+<h1>The original data<a class="headerlink" href="#the-original-data" title="Permalink to this heading">#</a></h1>
+<p>In this chapter the tabular data from the previous chapter will be converted into linked data. As we discussed earlier, in linked data the data is mainly represented by using IRIs and placing those URIs in data shapes.</p>
+<p>This already starts with describing the data itself.</p>
+<section id="schema-of-meta-data-on-synthetic-dataset-1">
+<h2>Schema of meta data on synthetic dataset 1<a class="headerlink" href="#schema-of-meta-data-on-synthetic-dataset-1" title="Permalink to this heading">#</a></h2>
+<p>Below is graph representation on the metadata on dataset 1. The following symbols are used.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/d308d58fb24ef33795bf78d31f5a4267f1018e597944117a9e0cf8e7f9abcb50.svg" src="../../_images/d308d58fb24ef33795bf78d31f5a4267f1018e597944117a9e0cf8e7f9abcb50.svg" /></div>
+</div>
+<p>Below it the (proposed) shape for the metadata.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/309d10e014a1878ff4dc6023b51dc31d468df30ad0f71bc37f0a20633713ffc4.svg" src="../../_images/309d10e014a1878ff4dc6023b51dc31d468df30ad0f71bc37f0a20633713ffc4.svg" /></div>
+</div>
+<section id="load-synthetic-data">
+<h3>Load (synthetic) data<a class="headerlink" href="#load-synthetic-data" title="Permalink to this heading">#</a></h3>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">set_option</span><span class="p">(</span><span class="s1">&#39;display.max_columns&#39;</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+<span class="n">subjects</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">filename</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">subjects</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/var/folders/85/6rr6j2113qx4d9synl4rnc9r0000gn/T/ipykernel_7439/1039768284.py:2: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  subjects = pd.read_csv(filename,index_col=False)
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>LocationName</th>
+      <th>LatLong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th>County</th>
+      <th>State</th>
+      <th>Name</th>
+      <th>TestType</th>
+      <th>EntryNumber</th>
+      <th>Brand</th>
+      <th>Trait</th>
+      <th>Product</th>
+      <th>Soil</th>
+      <th>Tillage</th>
+      <th>PlantingDate</th>
+      <th>HarvestDate</th>
+      <th>ValuePerac</th>
+      <th>SeedingRatePerAcre</th>
+      <th>PercentBollOpened</th>
+      <th>StormTolerance</th>
+      <th>Yield</th>
+      <th>Elongation</th>
+      <th>HVIColor</th>
+      <th>Leaf</th>
+      <th>Length</th>
+      <th>LintFraction</th>
+      <th>LoanValue</th>
+      <th>Mic</th>
+      <th>Strength</th>
+      <th>UI</th>
+      <th>Turnout</th>
+      <th>GrossIncome</th>
+      <th>Irrigated</th>
+      <th>IrrigationType</th>
+      <th>Year</th>
+      <th>ZIP Code</th>
+      <th>Test Result ID</th>
+      <th>Test ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>1</td>
+      <td>Unknown</td>
+      <td>RF</td>
+      <td>AFD5064RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>796.50</td>
+      <td>NaN</td>
+      <td>98.0</td>
+      <td>5.0</td>
+      <td>1486</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.13</td>
+      <td>0.258</td>
+      <td>53.60</td>
+      <td>4.2</td>
+      <td>29.3</td>
+      <td>82.0</td>
+      <td>25.8</td>
+      <td>796.496</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46899</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>2</td>
+      <td>Unknown</td>
+      <td>B2RF</td>
+      <td>AFD5065B2RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>705.16</td>
+      <td>NaN</td>
+      <td>96.0</td>
+      <td>6.0</td>
+      <td>1323</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.17</td>
+      <td>0.238</td>
+      <td>53.30</td>
+      <td>3.6</td>
+      <td>28.1</td>
+      <td>81.2</td>
+      <td>23.8</td>
+      <td>705.159</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46900</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>3</td>
+      <td>Americot</td>
+      <td>B2RF</td>
+      <td>AM1532B2RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>884.78</td>
+      <td>NaN</td>
+      <td>85.0</td>
+      <td>4.0</td>
+      <td>1660</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.18</td>
+      <td>0.240</td>
+      <td>53.30</td>
+      <td>3.5</td>
+      <td>26.0</td>
+      <td>80.1</td>
+      <td>24.0</td>
+      <td>884.780</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46901</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>4</td>
+      <td>All-Tex</td>
+      <td>RF</td>
+      <td>AT65018RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>733.87</td>
+      <td>NaN</td>
+      <td>89.0</td>
+      <td>4.0</td>
+      <td>1373</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.15</td>
+      <td>0.242</td>
+      <td>53.45</td>
+      <td>3.7</td>
+      <td>27.8</td>
+      <td>81.8</td>
+      <td>24.2</td>
+      <td>733.869</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46902</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>5</td>
+      <td>All-Tex</td>
+      <td>RF</td>
+      <td>AT65333RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>972.73</td>
+      <td>NaN</td>
+      <td>86.0</td>
+      <td>4.0</td>
+      <td>1825</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.14</td>
+      <td>0.279</td>
+      <td>53.30</td>
+      <td>3.5</td>
+      <td>27.2</td>
+      <td>81.4</td>
+      <td>27.9</td>
+      <td>972.725</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46903</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>43469</th>
+      <td>43470</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>72</td>
+      <td>Delta Pine</td>
+      <td>B2RF</td>
+      <td>DP0924B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>950.98</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1796</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.10</td>
+      <td>0.331</td>
+      <td>52.95</td>
+      <td>4.8</td>
+      <td>27.5</td>
+      <td>82.8</td>
+      <td>33.1</td>
+      <td>950.982</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30074</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43470</th>
+      <td>43471</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>73</td>
+      <td>FiberMax</td>
+      <td>B2RF</td>
+      <td>FM1740B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>922.31</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1729</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.12</td>
+      <td>0.348</td>
+      <td>53.35</td>
+      <td>4.6</td>
+      <td>28.6</td>
+      <td>82.4</td>
+      <td>34.8</td>
+      <td>922.315</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30075</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43471</th>
+      <td>43472</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>74</td>
+      <td>Stoneville</td>
+      <td>B2RF</td>
+      <td>ST4427B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>817.00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1531</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.11</td>
+      <td>0.324</td>
+      <td>53.35</td>
+      <td>4.5</td>
+      <td>28.3</td>
+      <td>82.8</td>
+      <td>32.4</td>
+      <td>817.002</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30076</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43472</th>
+      <td>43473</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>75</td>
+      <td>FiberMax</td>
+      <td>LLB2</td>
+      <td>FM1735LLB2</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>816.54</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1523</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.12</td>
+      <td>0.296</td>
+      <td>53.60</td>
+      <td>4.3</td>
+      <td>28.2</td>
+      <td>83.2</td>
+      <td>29.6</td>
+      <td>816.542</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30077</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43473</th>
+      <td>43474</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>76</td>
+      <td>FiberMax</td>
+      <td>B2RF</td>
+      <td>FM1880B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>775.96</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1450</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.14</td>
+      <td>0.331</td>
+      <td>53.50</td>
+      <td>4.4</td>
+      <td>30.0</td>
+      <td>82.3</td>
+      <td>33.1</td>
+      <td>775.964</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30078</td>
+      <td>2196</td>
+    </tr>
+  </tbody>
+</table>
+<p>43474 rows × 40 columns</p>
+</div></div></div>
+</div>
+</section>
+</section>
+<section id="file">
+<h2>File<a class="headerlink" href="#file" title="Permalink to this heading">#</a></h2>
+</section>
+<section id="production-shape">
+<h2>Production Shape<a class="headerlink" href="#production-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>OBJECTID</p></li>
+<li><p>Date of planting</p></li>
+<li><p>Date of harvest</p></li>
+<li><p>ValuePerac</p></li>
+<li><p>SeedingRatePerAcre</p></li>
+<li><p>PercentBallOpened</p></li>
+</ul>
+</section>
+<section id="productioncrop">
+<h2>ProductionCrop<a class="headerlink" href="#productioncrop" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Staple (1/32 in.)</p></li>
+<li><p>Length (in.)</p></li>
+<li><p>Strength (g/tex)</p></li>
+<li><p>Micronaire</p></li>
+<li><p>Leaf</p></li>
+<li><p>Ext</p></li>
+<li><p>HVIColor</p></li>
+<li><p>ColorRd</p></li>
+<li><p>Color+b</p></li>
+<li><p>TrashArea (%)</p></li>
+<li><p>Length Uniformity (%)</p></li>
+<li><p>LintTurnout (%)</p></li>
+<li><p>LintYield (lb/ac)</p></li>
+<li><p>ValuePerac ($/ac) StormTolerance</p></li>
+</ul>
+</section>
+<section id="productionlocation-shape">
+<h2>ProductionLocation Shape<a class="headerlink" href="#productionlocation-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>LocationName</p></li>
+<li><p>LatLong</p></li>
+<li><p>Latitude</p></li>
+<li><p>Longitude</p></li>
+<li><p>City</p></li>
+<li><p>County</p></li>
+<li><p>State</p></li>
+</ul>
+</section>
+<section id="variety-shape">
+<h2>Variety Shape<a class="headerlink" href="#variety-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Yield (lb. lint/acre)</p></li>
+<li><p>Elongation</p></li>
+<li><p>HVIColor</p></li>
+<li><p>Leaf</p></li>
+<li><p>Staple (1/32 in.)</p></li>
+<li><p>Length (in.)</p></li>
+<li><p>LintFraction (%)</p></li>
+<li><p>Strength (g/tex)</p></li>
+<li><p>Micronaire</p></li>
+<li><p>Length Uniformity (%)</p></li>
+<li><p>StormTolerance</p></li>
+</ul>
+</section>
+<section id="experiment-shape">
+<h2>Experiment Shape<a class="headerlink" href="#experiment-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Name</p></li>
+<li><p>TestType</p></li>
+<li><p>EntryNumber</p></li>
+<li><p>Brand</p></li>
+</ul>
+</section>
+<section id="soil-shape">
+<h2>Soil Shape<a class="headerlink" href="#soil-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Product</p></li>
+<li><p>Trait</p></li>
+<li><p>Soil</p></li>
+<li><p>Date of Tillage</p></li>
+</ul>
+</section>
+<section id="lot-shape">
+<h2>Lot Shape<a class="headerlink" href="#lot-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Date of irrigation</p></li>
+<li><p>IrrigationType</p></li>
+</ul>
+</section>
+<section id="weather-shape">
+<h2>Weather Shape<a class="headerlink" href="#weather-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Max and min temp</p></li>
+<li><p>Precipitation</p></li>
+<li><p>Cloud cover</p></li>
+</ul>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="schema-modelling">
+<h1>Schema modelling<a class="headerlink" href="#schema-modelling" title="Permalink to this heading">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1>Production Shape<a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<section id="id2">
+<h2>Production Shape<a class="headerlink" href="#id2" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>OBJECTID</p></li>
+<li><p>Date of planting</p></li>
+<li><p>Date of harvest</p></li>
+<li><p>ValuePerac</p></li>
+<li><p>SeedingRatePerAcre</p></li>
+<li><p>PercentBallOpened</p></li>
+</ul>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/50b094fd66f9d4fffd36d65d3deb8945f4da4d290142e72bba191c96d7e47194.svg" src="../../_images/50b094fd66f9d4fffd36d65d3deb8945f4da4d290142e72bba191c96d7e47194.svg" /></div>
+</div>
+</section>
+<section id="id3">
+<h2>ProductionCrop<a class="headerlink" href="#id3" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Staple (1/32 in.)</p></li>
+<li><p>Length (in.)</p></li>
+<li><p>Strength (g/tex)</p></li>
+<li><p>Micronaire</p></li>
+<li><p>Leaf</p></li>
+<li><p>Ext</p></li>
+<li><p>HVIColor</p></li>
+<li><p>ColorRd</p></li>
+<li><p>Color+b</p></li>
+<li><p>TrashArea (%)</p></li>
+<li><p>Length Uniformity (%)</p></li>
+<li><p>LintTurnout (%)</p></li>
+<li><p>LintYield (lb/ac)</p></li>
+<li><p>ValuePerac ($/ac) StormTolerance</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">localviz</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Digraph</span><span class="p">()</span>
+<span class="n">localviz</span><span class="o">.</span><span class="n">graph_attr</span><span class="p">[</span><span class="s1">&#39;rankdir&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;LR&#39;</span>
+<span class="c1"># uri</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">symbol</span><span class="p">[</span><span class="s2">&quot;iri&quot;</span><span class="p">])</span>
+<span class="c1"># nodes</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;production&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Production&quot;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;productioncrop&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;Production Crop&quot;</span><span class="p">)</span>
+<span class="c1"># one of</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">symbol</span><span class="p">[</span><span class="s2">&quot;oneof&quot;</span><span class="p">])</span>
+
+<span class="c1"># nodes</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;administrationtype&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;{ schema:City | schema:County | schema:State }&quot;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvest&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;harvestlocation&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;agschemas:harvestedAt&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvestlocation&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;latitude&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;schema:latitude&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvestlocation&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;longitude&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;schema:longitude&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvestlocation&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;harvestlocationname&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;skos:prefLabel&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvestlocation&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;administration&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;schema:isPartOf&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;administration&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;administrationtype&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;rdf:type&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvestlocation&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;zipcode&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;schemapostalCode&quot;</span><span class="p">)</span>
+
+<span class="n">localviz</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/9b1776d4e93347cfbd65ee39342bf3b7add6a4c17c06a1e59640e414f6c30a45.svg" src="../../_images/9b1776d4e93347cfbd65ee39342bf3b7add6a4c17c06a1e59640e414f6c30a45.svg" /></div>
+</div>
+</section>
+<section id="agricultural-experiment">
+<h2>Agricultural experiment<a class="headerlink" href="#agricultural-experiment" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">localviz</span> <span class="o">=</span> <span class="n">graphviz</span><span class="o">.</span><span class="n">Digraph</span><span class="p">()</span>
+
+<span class="c1"># uri</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">symbol</span><span class="p">[</span><span class="s2">&quot;iri&quot;</span><span class="p">])</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;experiment&quot;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;sample&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;nalt:9555&quot;</span><span class="p">)</span>
+
+<span class="c1"># datatypes</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">symbol</span><span class="p">[</span><span class="s2">&quot;datatype&quot;</span><span class="p">])</span>
+<span class="c1"># nodes</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span> <span class="s1">&#39;triallabel&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;xsd:string&#39;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span> <span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="c1"># one of</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;attr&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="n">symbol</span><span class="p">[</span><span class="s2">&quot;oneof&quot;</span><span class="p">])</span>
+
+<span class="c1"># nodes</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;node&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;agriculturetrialdesign&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;{agschemas:CAST | agschemas:CottonIncorporated|agschemas:County|agschemas:Extension|agschemas:OVT|agschemas:Strip|agschemas:VertWilt}&quot;</span><span class="p">)</span>
+
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;harvest&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;agschemas:trialPerformed&quot;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;agriculturetrialdesign&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s2">&quot;rdf:type&quot;</span><span class="p">)</span>
+<span class="n">add2graphviz</span><span class="p">(</span><span class="n">command</span><span class="o">=</span><span class="s1">&#39;edge&#39;</span><span class="p">,</span> <span class="n">arg1</span><span class="o">=</span><span class="s1">&#39;test&#39;</span><span class="p">,</span> <span class="n">arg2</span><span class="o">=</span><span class="s1">&#39;triallabel&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;skos:prefLabel&#39;</span><span class="p">)</span>
+
+<span class="n">localviz</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/7bcc48398191a6e0d6ae73660985b21106153959c6aeece6365dd48bb41bc789.svg" src="../../_images/7bcc48398191a6e0d6ae73660985b21106153959c6aeece6365dd48bb41bc789.svg" /></div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="rdf-generation">
+<h1>RDF generation<a class="headerlink" href="#rdf-generation" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">rdf</span><span class="o">.</span><span class="n">serialize</span><span class="p">(</span><span class="n">destination</span><span class="o">=</span><span class="n">filename</span><span class="o">+</span><span class="s2">&quot;.ttl&quot;</span><span class="p">,</span> <span class="nb">format</span><span class="o">=</span><span class="s2">&quot;turtle&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[a rdfg:Graph;rdflib:storage [a rdflib:Store;rdfs:label &#39;Memory&#39;]].
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">subjects</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>LocationName</th>
+      <th>LatLong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th>County</th>
+      <th>State</th>
+      <th>Name</th>
+      <th>TestType</th>
+      <th>EntryNumber</th>
+      <th>Brand</th>
+      <th>Trait</th>
+      <th>Product</th>
+      <th>Soil</th>
+      <th>Tillage</th>
+      <th>PlantingDate</th>
+      <th>HarvestDate</th>
+      <th>ValuePerac</th>
+      <th>SeedingRatePerAcre</th>
+      <th>PercentBollOpened</th>
+      <th>StormTolerance</th>
+      <th>Yield</th>
+      <th>Elongation</th>
+      <th>HVIColor</th>
+      <th>Leaf</th>
+      <th>Length</th>
+      <th>LintFraction</th>
+      <th>LoanValue</th>
+      <th>Mic</th>
+      <th>Strength</th>
+      <th>UI</th>
+      <th>Turnout</th>
+      <th>GrossIncome</th>
+      <th>Irrigated</th>
+      <th>IrrigationType</th>
+      <th>Year</th>
+      <th>ZIP Code</th>
+      <th>Test Result ID</th>
+      <th>Test ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>1</td>
+      <td>Unknown</td>
+      <td>RF</td>
+      <td>AFD5064RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>796.50</td>
+      <td>NaN</td>
+      <td>98.0</td>
+      <td>5.0</td>
+      <td>1486</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.13</td>
+      <td>0.258</td>
+      <td>53.60</td>
+      <td>4.2</td>
+      <td>29.3</td>
+      <td>82.0</td>
+      <td>25.8</td>
+      <td>796.496</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46899</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>2</td>
+      <td>Unknown</td>
+      <td>B2RF</td>
+      <td>AFD5065B2RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>705.16</td>
+      <td>NaN</td>
+      <td>96.0</td>
+      <td>6.0</td>
+      <td>1323</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.17</td>
+      <td>0.238</td>
+      <td>53.30</td>
+      <td>3.6</td>
+      <td>28.1</td>
+      <td>81.2</td>
+      <td>23.8</td>
+      <td>705.159</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46900</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>3</td>
+      <td>Americot</td>
+      <td>B2RF</td>
+      <td>AM1532B2RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>884.78</td>
+      <td>NaN</td>
+      <td>85.0</td>
+      <td>4.0</td>
+      <td>1660</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.18</td>
+      <td>0.240</td>
+      <td>53.30</td>
+      <td>3.5</td>
+      <td>26.0</td>
+      <td>80.1</td>
+      <td>24.0</td>
+      <td>884.780</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46901</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>4</td>
+      <td>All-Tex</td>
+      <td>RF</td>
+      <td>AT65018RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>733.87</td>
+      <td>NaN</td>
+      <td>89.0</td>
+      <td>4.0</td>
+      <td>1373</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.15</td>
+      <td>0.242</td>
+      <td>53.45</td>
+      <td>3.7</td>
+      <td>27.8</td>
+      <td>81.8</td>
+      <td>24.2</td>
+      <td>733.869</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46902</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>5</td>
+      <td>All-Tex</td>
+      <td>RF</td>
+      <td>AT65333RF</td>
+      <td>Loamy Sand</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>972.73</td>
+      <td>NaN</td>
+      <td>86.0</td>
+      <td>4.0</td>
+      <td>1825</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.14</td>
+      <td>0.279</td>
+      <td>53.30</td>
+      <td>3.5</td>
+      <td>27.2</td>
+      <td>81.4</td>
+      <td>27.9</td>
+      <td>972.725</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46903</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>43469</th>
+      <td>43470</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>72</td>
+      <td>Delta Pine</td>
+      <td>B2RF</td>
+      <td>DP0924B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>950.98</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1796</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.10</td>
+      <td>0.331</td>
+      <td>52.95</td>
+      <td>4.8</td>
+      <td>27.5</td>
+      <td>82.8</td>
+      <td>33.1</td>
+      <td>950.982</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30074</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43470</th>
+      <td>43471</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>73</td>
+      <td>FiberMax</td>
+      <td>B2RF</td>
+      <td>FM1740B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>922.31</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1729</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.12</td>
+      <td>0.348</td>
+      <td>53.35</td>
+      <td>4.6</td>
+      <td>28.6</td>
+      <td>82.4</td>
+      <td>34.8</td>
+      <td>922.315</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30075</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43471</th>
+      <td>43472</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>74</td>
+      <td>Stoneville</td>
+      <td>B2RF</td>
+      <td>ST4427B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>817.00</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1531</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.11</td>
+      <td>0.324</td>
+      <td>53.35</td>
+      <td>4.5</td>
+      <td>28.3</td>
+      <td>82.8</td>
+      <td>32.4</td>
+      <td>817.002</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30076</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43472</th>
+      <td>43473</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>75</td>
+      <td>FiberMax</td>
+      <td>LLB2</td>
+      <td>FM1735LLB2</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>816.54</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1523</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.12</td>
+      <td>0.296</td>
+      <td>53.60</td>
+      <td>4.3</td>
+      <td>28.2</td>
+      <td>83.2</td>
+      <td>29.6</td>
+      <td>816.542</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30077</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43473</th>
+      <td>43474</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>76</td>
+      <td>FiberMax</td>
+      <td>B2RF</td>
+      <td>FM1880B2RF</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>775.96</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>1450</td>
+      <td>NaN</td>
+      <td>41</td>
+      <td>4</td>
+      <td>1.14</td>
+      <td>0.331</td>
+      <td>53.50</td>
+      <td>4.4</td>
+      <td>30.0</td>
+      <td>82.3</td>
+      <td>33.1</td>
+      <td>775.964</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30078</td>
+      <td>2196</td>
+    </tr>
+  </tbody>
+</table>
+<p>43474 rows × 40 columns</p>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">placedf</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/cottonplace.csv&quot;</span><span class="p">)</span>
+<span class="n">placeqids</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;city&quot;</span> <span class="p">:</span> <span class="p">{},</span> <span class="s2">&quot;county&quot;</span> <span class="p">:{}}</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">placedf</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+    <span class="n">placeqids</span><span class="p">[</span><span class="s2">&quot;city&quot;</span><span class="p">][</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;City&quot;</span><span class="p">]]</span><span class="o">=</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;cityURI&quot;</span><span class="p">]</span>
+    <span class="n">placeqids</span><span class="p">[</span><span class="s2">&quot;county&quot;</span><span class="p">][</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;County&quot;</span><span class="p">]]</span><span class="o">=</span><span class="n">row</span><span class="p">[</span><span class="s2">&quot;countyQID&quot;</span><span class="p">]</span>
+<span class="n">placeqids</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{&#39;city&#39;: {&#39;Lamesa&#39;: &#39;Q970422&#39;,
+  nan: nan,
+  &#39;Agricola&#39;: &#39;Q4693850&#39;,
+  &#39;Snook&#39;: &#39;Q977497&#39;,
+  &#39;Weslaco&#39;: &#39;Q976553&#39;,
+  &#39;Corpus Christi&#39;: &#39;Q49242&#39;,
+  &#39;Halfway&#39;: &#39;Q116535266&#39;,
+  &#39;Lubbock&#39;: &#39;Q49273&#39;,
+  &#39;Pecos&#39;: &#39;Q978232&#39;,
+  &#39;Alexandria&#39;: &#39;Q985351&#39;,
+  &#39;Altus&#39;: &#39;Q446314&#39;,
+  &#39;Grand Junction&#39;: &#39;Q3292509&#39;,
+  &#39;La Grange&#39;: &#39;Q595837&#39;,
+  &#39;Artesia&#39;: &#39;Q707902&#39;,
+  &#39;Athens&#39;: &#39;Q203263&#39;,
+  &#39;Bainbridge&#39;: &#39;Q788794&#39;,
+  &#39;Belle Mina&#39;: &#39;Q4883662&#39;,
+  &#39;Bellefontaine&#39;: &#39;Q4883756&#39;,
+  &#39;Belzoni&#39;: &#39;Q792601&#39;,
+  &#39;Strong&#39;: &#39;Q11218147&#39;,
+  &#39;Prairie&#39;: &#39;Q7237807&#39;,
+  &#39;Southampton County&#39;: &#39;Q337915&#39;,
+  &#39;Friona&#39;: &#39;Q978903&#39;,
+  &#39;Brooksville&#39;: &#39;Q892252&#39;,
+  &#39;Blythe&#39;: &#39;Q886915&#39;,
+  &#39;Blytheville&#39;: &#39;Q79401&#39;,
+  &#39;Bolton&#39;: &#39;Q891642&#39;,
+  &#39;Buttonwillow&#39;: &#39;Q2347141&#39;,
+  &#39;Bossier City&#39;: &#39;Q877897&#39;,
+  &#39;Clarksdale&#39;: &#39;Q990145&#39;,
+  &#39;Buckeye&#39;: &#39;Q986528&#39;,
+  &#39;Louise&#39;: &#39;Q2425044&#39;,
+  &#39;Belcher&#39;: &#39;Q2924084&#39;,
+  &#39;Gilliam&#39;: &#39;Q1835764&#39;,
+  &#39;Fort Cobb&#39;: &#39;Q1826591&#39;,
+  &#39;Caledonia&#39;: &#39;Q594529&#39;,
+  &#39;St. Matthews&#39;: &#39;Q1193941&#39;,
+  &#39;Carlisle&#39;: &#39;Q14693154&#39;,
+  &#39;Macon&#39;: &#39;Q2005266&#39;,
+  &#39;Tahoka&#39;: &#39;Q982084&#39;,
+  &#39;Mayersville&#39;: &#39;Q2387079&#39;,
+  &#39;Seminole&#39;: &#39;Q502024&#39;,
+  &#39;Chic&#39;: &#39;Q116535262&#39;,
+  &#39;Chickasha&#39;: &#39;Q2794790&#39;,
+  &#39;Chillicothe&#39;: &#39;Q975508&#39;,
+  &#39;Muleshoe&#39;: &#39;Q982501&#39;,
+  &#39;Money&#39;: &#39;Q11013713&#39;,
+  &#39;Dundee&#39;: &#39;Q5314785&#39;,
+  &#39;Rolling Fork&#39;: &#39;Q772856&#39;,
+  &#39;Clarkedale&#39;: &#39;Q79659&#39;,
+  &#39;Clarkton&#39;: &#39;Q963794&#39;,
+  &#39;Clayton&#39;: &#39;Q1856733&#39;,
+  &#39;Minturn&#39;: &#39;Q22073116&#39;,
+  &#39;Elliott&#39;: &#39;Q27988776&#39;,
+  &#39;Clovis&#39;: &#39;Q985559&#39;,
+  &#39;Willcox&#39;: &#39;Q79450&#39;,
+  &#39;Kress&#39;: &#39;Q970226&#39;,
+  &#39;Loop&#39;: &#39;Q982276&#39;,
+  &#39;Coffeeville&#39;: &#39;Q2283243&#39;,
+  &#39;Grenada&#39;: &#39;Q985543&#39;,
+  &#39;College Station&#39;: &#39;Q695511&#39;,
+  &#39;Commerce&#39;: &#39;Q979151&#39;,
+  &#39;Corcoran&#39;: &#39;Q913487&#39;,
+  &#39;Levelland&#39;: &#39;Q970608&#39;,
+  &#39;Cotton Plant&#39;: nan,
+  &#39;Munday&#39;: &#39;Q982249&#39;,
+  &#39;Ralls&#39;: &#39;Q982269&#39;,
+  &#39;Cullison&#39;: &#39;Q2422215&#39;,
+  &#39;Schlater&#39;: &#39;Q263048&#39;,
+  &#39;Tulia&#39;: &#39;Q974357&#39;,
+  &#39;Elk City&#39;: &#39;Q1007885&#39;,
+  &#39;Darlington&#39;: &#39;Q428231&#39;,
+  &#39;Erick&#39;: &#39;Q612755&#39;,
+  &#39;Mississippi State&#39;: &#39;Q15253671&#39;,
+  &#39;Starkville&#39;: &#39;Q770470&#39;,
+  &#39;Sledge&#39;: &#39;Q2034205&#39;,
+  &#39;Itta Bena&#39;: &#39;Q867490&#39;,
+  &#39;Stoneville&#39;: &#39;Q7619339&#39;,
+  &#39;Little Dixie&#39;: &#39;Q14681160&#39;,
+  &#39;East Duke&#39;: &#39;Q1907688&#39;,
+  &#39;Durant&#39;: &#39;Q798425&#39;,
+  &#39;Edisto Beach&#39;: &#39;Q1903825&#39;,
+  &#39;Edmondson&#39;: &#39;Q2660653&#39;,
+  &#39;Edwards&#39;: &#39;Q1925376&#39;,
+  &#39;Ellistown&#39;: &#39;Q16890989&#39;,
+  &#39;Eloy&#39;: &#39;Q80072&#39;,
+  &#39;Engelhard, North Carolina&#39;: &#39;Q3304453&#39;,
+  &#39;Eupora&#39;: &#39;Q578038&#39;,
+  &#39;Fairhope&#39;: &#39;Q79502&#39;,
+  &#39;Floydada&#39;: &#39;Q975828&#39;,
+  &#39;Friars Point&#39;: &#39;Q2113775&#39;,
+  &#39;Ripley&#39;: &#39;Q1929828&#39;,
+  &#39;Garden City&#39;: &#39;Q3025151&#39;,
+  &#39;Tunica&#39;: &#39;Q658447&#39;,
+  &#39;Gift&#39;: &#39;Q116535263&#39;,
+  &#39;Gin City&#39;: &#39;Q18326175&#39;,
+  &#39;Glendora&#39;: &#39;Q2400426&#39;,
+  &#39;Goodyear&#39;: &#39;Q79457&#39;,
+  &#39;Gould&#39;: &#39;Q79495&#39;,
+  &#39;Thatcher&#39;: &#39;Q512101&#39;,
+  &#39;Greenwood&#39;: &#39;Q986376&#39;,
+  &#39;Littlefield&#39;: &#39;Q202736&#39;,
+  &#39;Bernie&#39;: &#39;Q955330&#39;,
+  &#39;Lena&#39;: &#39;Q6522051&#39;,
+  &#39;Lillington&#39;: &#39;Q2029270&#39;,
+  &#39;Headland&#39;: &#39;Q79858&#39;,
+  &#39;Huron&#39;: &#39;Q2649652&#39;,
+  &#39;Delhi&#39;: &#39;Q16736132&#39;,
+  &#39;Jackson&#39;: &#39;Q985409&#39;,
+  &#39;Quanah&#39;: &#39;Q974733&#39;,
+  &#39;Carnegie&#39;: &#39;Q1982359&#39;,
+  &#39;Amherst&#39;: &#39;Q978696&#39;,
+  &#39;Tchula&#39;: &#39;Q953392&#39;,
+  &#39;Isle of Wight&#39;: &#39;Q6084077&#39;,
+  &#39;Tipton&#39;: &#39;Q2849923&#39;,
+  &#39;Sikeston&#39;: &#39;Q961229&#39;,
+  &#39;Jonesville&#39;: &#39;Q3239810&#39;,
+  &#39;Judd Hill&#39;: &#39;Q14680994&#39;,
+  &#39;Moscow&#39;: &#39;Q1023006&#39;,
+  &#39;Keiser&#39;: &#39;Q79488&#39;,
+  &#39;Meadow&#39;: &#39;Q972571&#39;,
+  &#39;Brownfield&#39;: &#39;Q981849&#39;,
+  &#39;Kelso&#39;: &#39;Q6386523&#39;,
+  &#39;Keo&#39;: &#39;Q2580662&#39;,
+  &#39;Lake Cormorant&#39;: &#39;Q6475466&#39;,
+  &#39;Lake Village&#39;: &#39;Q79351&#39;,
+  &#39;Lamar&#39;: &#39;Q572172&#39;,
+  &#39;Las Cruces&#39;: &#39;Q33264&#39;,
+  &#39;Learned&#39;: &#39;Q2208799&#39;,
+  &#39;Leesburg&#39;: nan,
+  &#39;Lemoore&#39;: &#39;Q986940&#39;,
+  &#39;Portageville&#39;: &#39;Q968000&#39;,
+  &#39;Ridgely&#39;: &#39;Q2749132&#39;,
+  &#39;Los Banos&#39;: &#39;Q590932&#39;,
+  &#39;Lucedale&#39;: &#39;Q1822215&#39;,
+  &#39;Bovina&#39;: &#39;Q981980&#39;,
+  &#39;Madden&#39;: &#39;Q6726598&#39;,
+  &#39;Malden&#39;: &#39;Q954015&#39;,
+  &#39;Manila&#39;: &#39;Q79626&#39;,
+  &#39;Marianna&#39;: &#39;Q1924806&#39;,
+  &#39;Maricopa&#39;: &#39;Q79877&#39;,
+  &#39;Mount Blanco&#39;: nan,
+  &#39;Farwell&#39;: &#39;Q981214&#39;,
+  &#39;Marvell&#39;: &#39;Q79467&#39;,
+  &#39;Natchez&#39;: &#39;Q944044&#39;,
+  &#39;Mattson&#39;: &#39;Q6791887&#39;,
+  &#39;Memphis&#39;: &#39;Q979971&#39;,
+  &#39;Mendota&#39;: &#39;Q984601&#39;,
+  &#39;Hydro&#39;: &#39;Q2974873&#39;,
+  &#39;San Angelo&#39;: &#39;Q925598&#39;,
+  &#39;Midland&#39;: &#39;Q128321&#39;,
+  &#39;Midville&#39;: &#39;Q2206982&#39;,
+  &#39;Ropesville&#39;: &#39;Q1014938&#39;,
+  &#39;Suffolk&#39;: &#39;Q112710714&#39;,
+  &#39;Milan&#39;: &#39;Q1856043&#39;,
+  &#39;Minter City&#39;: &#39;Q6869609&#39;,
+  &#39;Morgan City&#39;: &#39;Q892742&#39;,
+  &#39;Newellton&#39;: &#39;Q2185881&#39;,
+  &#39;Verona&#39;: &#39;Q867136&#39;,
+  &#39;St. Joseph&#39;: &#39;Q2562831&#39;,
+  &#39;Fairmont&#39;: &#39;Q2187895&#39;,
+  &#39;Oxford&#39;: &#39;Q1818312&#39;,
+  &#39;Senatobia&#39;: &#39;Q2073595&#39;,
+  &#39;Parker&#39;: &#39;Q916314&#39;,
+  &#39;Pee Dee&#39;: &#39;Q1687905&#39;,
+  &#39;Florence&#39;: &#39;Q597842&#39;,
+  &#39;Marana&#39;: &#39;Q762743&#39;,
+  &#39;Plains&#39;: &#39;Q982455&#39;,
+  &#39;Plainview&#39;: &#39;Q982448&#39;,
+  &#39;Tallassee&#39;: &#39;Q79215&#39;,
+  &#39;Port Lavaca&#39;: &#39;Q982477&#39;,
+  &#39;Portland&#39;: &#39;Q80163&#39;,
+  &#39;Poston&#39;: &#39;Q1855103&#39;,
+  &#39;Prattville&#39;: &#39;Q79509&#39;,
+  &#39;Queen Creek&#39;: &#39;Q985299&#39;,
+  &#39;Echo&#39;: &#39;Q17515231&#39;,
+  &#39;Raymond&#39;: &#39;Q1779125&#39;,
+  &#39;Rector&#39;: &#39;Q79382&#39;,
+  &#39;Coushatta&#39;: &#39;Q2032769&#39;,
+  &#39;Red Rock&#39;: &#39;Q7304894&#39;,
+  &#39;Acuff&#39;: &#39;Q4677866&#39;,
+  &#39;Rich&#39;: &#39;Q7323150&#39;,
+  &#39;Wellington&#39;: &#39;Q979761&#39;,
+  &#39;Rocky Mount&#39;: &#39;Q1021026&#39;,
+  &#39;Hollister&#39;: &#39;Q2837518&#39;,
+  &#39;Rohwer&#39;: &#39;Q7359850&#39;,
+  &#39;Safford&#39;: &#39;Q79767&#39;,
+  &#39;San Patricio&#39;: &#39;Q974215&#39;,
+  &#39;San Tan Valley&#39;: &#39;Q5241708&#39;,
+  &#39;Crossville&#39;: &#39;Q67163&#39;,
+  &#39;Seaboard&#39;: &#39;Q2026315&#39;,
+  &#39;Senath&#39;: &#39;Q960374&#39;,
+  &#39;Shafter&#39;: &#39;Q985258&#39;,
+  &#39;Vaiden&#39;: &#39;Q2300891&#39;,
+  &#39;Shorter&#39;: &#39;Q67960&#39;,
+  &#39;Slate Springs&#39;: &#39;Q2533932&#39;,
+  &#39;Thrall&#39;: &#39;Q981691&#39;,
+  &#39;Tifton&#39;: &#39;Q2729512&#39;,
+  &#39;Hollis&#39;: &#39;Q525880&#39;,
+  &#39;Tribbett&#39;: &#39;Q7840342&#39;,
+  &#39;Union&#39;: &#39;Q2301085&#39;,
+  &#39;Aguila&#39;: &#39;Q3476619&#39;,
+  &#39;Aztec&#39;: &#39;Q5715129&#39;,
+  &#39;Sunizona&#39;: &#39;Q7640397&#39;,
+  &#39;Coolidge&#39;: &#39;Q80067&#39;,
+  &#39;Yuma&#39;: &#39;Q79820&#39;,
+  &#39;El toro&#39;: &#39;Q116534727&#39;,
+  &#39;Uvalde&#39;: &#39;Q868860&#39;,
+  &#39;Vardaman&#39;: &#39;Q2300967&#39;,
+  &#39;Waterproof&#39;: &#39;Q2297051&#39;,
+  &#39;Westside&#39;: &#39;Q1410741&#39;,
+  &#39;Jay&#39;: &#39;Q962926&#39;,
+  &#39;Winfield&#39;: &#39;Q628263&#39;,
+  &#39;Five Points, Fresno County, California&#39;: &#39;Q5456075&#39;,
+  &#39;Yazoo City&#39;: &#39;Q983832&#39;},
+ &#39;county&#39;: {&#39;Dawson County&#39;: &#39;Q110670&#39;,
+  &#39;Cook County&#39;: &#39;Q156431&#39;,
+  &#39;George County&#39;: &#39;Q485445&#39;,
+  &#39;Burleson County&#39;: &#39;Q108821&#39;,
+  &#39;Hidalgo County&#39;: &#39;Q26519&#39;,
+  &#39;Nueces River&#39;: &#39;Q1468723&#39;,
+  &#39;Hale County&#39;: &#39;Q111622&#39;,
+  &#39;Lubbock County&#39;: &#39;Q111790&#39;,
+  &#39;Reeves County&#39;: &#39;Q112550&#39;,
+  &#39;Maricopa County&#39;: &#39;Q58691&#39;,
+  &#39;Crockett County&#39;: &#39;Q495022&#39;,
+  &#39;Dyer County&#39;: &#39;Q495078&#39;,
+  &#39;Nolan County&#39;: &#39;Q114026&#39;,
+  &#39;Rapides Parish&#39;: &#39;Q503870&#39;,
+  &#39;Glasscock County&#39;: &#39;Q109293&#39;,
+  &#39;Jackson County&#39;: &#39;Q485030&#39;,
+  &#39;Fayette County&#39;: &#39;Q493957&#39;,
+  &#39;Hardeman County&#39;: &#39;Q109317&#39;,
+  &#39;Appling County&#39;: &#39;Q488186&#39;,
+  &#39;Eddy County&#39;: &#39;Q485245&#39;,
+  &#39;Ashley County&#39;: &#39;Q61026&#39;,
+  &#39;Clarke County&#39;: &#39;Q112061&#39;,
+  &#39;Avoyelles Parish&#39;: &#39;Q504435&#39;,
+  &#39;Bailey County&#39;: &#39;Q107973&#39;,
+  &#39;Decatur&#39;: &#39;Q79324&#39;,
+  &#39;Bamberg County&#39;: &#39;Q497890&#39;,
+  &#39;Shelby County&#39;: &#39;Q501602&#39;,
+  &#39;Barnwell County&#39;: &#39;Q497917&#39;,
+  &#39;Mississippi County&#39;: &#39;Q61157&#39;,
+  &#39;Dillon County&#39;: &#39;Q502404&#39;,
+  &#39;Craighead County&#39;: &#39;Q61354&#39;,
+  &#39;Matagorda County&#39;: &#39;Q485910&#39;,
+  &#39;Beaufort County&#39;: &#39;Q484639&#39;,
+  &#39;Beckham County&#39;: &#39;Q491646&#39;,
+  &#39;Caddo Parish&#39;: &#39;Q177562&#39;,
+  &#39;Hyde County&#39;: &#39;Q511659&#39;,
+  &#39;Limestone County&#39;: &#39;Q501108&#39;,
+  &#39;Webster County&#39;: &#39;Q486435&#39;,
+  &#39;Humphreys County&#39;: &#39;Q130009&#39;,
+  &#39;Monroe County&#39;: &#39;Q491276&#39;,
+  &#39;Ben Hill County&#39;: &#39;Q111867&#39;,
+  &#39;Southampton County&#39;: &#39;Q337915&#39;,
+  &#39;Parmer County&#39;: &#39;Q484521&#39;,
+  &#39;Berrien County&#39;: &#39;Q488868&#39;,
+  &#39;Bertie County&#39;: &#39;Q504335&#39;,
+  &#39;Bexar County&#39;: &#39;Q16861&#39;,
+  &#39;Noxubee County&#39;: &#39;Q490215&#39;,
+  &#39;Early County&#39;: &#39;Q486757&#39;,
+  &#39;Floyd County&#39;: &#39;Q110528&#39;,
+  &#39;Riverside County&#39;: &#39;Q108111&#39;,
+  &#39;Bolivar County&#39;: &#39;Q115356&#39;,
+  &#39;Hinds County&#39;: &#39;Q486538&#39;,
+  &#39;Kern County&#39;: &#39;Q108047&#39;,
+  &#39;Bossier Parish&#39;: &#39;Q498042&#39;,
+  &#39;Coahoma County&#39;: &#39;Q156575&#39;,
+  &#39;Lincoln County&#39;: &#39;Q61294&#39;,
+  &#39;Brazos County&#39;: &#39;Q26601&#39;,
+  &#39;Briscoe County&#39;: &#39;Q109165&#39;,
+  &#39;Burke County&#39;: &#39;Q211360&#39;,
+  &#39;Medina County&#39;: &#39;Q110421&#39;,
+  &#39;Childress County&#39;: &#39;Q109751&#39;,
+  &#39;Grady County&#39;: &#39;Q484600&#39;,
+  &#39;Lowndes County&#39;: &#39;Q493134&#39;,
+  &#39;Calhoun County&#39;: &#39;Q489377&#39;,
+  &#39;Cameron County&#39;: &#39;Q27051&#39;,
+  &#39;Candler County&#39;: &#39;Q488224&#39;,
+  &#39;Claiborne County&#39;: &#39;Q492488&#39;,
+  &#39;Carroll County&#39;: &#39;Q494905&#39;,
+  &#39;Carson County&#39;: &#39;Q109155&#39;,
+  &#39;Catahoula&#39;: &#39;Q3887862&#39;,
+  &#39;Lynn County&#39;: &#39;Q114323&#39;,
+  &#39;Dunklin County&#39;: &#39;Q430938&#39;,
+  &#39;Issaquena County&#39;: &#39;Q490839&#39;,
+  &#39;Chester County&#39;: &#39;Q494799&#39;,
+  &#39;Haywood County&#39;: &#39;Q502069&#39;,
+  &#39;Gaines County&#39;: &#39;Q109836&#39;,
+  &#39;Chicot County&#39;: &#39;Q61458&#39;,
+  &#39;Leflore County&#39;: &#39;Q497607&#39;,
+  &#39;Madison County&#39;: &#39;Q494755&#39;,
+  &#39;Tunica County&#39;: &#39;Q484668&#39;,
+  &#39;Tensas Parish&#39;: &#39;Q512911&#39;,
+  &#39;Sharkey County&#39;: &#39;Q497992&#39;,
+  &#39;Crittenden County&#39;: &#39;Q61346&#39;,
+  &#39;Clay County&#39;: &#39;Q61330&#39;,
+  &#39;Concordia Parish&#39;: &#39;Q509745&#39;,
+  &#39;Lee County&#39;: &#39;Q304065&#39;,
+  &#39;Curry County&#39;: &#39;Q484496&#39;,
+  &#39;Cochise County&#39;: &#39;Q58774&#39;,
+  &#39;Swisher County&#39;: &#39;Q112882&#39;,
+  &#39;Yalobusha County&#39;: &#39;Q486480&#39;,
+  &#39;Grenada County&#39;: &#39;Q490869&#39;,
+  &#39;Colorado&#39;: &#39;Q5148681&#39;,
+  &#39;Colquitt County&#39;: &#39;Q113005&#39;,
+  &#39;Hunt&#39;: &#39;Q5943840&#39;,
+  &#39;Concho County&#39;: &#39;Q109795&#39;,
+  &#39;Kings County&#39;: &#39;Q156358&#39;,
+  &#39;Crisp County&#39;: &#39;Q156486&#39;,
+  &#39;Hockley&#39;: &#39;Q3477808&#39;,
+  &#39;Aransas County&#39;: &#39;Q107982&#39;,
+  &#39;Woodruff County&#39;: &#39;Q61204&#39;,
+  &#39;Cowley County&#39;: &#39;Q376464&#39;,
+  &#39;Knox County&#39;: &#39;Q110570&#39;,
+  &#39;Crosby County&#39;: &#39;Q109279&#39;,
+  &#39;Pratt County&#39;: &#39;Q374604&#39;,
+  &#39;Custer County&#39;: &#39;Q490716&#39;,
+  &#39;Harmon County&#39;: &#39;Q486626&#39;,
+  &#39;Navarro County&#39;: &#39;Q112603&#39;,
+  &#39;Darlington County&#39;: &#39;Q502285&#39;,
+  &#39;Oktibbeha County&#39;: &#39;Q497615&#39;,
+  &#39;Tom Green County&#39;: &#39;Q113396&#39;,
+  &#39;Quitman County&#39;: &#39;Q490266&#39;,
+  &#39;Terrell County&#39;: &#39;Q503492&#39;,
+  &#39;DeWitt County&#39;: &#39;Q26712&#39;,
+  &#39;Washington County&#39;: &#39;Q484643&#39;,
+  &#39;Desha County&#39;: &#39;Q61029&#39;,
+  &#39;Wilbarger County&#39;: &#39;Q114339&#39;,
+  &#39;Howard County&#39;: &#39;Q111380&#39;,
+  &#39;Craven County&#39;: &#39;Q529958&#39;,
+  &#39;Drew County&#39;: &#39;Q61478&#39;,
+  &#39;Gray County&#39;: &#39;Q109312&#39;,
+  &#39;Franklin Parish&#39;: &#39;Q504391&#39;,
+  &#39;Holmes County&#39;: &#39;Q485426&#39;,
+  &#39;East Carroll Parish&#39;: &#39;Q505505&#39;,
+  &#39;Echols County&#39;: &#39;Q493029&#39;,
+  &#39;Edgecombe County&#39;: &#39;Q118127&#39;,
+  &#39;Colleton County&#39;: &#39;Q502473&#39;,
+  &#39;Orangeburg County&#39;: &#39;Q506068&#39;,
+  &#39;Effingham County&#39;: &#39;Q156637&#39;,
+  &#39;Ellis County&#39;: &#39;Q110130&#39;,
+  &#39;Tishomingo County&#39;: &#39;Q112834&#39;,
+  &#39;Pinal County&#39;: &#39;Q58712&#39;,
+  &#39;Macon County&#39;: &#39;Q502777&#39;,
+  &#39;Evans County&#39;: &#39;Q493044&#39;,
+  &#39;Baldwin County&#39;: &#39;Q156163&#39;,
+  &#39;Fresno County&#39;: &#39;Q271915&#39;,
+  &#39;Florence County&#39;: &#39;Q505987&#39;,
+  &#39;St. Francis County&#39;: &#39;Q61145&#39;,
+  &#39;Fort Bend County&#39;: &#39;Q26895&#39;,
+  &#39;Jefferson County&#39;: &#39;Q486386&#39;,
+  &#39;Lauderdale County&#39;: &#39;Q502364&#39;,
+  &#39;Gates County&#39;: &#39;Q509838&#39;,
+  &#39;Gibson County&#39;: &#39;Q502442&#39;,
+  &#39;Tipton County&#39;: &#39;Q474999&#39;,
+  &#39;Haskell County&#39;: &#39;Q112768&#39;,
+  &#39;Lafayette County&#39;: &#39;Q61167&#39;,
+  &#39;Tallahatchie County&#39;: &#39;Q490251&#39;,
+  &#39;Graham County&#39;: &#39;Q58692&#39;,
+  &#39;Greensville County&#39;: &#39;Q340605&#39;,
+  &#39;Lamb County&#39;: &#39;Q112781&#39;,
+  &#39;Stoddard&#39;: &#39;Q28089534&#39;,
+  &#39;Motley County&#39;: &#39;Q483888&#39;,
+  &#39;Reagan County&#39;: &#39;Q111851&#39;,
+  &#39;Halifax County&#39;: &#39;Q509910&#39;,
+  &#39;Hall County&#39;: &#39;Q108803&#39;,
+  &#39;Hampton County&#39;: &#39;Q497880&#39;,
+  &#39;Wheeler County&#39;: &#39;Q111766&#39;,
+  &#39;Harnett County&#39;: &#39;Q497861&#39;,
+  &#39;Pulaski County&#39;: &#39;Q498301&#39;,
+  &#39;Jeff Davis County&#39;: &#39;Q493071&#39;,
+  &#39;Henry County&#39;: &#39;Q501000&#39;,
+  &#39;Hertford County&#39;: &#39;Q751202&#39;,
+  &#39;Hill County&#39;: &#39;Q110384&#39;,
+  &#39;Escambia County&#39;: &#39;Q487744&#39;,
+  &#39;New Madrid County&#39;: &#39;Q489779&#39;,
+  &#39;Pointe Coupee Parish&#39;: &#39;Q506951&#39;,
+  &#39;Irwin County&#39;: &#39;Q492057&#39;,
+  &#39;Isle of Wight County&#39;: &#39;Q338052&#39;,
+  &#39;Northampton County&#39;: &#39;Q506676&#39;,
+  &#39;Collingsworth County&#39;: &#39;Q111647&#39;,
+  &#39;Wayne County&#39;: &#39;Q491762&#39;,
+  &#39;Tillman County&#39;: &#39;Q489324&#39;,
+  &#39;Scott County&#39;: &#39;Q496980&#39;,
+  &#39;Johnson County&#39;: &#39;Q163529&#39;,
+  &#39;Johnston County&#39;: &#39;Q497938&#39;,
+  &#39;Jones County&#39;: &#39;Q483895&#39;,
+  &#39;Poinsett County&#39;: &#39;Q61153&#39;,
+  &#39;Stevens County&#39;: &#39;Q402259&#39;,
+  &#39;Terry County&#39;: &#39;Q113864&#39;,
+  &#39;Lonoke County&#39;: &#39;Q61143&#39;,
+  &#39;Wharton County&#39;: &#39;Q483916&#39;,
+  &#39;Williamson County&#39;: &#39;Q112686&#39;,
+  &#39;DeSoto County&#39;: &#39;Q339724&#39;,
+  &#39;Lake County&#39;: &#39;Q494771&#39;,
+  &#39;Lamar County&#39;: &#39;Q490896&#39;,
+  &#39;Doña Ana County&#39;: &#39;Q112953&#39;,
+  &#39;Pemiscot County&#39;: &#39;Q497602&#39;,
+  &#39;Merced County&#39;: &#39;Q109690&#39;,
+  &#39;Leake County&#39;: &#39;Q490835&#39;,
+  &#39;Madison Parish&#39;: &#39;Q507180&#39;,
+  &#39;Marlboro County&#39;: &#39;Q512816&#39;,
+  &#39;Martin County&#39;: &#39;Q484551&#39;,
+  &#39;Phillips County&#39;: &#39;Q61470&#39;,
+  &#39;Adams County&#39;: &#39;Q108788&#39;,
+  &#39;Blaine County&#39;: &#39;Q491623&#39;,
+  &#39;Midland County&#39;: &#39;Q483937&#39;,
+  &#39;Suffolk&#39;: &#39;Q342428&#39;,
+  &#39;Milam County&#39;: &#39;Q26716&#39;,
+  &#39;Miller County&#39;: &#39;Q493107&#39;,
+  &#39;Dallas County&#39;: &#39;Q488847&#39;,
+  &#39;Mitchell County&#39;: &#39;Q112442&#39;,
+  &#39;Montgomery County&#39;: &#39;Q506697&#39;,
+  &#39;Morehouse Parish&#39;: &#39;Q1125008&#39;,
+  &#39;Franklin County&#39;: &#39;Q488892&#39;,
+  &#39;Cherokee County&#39;: &#39;Q108832&#39;,
+  &#39;Washita County&#39;: &#39;Q495958&#39;,
+  &#39;Garfield County&#39;: &#39;Q484729&#39;,
+  &#39;Ouachita Parish&#39;: &#39;Q507078&#39;,
+  &#39;Sumner County&#39;: &#39;Q375125&#39;,
+  &#39;Tate County&#39;: &#39;Q486526&#39;,
+  &#39;Accomack County&#39;: &#39;Q49289&#39;,
+  &#39;La Paz County&#39;: &#39;Q58759&#39;,
+  &#39;Runnels County&#39;: &#39;Q112634&#39;,
+  &#39;Marion County&#39;: &#39;Q502456&#39;,
+  &#39;Pima County&#39;: &#39;Q58688&#39;,
+  &#39;Yoakum County&#39;: &#39;Q112619&#39;,
+  &#39;Sumter County&#39;: &#39;Q503076&#39;,
+  &#39;Elmore County&#39;: &#39;Q494630&#39;,
+  &#39;Autauga County&#39;: &#39;Q156168&#39;,
+  &#39;Brooks County&#39;: &#39;Q488175&#39;,
+  &#39;Red River Parish&#39;: &#39;Q507126&#39;,
+  &#39;Refugio County&#39;: &#39;Q26705&#39;,
+  &#39;San Patricio County&#39;: &#39;Q113132&#39;,
+  &#39;Reno&#39;: &#39;Q17199075&#39;,
+  &#39;Stanly County&#39;: &#39;Q507798&#39;,
+  &#39;Richland Parish&#39;: &#39;Q507028&#39;,
+  &#39;Robeson County&#39;: &#39;Q507733&#39;,
+  &#39;DeKalb County&#39;: &#39;Q494626&#39;,
+  &#39;Scotland County&#39;: &#39;Q506690&#39;,
+  &#39;Screven County&#39;: &#39;Q503511&#39;,
+  &#39;Sampson County&#39;: &#39;Q507722&#39;,
+  &#39;Moore County&#39;: &#39;Q156464&#39;,
+  &#39;Surry County&#39;: &#39;Q506209&#39;,
+  &#39;Worth County&#39;: &#39;Q486154&#39;,
+  &#39;Tattnall County&#39;: &#39;Q505310&#39;,
+  &#39;Telfair County&#39;: &#39;Q691614&#39;,
+  &#39;Tift County&#39;: &#39;Q498346&#39;,
+  &#39;Tulare County&#39;: &#39;Q109686&#39;,
+  &#39;Fisher County&#39;: &#39;Q109975&#39;,
+  &#39;Sherman County&#39;: &#39;Q114423&#39;,
+  &#39;Neshoba County&#39;: &#39;Q426398&#39;,
+  &#39;Yuma County&#39;: &#39;Q58698&#39;,
+  &#39;Jenkins County&#39;: &#39;Q389551&#39;,
+  &#39;Randolph County&#39;: &#39;Q498307&#39;,
+  &#39;Twiggs County&#39;: &#39;Q503551&#39;,
+  &#39;Uvalde County&#39;: &#39;Q26697&#39;,
+  &#39;Victoria County&#39;: &#39;Q26699&#39;,
+  &#39;Dooly County&#39;: &#39;Q492036&#39;,
+  &#39;West Carroll Parish&#39;: &#39;Q1139827&#39;,
+  &#39;Los Angeles County&#39;: &#39;Q104994&#39;,
+  &#39;Santa Rosa County&#39;: &#39;Q494500&#39;,
+  &#39;Willacy County&#39;: &#39;Q114503&#39;,
+  &#39;Wilson County&#39;: &#39;Q510900&#39;,
+  &#39;Yazoo&#39;: &#39;Q1201857&#39;}}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">schema</span><span class="o">.</span><span class="n">view</span><span class="p">()</span>
+<span class="n">schema</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/ea7d97128b6677d726daaed6a0c8aea17d7df367b5d09ff0b32406f173ee1fb5.svg" src="../../_images/ea7d97128b6677d726daaed6a0c8aea17d7df367b5d09ff0b32406f173ee1fb5.svg" /></div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="shex-design">
+<h1>ShEx design<a class="headerlink" href="#shex-design" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">dataexpressions</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">dataexpressions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TripleConstraint</span><span class="p">(</span><span class="n">predicate</span><span class="o">=</span><span class="n">IRIREF</span><span class="p">(</span><span class="n">RDF</span><span class="o">.</span><span class="n">type</span><span class="p">),</span><span class="n">valueExpr</span><span class="o">=</span><span class="n">NodeConstraint</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="n">DCAT</span><span class="o">.</span><span class="n">Dataset</span><span class="p">])))</span>
+<span class="n">dataexpressions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TripleConstraint</span><span class="p">(</span><span class="n">predicate</span><span class="o">=</span><span class="n">IRIREF</span><span class="p">(</span><span class="n">DCTERMS</span><span class="o">.</span><span class="n">format</span><span class="p">),</span><span class="n">valueExpr</span><span class="o">=</span><span class="n">NodeConstraint</span><span class="p">(</span><span class="n">values</span><span class="o">=</span><span class="p">[</span><span class="n">IRIREF</span><span class="p">(</span><span class="n">WD</span><span class="o">.</span><span class="n">Q63082925</span><span class="p">)]),</span> <span class="n">annotations</span><span class="o">=</span><span class="p">[</span><span class="n">Annotation</span><span class="p">(</span><span class="n">RDFS</span><span class="o">.</span><span class="n">label</span><span class="p">,</span><span class="n">ObjectLiteral</span><span class="p">(</span><span class="s2">&quot;Office Open XML Spreadsheet Document&quot;</span><span class="p">,</span> <span class="n">language</span><span class="o">=</span><span class="s2">&quot;en&quot;</span><span class="p">))]))</span>
+<span class="n">dataexpressions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TripleConstraint</span><span class="p">(</span><span class="n">predicate</span><span class="o">=</span><span class="n">IRIREF</span><span class="p">(</span><span class="n">RDFS</span><span class="o">.</span><span class="n">label</span><span class="p">),</span> <span class="n">valueExpr</span><span class="o">=</span><span class="n">NodeConstraint</span><span class="p">(</span><span class="n">datatype</span><span class="o">=</span><span class="n">XSD</span><span class="o">.</span><span class="n">string</span><span class="p">)))</span>
+<span class="n">dataexpressions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TripleConstraint</span><span class="p">(</span><span class="n">predicate</span><span class="o">=</span><span class="n">IRIREF</span><span class="p">(</span><span class="n">DCTERMS</span><span class="o">.</span><span class="n">issued</span><span class="p">),</span> <span class="n">valueExpr</span><span class="o">=</span><span class="n">NodeConstraint</span><span class="p">(</span><span class="n">datatype</span><span class="o">=</span><span class="n">XSD</span><span class="o">.</span><span class="n">dateTime</span><span class="p">)))</span>
+<span class="n">dataexpressions</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">TripleConstraint</span><span class="p">(</span><span class="n">predicate</span><span class="o">=</span><span class="n">IRIREF</span><span class="p">(</span><span class="n">DCTERMS</span><span class="o">.</span><span class="n">modified</span><span class="p">),</span> <span class="n">valueExpr</span><span class="o">=</span><span class="n">NodeConstraint</span><span class="p">(</span><span class="n">datatype</span><span class="o">=</span><span class="n">XSD</span><span class="o">.</span><span class="n">dateTime</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">node</span> <span class="ow">in</span> <span class="n">rdf</span><span class="o">.</span><span class="n">all_nodes</span><span class="p">():</span>
+    <span class="k">if</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">URIRef</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">rdf</span><span class="o">.</span><span class="n">parse</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+        <span class="k">except</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">node</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>http://subjects.semscape.org//Ge%201006/YAG/9b462de507c7476fb7b33ef76bf05be6
+http://clinicalsite.semscape.org/KAG
+http://clinicalsite.semscape.org/LAG
+http://labsite.semscape.org/Ge%20970
+http://clinicalsite.semscape.org/IAG
+http://labsite.semscape.org/Ge%20893%2A
+http://subjects.semscape.org//Ge%20993/XAG/67c9dbedd3674accbd24fa93e14e2e79
+http://clinicalsite.semscape.org/QAG
+https://g-68f8be.81de.36fe.data.globus.org/Pages/Sample%20clinical%20data_July%202022.xlsx
+http://labsite.semscape.org/Ge%20849
+http://purl.obolibrary.org/obo/RO_0000086
+http://labsite.semscape.org/Ge%20852
+http://subjects.semscape.org//Ge%20835/EAG/cdb15cd16da444f7beaeff592747bb5d
+http://clinicalsite.semscape.org/OAG
+http://clinicalsite.semscape.org/VAG
+http://subjects.semscape.org//Ge%20977/VAG/dc2907bf99414d3f8e56f21ebbc6d746
+http://labsite.semscape.org/Ge%20882
+http://labsite.semscape.org/Ge%201018
+http://clinicalsite.semscape.org/ABG
+http://subjects.semscape.org//Ge%20941%2A/OAG/544a27d3b5974ed6a827a84298e78bf1
+http://subjects.semscape.org//Ge%201018/ABG/7aa82c2c5c1241cabe9bbc39cb994fa3
+http://subjects.semscape.org//Ge%20852/GAG/51ae3b7620e54904afb622e4861c5622
+http://purl.obolibrary.org/obo/BFO_0000185
+http://labsite.semscape.org/Ge%20829
+http://labsite.semscape.org/Ge%20835
+http://labsite.semscape.org/Ge%201006
+http://purl.obolibrary.org/obo/CHEBI_35341
+http://subjects.semscape.org//Ge%20989%2A/WAG/0f413a59d8814e69938d8a18db0c553e
+http://clinicalsite.semscape.org/MAG
+http://labsite.semscape.org/Ge%201007
+http://labsite.semscape.org/Ge%20950
+http://labsite.semscape.org/Ge%20989%2A
+http://labsite.semscape.org/Ge%20977
+http://labsite.semscape.org/Ge%20904
+http://subjects.semscape.org//Ge%20904/MAG/0fccb8e113c340e681cba940a3bcd281
+http://www.ebi.ac.uk/efo/EFO_0004587
+http://subjects.semscape.org//Ge%20970/UAG/f507da0014bb4cd6921f3508ce520b36
+http://clinicalsite.semscape.org/YAG
+http://subjects.semscape.org//Ge%20963%2A/RAG/a7ea3ed1400746e3b49c4507b71835b0
+http://clinicalsite.semscape.org/RAG
+http://clinicalsite.semscape.org/EAG
+http://subjects.semscape.org//Ge%20901/LAG/08409068b62a4008b8f166fce20b1b24
+http://clinicalsite.semscape.org/FAG
+http://labsite.semscape.org/Ge%20901
+http://purl.obolibrary.org/obo/DOID_3068
+http://labsite.semscape.org/Ge%20993
+http://clinicalsite.semscape.org/GAG
+https://schema.org/DiagnosticLab
+http://clinicalsite.semscape.org/XAG
+http://clinicalsite.semscape.org/ZAG
+http://subjects.semscape.org//Ge%20882/IAG/11c9d824cbac4283a260f4eb601d1f8d
+http://subjects.semscape.org//Ge%20829/DAG/701dab5d4e104a2a99a6332ef6f6f822
+http://clinicalsite.semscape.org/WAG
+http://subjects.semscape.org//Ge%20939/PAG/37b795db706c498287a287a9aa3f05bd
+http://labsite.semscape.org/Ge%20963%2A
+http://labsite.semscape.org/Ge%20941%2A
+http://subjects.semscape.org//Ge%20950/QAG/467c2ea08adf44c9969d3792a6f00d96
+http://clinicalsite.semscape.org/DAG
+http://labsite.semscape.org/Ge%20939
+http://subjects.semscape.org//Ge%20893%2A/KAG/7645d026b5724915be5e837339887eb3
+https://schema.org/MedicalClinic
+http://subjects.semscape.org//Ge%201007/ZAG/25e069c1f3644e3fad1579dcc4fbb738
+http://subjects.semscape.org//Ge%20849/FAG/44a93dc717404243a985cfe28d8ed512
+http://www.wikidata.org/entity/Q63082925
+http://clinicalsite.semscape.org/PAG
+http://clinicalsite.semscape.org/UAG
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="extract-schema">
+<h1>Extract schema<a class="headerlink" href="#extract-schema" title="Permalink to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">shexer.shaper</span> <span class="kn">import</span> <span class="n">Shaper</span>
+<span class="kn">from</span> <span class="nn">shexer.consts</span> <span class="kn">import</span> <span class="n">NT</span><span class="p">,</span> <span class="n">TURTLE</span>
+
+<span class="n">q</span> <span class="o">=</span> <span class="s2">&quot;select ?class where { ?item rdf:type ?class }&quot;</span>
+<span class="n">target_classes</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">rdf</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="n">q</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">target_class</span> <span class="ow">in</span> <span class="n">x</span><span class="p">:</span>
+  <span class="k">if</span> <span class="nb">str</span><span class="p">(</span><span class="n">target_class</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">])</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">target_classes</span><span class="p">:</span>
+    <span class="n">target_classes</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">str</span><span class="p">(</span><span class="n">target_class</span><span class="p">[</span><span class="s2">&quot;class&quot;</span><span class="p">]))</span>
+
+<span class="n">shex_target_file</span> <span class="o">=</span> <span class="n">filename</span><span class="o">+</span><span class="s2">&quot;.shex&quot;</span>
+
+<span class="n">shaper</span> <span class="o">=</span> <span class="n">Shaper</span><span class="p">(</span><span class="n">target_classes</span><span class="o">=</span><span class="n">target_classes</span><span class="p">,</span>
+                <span class="n">rdflib_graph</span><span class="o">=</span><span class="n">rdf</span><span class="p">,</span>
+                <span class="n">input_format</span><span class="o">=</span><span class="n">TURTLE</span><span class="p">,</span>
+                <span class="p">)</span>  <span class="c1"># Default rdf:type</span>
+            
+<span class="n">shaper</span><span class="o">.</span><span class="n">shex_graph</span><span class="p">(</span><span class="n">output_file</span><span class="o">=</span><span class="n">shex_target_file</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">placedf</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Column</th>
+      <th>LatLong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th>cityURI</th>
+      <th>County</th>
+      <th>countyQID</th>
+      <th>State</th>
+      <th>stateQID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>0</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Q970422</td>
+      <td>Dawson County</td>
+      <td>Q110670</td>
+      <td>Texas</td>
+      <td>Q1439</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>216</td>
+      <td>-83.49 31.27</td>
+      <td>31.2700</td>
+      <td>-83.4900</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Cook County</td>
+      <td>Q156431</td>
+      <td>Georgia</td>
+      <td>Q1428</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>228</td>
+      <td>32.73646 -101.95209</td>
+      <td>32.7365</td>
+      <td>-101.9521</td>
+      <td>Lamesa</td>
+      <td>Q970422</td>
+      <td>Dawson County</td>
+      <td>Q110670</td>
+      <td>Texas</td>
+      <td>Q1439</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>380</td>
+      <td>30.8443 -88.5703</td>
+      <td>30.8443</td>
+      <td>-88.5703</td>
+      <td>Agricola</td>
+      <td>Q4693850</td>
+      <td>George County</td>
+      <td>Q485445</td>
+      <td>Mississippi</td>
+      <td>Q1494</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>407</td>
+      <td>30.47555 -96.63951</td>
+      <td>30.4756</td>
+      <td>-96.6395</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Burleson County</td>
+      <td>Q108821</td>
+      <td>Texas</td>
+      <td>Q1439</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>666</th>
+      <td>43251</td>
+      <td>36.42938 -120.10307</td>
+      <td>36.4294</td>
+      <td>-120.1031</td>
+      <td>Five Points, Fresno County, California</td>
+      <td>Q5456075</td>
+      <td>Fresno County</td>
+      <td>Q271915</td>
+      <td>California</td>
+      <td>Q99</td>
+    </tr>
+    <tr>
+      <th>667</th>
+      <td>43305</td>
+      <td>32.84779 -90.41503</td>
+      <td>32.8478</td>
+      <td>-90.4150</td>
+      <td>Yazoo City</td>
+      <td>Q983832</td>
+      <td>Yazoo</td>
+      <td>Q1201857</td>
+      <td>Mississippi</td>
+      <td>Q1494</td>
+    </tr>
+    <tr>
+      <th>668</th>
+      <td>43354</td>
+      <td>29.06157 -97.471149</td>
+      <td>29.0616</td>
+      <td>-97.4711</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>DeWitt County</td>
+      <td>Q26712</td>
+      <td>Texas</td>
+      <td>Q1439</td>
+    </tr>
+    <tr>
+      <th>669</th>
+      <td>43364</td>
+      <td>32.68485 -114.62461</td>
+      <td>32.6849</td>
+      <td>-114.6246</td>
+      <td>Yuma</td>
+      <td>Q79820</td>
+      <td>Yuma County</td>
+      <td>Q58698</td>
+      <td>Arizona</td>
+      <td>Q816</td>
+    </tr>
+    <tr>
+      <th>670</th>
+      <td>43460</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>Yuma County</td>
+      <td>Q58698</td>
+      <td>Arizona</td>
+      <td>Q816</td>
+    </tr>
+  </tbody>
+</table>
+<p>671 rows × 10 columns</p>
+</div></div></div>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./creating-rdf/cotton"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="primary_data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Example (synthetic) data sets</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../weather/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Weather data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Example workflow on Cotton shape</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-original-data">The original data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-of-meta-data-on-synthetic-dataset-1">Schema of meta data on synthetic dataset 1</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-synthetic-data">Load (synthetic) data</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#file">File</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#production-shape">Production Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#productioncrop">ProductionCrop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#productionlocation-shape">ProductionLocation Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#variety-shape">Variety Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#experiment-shape">Experiment Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soil-shape">Soil Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#lot-shape">Lot Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-shape">Weather Shape</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-modelling">Schema modelling</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Production Shape</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Production Shape</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">ProductionCrop</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#agricultural-experiment">Agricultural experiment</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#rdf-generation">RDF generation</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shex-design">ShEx design</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#extract-schema">Extract schema</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andra Waagmeester, Kat Thornton, Jose Labra, Eric Prud'hommeaux, Josh Moore, Tom Baker, Nishad Thalhath, Jennifer Woodward
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

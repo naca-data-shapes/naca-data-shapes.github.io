@@ -1,0 +1,830 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Example workflow on Cotton shape &#8212; NAL Shapes Resource Guide on Cotton</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=e353d410970836974a52" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=e353d410970836974a52" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=e353d410970836974a52" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52" />
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'creating-rdf/weather/convert2rdf';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Query and visualization examples" href="../../queries/index.html" />
+    <link rel="prev" title="Example (synthetic) data sets" href="primary_data.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Logo image"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Logo image"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    The NAL Shapes program demonstration area
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../introduction/index.html">Introduction</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/intro.html">Introduction</a></li>
+
+
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/linkeddata_rdf_web_of_data.html">Linked data, RDF and the web of data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/benefits.html">RDF: The Good Parts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../introduction/challenges.html">Challenges for RDF Adoption</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../semantic-modelling/index.html">Semantic Modelling</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../semantic-modelling/ontologies.html">Ontologies and Controlled Vocabularies</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../semantic-modelling/schemas.html">Schemas</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../cotton/index.html">Cotton data</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../cotton/primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../cotton/convert2rdf.html">Example workflow on Cotton shape</a></li>
+
+
+
+
+
+
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="index.html">Weather data</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="primary_data.html">Example (synthetic) data sets</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Example workflow on Cotton shape</a></li>
+
+
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../queries/index.html">Query and visualization examples</a><input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../queries/cotton_wikidata.html">Wikidata queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../queries/cotton_example.html">Cotton: Use cases: queries and visualizations</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../glossary/index.html">Glossary</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../references/index.html">References</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/weather/convert2rdf.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button"
+   title="Suggest edit"
+   data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+
+</a>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/creating-rdf/weather/convert2rdf.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+<script>
+document.write(`
+  <button class="theme-switch-button btn btn-sm btn-outline-primary navbar-btn rounded-circle" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch" data-mode="light"><i class="fa-solid fa-sun"></i></span>
+    <span class="theme-switch" data-mode="dark"><i class="fa-solid fa-moon"></i></span>
+    <span class="theme-switch" data-mode="auto"><i class="fa-solid fa-circle-half-stroke"></i></span>
+  </button>
+`);
+</script>
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Example workflow on Cotton shape</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Example workflow on Cotton shape</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-original-data">The original data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-of-meta-data-on-weather-dataset-exampe">Schema of meta data on weather dataset exampe</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-synthetic-data">Load (synthetic) data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shape-modelling">Shape modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-shape">Weather Shape</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="example-workflow-on-cotton-shape">
+<h1>Example workflow on Cotton shape<a class="headerlink" href="#example-workflow-on-cotton-shape" title="Permalink to this heading">#</a></h1>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="kn">import</span> <span class="nn">requests</span>
+<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="kn">from</span> <span class="nn">rdflib</span> <span class="kn">import</span> <span class="n">Namespace</span><span class="p">,</span> <span class="n">Graph</span><span class="p">,</span> <span class="n">URIRef</span><span class="p">,</span> <span class="n">Literal</span><span class="p">,</span> <span class="n">BNode</span>
+
+<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="the-original-data">
+<h1>The original data<a class="headerlink" href="#the-original-data" title="Permalink to this heading">#</a></h1>
+<p>In this chapter the tabular data from the previous chapter will be converted into linked data. As we discussed earlier, in linked data the data is mainly represented by using IRIs and placing those URIs in data shapes.</p>
+<p>This already starts with describing the data itself.</p>
+<section id="schema-of-meta-data-on-weather-dataset-exampe">
+<h2>Schema of meta data on weather dataset exampe<a class="headerlink" href="#schema-of-meta-data-on-weather-dataset-exampe" title="Permalink to this heading">#</a></h2>
+<p>Below is graph representation on the metadata on dataset 1. The following symbols are used.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/ad94e6810a0235410af8cee0d5a22259cca93ea2bd3b8be073c925eaea8aef5f.svg" src="../../_images/ad94e6810a0235410af8cee0d5a22259cca93ea2bd3b8be073c925eaea8aef5f.svg" /></div>
+</div>
+<p>Below it the (proposed) shape for the metadata.</p>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<img alt="../../_images/5e5c707f382f668c2b15ce8bb45855be4ab24b5ac1c3919d3c49c9cb38dadef9.svg" src="../../_images/5e5c707f382f668c2b15ce8bb45855be4ab24b5ac1c3919d3c49c9cb38dadef9.svg" /></div>
+</div>
+<section id="load-synthetic-data">
+<h3>Load (synthetic) data<a class="headerlink" href="#load-synthetic-data" title="Permalink to this heading">#</a></h3>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>STATION</th>
+      <th>NAME</th>
+      <th>DATE</th>
+      <th>DAPR</th>
+      <th>MDPR</th>
+      <th>PRCP</th>
+      <th>SNOW</th>
+      <th>SNWD</th>
+      <th>TMAX</th>
+      <th>TMIN</th>
+      <th>TOBS</th>
+      <th>WT01</th>
+      <th>WT11</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-01</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.44</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>60</td>
+      <td>36.0</td>
+      <td>36.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-02</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.02</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>41</td>
+      <td>27.0</td>
+      <td>27.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-03</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>59</td>
+      <td>27.0</td>
+      <td>33.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-04</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>68</td>
+      <td>33.0</td>
+      <td>35.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-05</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>71</td>
+      <td>33.0</td>
+      <td>43.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>240</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-27</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>74</td>
+      <td>40.0</td>
+      <td>47.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>241</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-28</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>76</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>242</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-29</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>67</td>
+      <td>32.0</td>
+      <td>32.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>243</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>73</td>
+      <td>32.0</td>
+      <td>45.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>244</th>
+      <td>USC00415013</td>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-31</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>90</td>
+      <td>39.0</td>
+      <td>45.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>245 rows × 13 columns</p>
+</div></div></div>
+</div>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="shape-modelling">
+<h1>Shape modelling<a class="headerlink" href="#shape-modelling" title="Permalink to this heading">#</a></h1>
+<section id="weather-shape">
+<h2>Weather Shape<a class="headerlink" href="#weather-shape" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Max and min temp</p></li>
+<li><p>Precipitation</p></li>
+<li><p>Cloud cover</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">shex</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;shex/weather.shex&quot;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+<span class="n">graphvizSchema</span> <span class="o">=</span> <span class="n">shex2dot</span><span class="o">.</span><span class="n">shex2dot</span><span class="p">(</span><span class="n">shex</span><span class="p">,</span> <span class="s2">&quot;weather&quot;</span><span class="p">)</span>
+<span class="n">graphvizSchema</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> example: &lt;http://www.example.org/&gt;
+ agschemas: &lt;https://agschemas.org/&gt;
+ ghcnd: &lt;http://example.com/weather/GHCND&gt;
+ xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+ nalt: &lt;https://lod.nal.usda.gov/nalt/&gt;
+ rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+ dct: &lt;http://purl.org/dc/terms/&gt;
+ schema: &lt;http://schema.org/&gt;
+ qudt: &lt;http://qudt.org/schema/qudt/&gt;
+ quantitykind: &lt;http://qudt.org/vocab/quantitykind/&gt;
+ unit: &lt;http://qudt.org/vocab/unit/&gt;
+Valid: False
+None
+http://www.example.org/location
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;https://agschemas.org/nearbyWeatherStation&#39;, valueExpr=&#39;http://www.example.org/weatherStation&#39;, min=1, max=-1, onShapeExpression=None, semActs=None, annotations=None)
+http://www.example.org/weatherStation
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;https://lod.nal.usda.gov/nalt/52296&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://purl.org/dc/terms/identifier&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#string&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/latitude&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#decimal&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/longitude&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#decimal&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/elavation&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#decimal&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/startDate&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#date&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/endDate&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#date&#39;, values=None), min=0, max=1, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/hasMeasurement&#39;, valueExpr=&#39;http://www.example.org/measurement&#39;, min=1, max=-1, onShapeExpression=None, semActs=None, annotations=None)
+http://www.example.org/measurement
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://www.w3.org/1999/02/22-rdf-syntax-ns#type&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://qudt.org/schema/qudt/QuantityValue&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://qudt.org/schema/qudt/quantityValue&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#decimal&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://qudt.org/schema/qudt/quantityKind&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=None, values=[&#39;http://qudt.org/vocab/quantitykind/Precipitation&#39;, &#39;http://qudt.org/vocab/quantitykind/Temperature&#39;]), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://qudt.org/schema/qudt/unit&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=None, values=[&#39;http://qudt.org/vocab/unit/DEG_F&#39;, &#39;http://qudt.org/vocab/unit/IN&#39;]), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/startDate&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#date&#39;, values=None), min=None, max=None, onShapeExpression=None, semActs=None, annotations=None)
+TripleConstraint(type=&#39;TripleConstraint&#39;, id=None, inverse=None, predicate=&#39;http://schema.org/endDate&#39;, valueExpr=NodeConstraint(type=&#39;NodeConstraint&#39;, id=None, nodeKind=None, datatype=&#39;http://www.w3.org/2001/XMLSchema#date&#39;, values=None), min=0, max=1, onShapeExpression=None, semActs=None, annotations=None)
+</pre></div>
+</div>
+<img alt="../../_images/554b41b416cd0e6437423b86129344d728cefde0a1ef0ccf5d8bde4a1d67dbb1.svg" src="../../_images/554b41b416cd0e6437423b86129344d728cefde0a1ef0ccf5d8bde4a1d67dbb1.svg" /></div>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./creating-rdf/weather"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+                <footer class="bd-footer-article">
+                  
+<div class="footer-article-items footer-article__inner">
+  
+    <div class="footer-article-item"><!-- Previous / next buttons -->
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="primary_data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Example (synthetic) data sets</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../../queries/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Query and visualization examples</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div></div>
+  
+</div>
+
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Example workflow on Cotton shape</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#the-original-data">The original data</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#schema-of-meta-data-on-weather-dataset-exampe">Schema of meta data on weather dataset exampe</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#load-synthetic-data">Load (synthetic) data</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#shape-modelling">Shape modelling</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#weather-shape">Weather Shape</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Andra Waagmeester, Kat Thornton, Jose Labra, Eric Prud'hommeaux, Josh Moore, Tom Baker, Nishad Thalhath, Jennifer Woodward
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=e353d410970836974a52"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=e353d410970836974a52"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
