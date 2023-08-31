@@ -35,7 +35,7 @@ repository:
 html:
   use_edit_page_button: true
   use_issues_button: true
-  use_repository_button: false
+  use_repository_button: true
 
 sphinx:
   extra_extensions:
