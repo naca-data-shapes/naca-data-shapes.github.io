@@ -239,18 +239,50 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="article-header-buttons">
 
 
-<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/cotton/primary_data.ipynb" target="_blank"
-   class="btn btn-sm btn-source-edit-button"
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-gitlab"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://gitlab.com/naca-data-shapes/cotton-shapes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-gitlab"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/cotton/primary_data.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
-   data-bs-placement="bottom" data-bs-toggle="tooltip"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   <i class="fas fa-pencil-alt"></i>
   </span>
-
+<span class="btn__text-container">Suggest edit</span>
 </a>
+</li>
+      
+  </ul>
+</div>
 
 
 
@@ -388,17 +420,320 @@ document.write(`
 It contains legacy data on cotton harvests.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">cotton</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/Legacy_Cotton_VT_data.csv&quot;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">on_bad_lines</span> <span class="o">=</span> <span class="s1">&#39;skip&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">cotton</span>
-
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>/tmp/ipykernel_1890/2413312554.py:2: ParserWarning: Length of header or names does not match length of data. This leads to a loss of data with index_col=False.
+  cotton = pd.read_csv(&quot;data/Legacy_Cotton_VT_data.csv&quot;,index_col=False, on_bad_lines = &#39;skip&#39;)
 </pre></div>
 </div>
-</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>OBJECTID</th>
+      <th>LocationName</th>
+      <th>LatLong</th>
+      <th>Latitude</th>
+      <th>Longitude</th>
+      <th>City</th>
+      <th>County</th>
+      <th>State</th>
+      <th>Name</th>
+      <th>TestType</th>
+      <th>...</th>
+      <th>Strength</th>
+      <th>UI</th>
+      <th>Turnout</th>
+      <th>GrossIncome</th>
+      <th>Irrigated</th>
+      <th>IrrigationType</th>
+      <th>Year</th>
+      <th>ZIP Code</th>
+      <th>Test Result ID</th>
+      <th>Test ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>29.3</td>
+      <td>82.0</td>
+      <td>25.8</td>
+      <td>796.496</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46899</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.1</td>
+      <td>81.2</td>
+      <td>23.8</td>
+      <td>705.159</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46900</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>26.0</td>
+      <td>80.1</td>
+      <td>24.0</td>
+      <td>884.780</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46901</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.8</td>
+      <td>81.8</td>
+      <td>24.2</td>
+      <td>733.869</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46902</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>Ac Drip</td>
+      <td>32.7457 -101.9396</td>
+      <td>32.7457</td>
+      <td>-101.9396</td>
+      <td>Lamesa</td>
+      <td>Dawson</td>
+      <td>Texas</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.2</td>
+      <td>81.4</td>
+      <td>27.9</td>
+      <td>972.725</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>79331.0</td>
+      <td>46903</td>
+      <td>3126</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>43469</th>
+      <td>43470</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>27.5</td>
+      <td>82.8</td>
+      <td>33.1</td>
+      <td>950.982</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30074</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43470</th>
+      <td>43471</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.6</td>
+      <td>82.4</td>
+      <td>34.8</td>
+      <td>922.315</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30075</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43471</th>
+      <td>43472</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.3</td>
+      <td>82.8</td>
+      <td>32.4</td>
+      <td>817.002</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30076</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43472</th>
+      <td>43473</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>28.2</td>
+      <td>83.2</td>
+      <td>29.6</td>
+      <td>816.542</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30077</td>
+      <td>2196</td>
+    </tr>
+    <tr>
+      <th>43473</th>
+      <td>43474</td>
+      <td>Yuma County</td>
+      <td>32.8257 -113.52519</td>
+      <td>32.8257</td>
+      <td>-113.5252</td>
+      <td>NaN</td>
+      <td>Yuma</td>
+      <td>Arizona</td>
+      <td>OVT - Irrigated</td>
+      <td>OVT</td>
+      <td>...</td>
+      <td>30.0</td>
+      <td>82.3</td>
+      <td>33.1</td>
+      <td>775.964</td>
+      <td>YesIrr</td>
+      <td>NotSpecified</td>
+      <td>2008</td>
+      <td>85333.0</td>
+      <td>30078</td>
+      <td>2196</td>
+    </tr>
+  </tbody>
+</table>
+<p>43474 rows × 40 columns</p>
+</div></div></div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
@@ -415,7 +750,7 @@ Data columns (total 40 columns):
  5   City                29623 non-null  object 
  6   County              43474 non-null  object 
  7   State               43474 non-null  object 
- 8   Name                43474 non-null  object 
+ 8   Name                43442 non-null  object 
  9   TestType            43474 non-null  object 
  10  EntryNumber         43474 non-null  int64  
  11  Brand               43474 non-null  object 

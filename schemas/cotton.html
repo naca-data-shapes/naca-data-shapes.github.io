@@ -237,18 +237,50 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="article-header-buttons">
 
 
-<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./schemas/cotton.ipynb" target="_blank"
-   class="btn btn-sm btn-source-edit-button"
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-gitlab"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://gitlab.com/naca-data-shapes/cotton-shapes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-gitlab"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./schemas/cotton.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
-   data-bs-placement="bottom" data-bs-toggle="tooltip"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   <i class="fas fa-pencil-alt"></i>
   </span>
-
+<span class="btn__text-container">Suggest edit</span>
 </a>
+</li>
+      
+  </ul>
+</div>
 
 
 
@@ -377,14 +409,14 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pyshex (from shexviz)
   Downloading PyShEx-0.8.1-py3-none-any.whl (51 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/51.9 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">51.9/51.9 kB</span> <span class=" -Color -Color-Red">2.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">51.9/51.9 kB</span> <span class=" -Color -Color-Red">3.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting graphviz (from shexviz)
   Downloading graphviz-0.20.1-py3-none-any.whl (47 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/47.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">47.0/47.0 kB</span> <span class=" -Color -Color-Red">6.9 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">47.0/47.0 kB</span> <span class=" -Color -Color-Red">12.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
@@ -396,7 +428,9 @@ document.write(`
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> \ done
-?25hCollecting chardet (from pyshex-&gt;shexviz)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>?25hCollecting chardet (from pyshex-&gt;shexviz)
   Obtaining dependency information for chardet from https://files.pythonhosted.org/packages/38/6f/f5fbc992a329ee4e0f288c1fe0e2ad9485ed064cac731ed2fe47dcc38cbf/chardet-5.2.0-py3-none-any.whl.metadata
   Downloading chardet-5.2.0-py3-none-any.whl.metadata (3.4 kB)
 </pre></div>
@@ -404,26 +438,32 @@ document.write(`
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pyshexc==0.9.1 (from pyshex-&gt;shexviz)
   Downloading PyShExC-0.9.1-py2.py3-none-any.whl (69 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/69.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">69.8/69.8 kB</span> <span class=" -Color -Color-Red">15.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">69.8/69.8 kB</span> <span class=" -Color -Color-Red">16.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting rdflib-shim (from pyshex-&gt;shexviz)
   Downloading rdflib_shim-1.0.3-py3-none-any.whl (5.2 kB)
 Requirement already satisfied: requests&gt;=2.22.0 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from pyshex-&gt;shexviz) (2.31.0)
-Collecting sparqlslurper&gt;=0.5.1 (from pyshex-&gt;shexviz)
-  Downloading sparqlslurper-0.5.1-py3-none-any.whl (6.6 kB)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting sparqlslurper&gt;=0.5.1 (from pyshex-&gt;shexviz)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading sparqlslurper-0.5.1-py3-none-any.whl (6.6 kB)
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting sparqlwrapper&gt;=1.8.5 (from pyshex-&gt;shexviz)
   Downloading SPARQLWrapper-2.0.0-py3-none-any.whl (28 kB)
-Requirement already satisfied: urllib3 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from pyshex-&gt;shexviz) (2.0.4)
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting antlr4-python3-runtime~=4.9.3 (from pyshexc==0.9.1-&gt;pyshex-&gt;shexviz)
-  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: urllib3 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from pyshex-&gt;shexviz) (2.0.4)
+Collecting antlr4-python3-runtime~=4.9.3 (from pyshexc==0.9.1-&gt;pyshex-&gt;shexviz)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>  Downloading antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/117.0 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">117.0/117.0 kB</span> <span class=" -Color -Color-Red">32.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">117.0/117.0 kB</span> <span class=" -Color -Color-Red">28.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
@@ -440,14 +480,16 @@ Requirement already satisfied: urllib3 in /opt/hostedtoolcache/Python/3.8.17/x64
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting pyjsg&gt;=0.11.10 (from pyshexc==0.9.1-&gt;pyshex-&gt;shexviz)
   Downloading PyJSG-0.11.10-py3-none-any.whl (80 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/80.8 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">80.8/80.8 kB</span> <span class=" -Color -Color-Red">24.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">80.8/80.8 kB</span> <span class=" -Color -Color-Red">18.5 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting rdflib&gt;=0.4.2 (from cfgraph&gt;=0.2.1-&gt;pyshex-&gt;shexviz)
   Obtaining dependency information for rdflib&gt;=0.4.2 from https://files.pythonhosted.org/packages/d4/b0/7b7d8b5b0d01f1a0b12cc2e5038a868ef3a15825731b8a0d776cf47566c0/rdflib-7.0.0-py3-none-any.whl.metadata
   Downloading rdflib-7.0.0-py3-none-any.whl.metadata (11 kB)
-Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.22.0-&gt;pyshex-&gt;shexviz) (3.2.0)
+</pre></div>
+</div>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Requirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.22.0-&gt;pyshex-&gt;shexviz) (3.2.0)
 Requirement already satisfied: idna&lt;4,&gt;=2.5 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.22.0-&gt;pyshex-&gt;shexviz) (3.4)
 Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Python/3.8.17/x64/lib/python3.8/site-packages (from requests&gt;=2.22.0-&gt;pyshex-&gt;shexviz) (2023.7.22)
 </pre></div>
@@ -459,7 +501,7 @@ Requirement already satisfied: certifi&gt;=2017.4.17 in /opt/hostedtoolcache/Pyt
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Collecting isodate&lt;0.7.0,&gt;=0.6.0 (from rdflib&gt;=0.4.2-&gt;cfgraph&gt;=0.2.1-&gt;pyshex-&gt;shexviz)
   Downloading isodate-0.6.1-py2.py3-none-any.whl (41 kB)
 ?25l     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/41.7 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">41.7/41.7 kB</span> <span class=" -Color -Color-Red">14.1 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">41.7/41.7 kB</span> <span class=" -Color -Color-Red">11.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25h
 </pre></div>
 </div>
@@ -471,15 +513,15 @@ Requirement already satisfied: six in /opt/hostedtoolcache/Python/3.8.17/x64/lib
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Downloading chardet-5.2.0-py3-none-any.whl (199 kB)
 ?25l   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/199.4 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">199.4/199.4 kB</span> <span class=" -Color -Color-Red">38.3 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">199.4/199.4 kB</span> <span class=" -Color -Color-Red">36.7 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25hDownloading rdflib-7.0.0-py3-none-any.whl (531 kB)
 ?25l   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/531.9 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
-   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">531.9/531.9 kB</span> <span class=" -Color -Color-Red">78.2 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
-?25hDownloading pyparsing-3.1.1-py3-none-any.whl (103 kB)
-?25l   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/103.1 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
 </pre></div>
 </div>
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">103.1/103.1 kB</span> <span class=" -Color -Color-Red">31.4 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">531.9/531.9 kB</span> <span class=" -Color -Color-Red">57.0 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
+?25hDownloading pyparsing-3.1.1-py3-none-any.whl (103 kB)
+?25l   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">0.0/103.1 kB</span> <span class=" -Color -Color-Red">?</span> eta <span class=" -Color -Color-Cyan">-:--:--</span>
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ <span class=" -Color -Color-Green">103.1/103.1 kB</span> <span class=" -Color -Color-Red">25.6 MB/s</span> eta <span class=" -Color -Color-Cyan">0:00:00</span>
 ?25hBuilding wheels for collected packages: cfgraph, antlr4-python3-runtime
 </pre></div>
 </div>
@@ -487,7 +529,7 @@ Requirement already satisfied: six in /opt/hostedtoolcache/Python/3.8.17/x64/lib
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> \ done
-?25h  Created wheel for cfgraph: filename=CFGraph-0.2.1-py3-none-any.whl size=2232 sha256=e6dfa235a7733a30be698e45f5c9497611e0772b0a583d88eb4ad35bd6d86bf8
+?25h  Created wheel for cfgraph: filename=CFGraph-0.2.1-py3-none-any.whl size=2232 sha256=d515edd5796c8cd0d1fe4ab060a6e9d023f7171fce6b7bba4e149d6812bc86af
   Stored in directory: /home/runner/.cache/pip/wheels/6a/23/eb/5312dc033128049741d0685a9dcdc14a92224ce9b4fc252e58
 </pre></div>
 </div>
@@ -495,7 +537,7 @@ Requirement already satisfied: six in /opt/hostedtoolcache/Python/3.8.17/x64/lib
 </pre></div>
 </div>
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span> done
-?25h  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144573 sha256=5b6157e84d82e68aa7e9897a72394263d496d004995d1c8e96e2803360f1c82c
+?25h  Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144573 sha256=05768a87fa546dc35108ff03877da585d5024b5c4e379d8cdbee2383e6d2a880
   Stored in directory: /home/runner/.cache/pip/wheels/b1/a3/c2/6df046c09459b73cc9bb6c4401b0be6c47048baf9a1617c485
 Successfully built cfgraph antlr4-python3-runtime
 </pre></div>

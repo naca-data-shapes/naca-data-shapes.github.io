@@ -239,18 +239,50 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="article-header-buttons">
 
 
-<a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/weather/primary_data.ipynb" target="_blank"
-   class="btn btn-sm btn-source-edit-button"
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-gitlab"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://gitlab.com/naca-data-shapes/cotton-shapes" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-gitlab"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://gitlab.com/naca-data-shapes/cotton-shapes/-/edit/main/./creating-rdf/weather/primary_data.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
    title="Suggest edit"
-   data-bs-placement="bottom" data-bs-toggle="tooltip"
+   data-bs-placement="left" data-bs-toggle="tooltip"
 >
   
 
 <span class="btn__icon-container">
   <i class="fas fa-pencil-alt"></i>
   </span>
-
+<span class="btn__text-container">Suggest edit</span>
 </a>
+</li>
+      
+  </ul>
+</div>
 
 
 
@@ -389,17 +421,223 @@ document.write(`
 It contains weather data for Lamesa, TX for March1- October 30, 2010.</p>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ModuleNotFoundError</span><span class="g g-Whitespace">                       </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
-<span class="ne">----&gt; </span><span class="mi">1</span> <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
-<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">weather</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/Dawson3242890.csv&quot;</span><span class="p">,</span><span class="n">index_col</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">weather</span>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
 
-<span class="ne">ModuleNotFoundError</span>: No module named &#39;pandas&#39;
-</pre></div>
-</div>
-</div>
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>NAME</th>
+      <th>DATE</th>
+      <th>DAPR</th>
+      <th>MDPR</th>
+      <th>PRCP</th>
+      <th>SNOW</th>
+      <th>SNWD</th>
+      <th>TMAX</th>
+      <th>TMIN</th>
+      <th>TOBS</th>
+      <th>WT01</th>
+      <th>WT11</th>
+    </tr>
+    <tr>
+      <th>STATION</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-01</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.44</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>60</td>
+      <td>36.0</td>
+      <td>36.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-02</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.02</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>41</td>
+      <td>27.0</td>
+      <td>27.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-03</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>59</td>
+      <td>27.0</td>
+      <td>33.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-04</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>68</td>
+      <td>33.0</td>
+      <td>35.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-03-05</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>71</td>
+      <td>33.0</td>
+      <td>43.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-27</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>74</td>
+      <td>40.0</td>
+      <td>47.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-28</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>76</td>
+      <td>40.0</td>
+      <td>40.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-29</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>67</td>
+      <td>32.0</td>
+      <td>32.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-30</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>73</td>
+      <td>32.0</td>
+      <td>45.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>USC00415013</th>
+      <td>LAMESA 1 SSE, TX US</td>
+      <td>2010-10-31</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>0.00</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>90</td>
+      <td>39.0</td>
+      <td>45.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>245 rows × 12 columns</p>
+</div></div></div>
 </div>
 <div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
