@@ -390,6 +390,25 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="semantic-modelling">
 <h1>Semantic Modelling<a class="headerlink" href="#semantic-modelling" title="Permalink to this heading">#</a></h1>
+<p>The proposed semantic model includes experimental design and data captured for those experiments.
+It is designed for optimal re-use, allowing all experiments to reuse the <span style="background-color: #cfe2f3">experiment shapes</span>, all experiments on <span style="background-color: #fff2cc">crops</span> (vs. e.g. livestock) to reuse soil and harvest methods shapes, and specific products, e.g. <span style="background-color: #ffffff">cotton</span>, to extend the crop shapes.
+This image is intended to orient readers as to the current model, inspire further development, and orient developers of other crop products with its inclusion of the cotton exemplar.</p>
+<p><img alt="experiment model with cotton" src="../_images/boxology-lot-to-location.svg" /></p>
+<p>This model exploits inheritance, allowing the base <span style="background-color: #cfe2f3">experiments</span> to reference abstract <code class="docutils literal notranslate"><span class="pre">Sample</span></code>s.
+<span style="background-color: #cfe2f3">Crop Samples</span> add attributes common to (hopefully) all crops.
+<span style="background-color: #ffffff">Cotton Samples</span> include the remaining attributes common to measurements of cotton growth and harvest.
+A similar hierarchy captures the expected yield with the cotton-specific <span style="background-color: #ffffff">VarietySpec</span> extending <span style="background-color: #fff2cc">CropSpec</span>, which in turn extends the base notion of a <span style="background-color: #cfe2f3">ReferenceSpec</span>.
+The <span style="background-color: #ffffff">cotton shapes</span> include two enumerations for ginning and cleaning methods, as well as additional harvest methods.</p>
+<p>Each Test includes a set of Blocks, each of which collects a set of TestDescriptions.
+TestDescriptions capture both test constraints and study variables.
+The latter are distinguished by having fixed value that constraints the intentions of the study.
+The <code class="docutils literal notranslate"><span class="pre">var</span></code> attribute identifies attributes from e.g. Samples or Weather.
+In the image, this is represented by a green line pointing at an attribute.</p>
+<ul class="simple">
+<li><p><span style="background-color: #cfe2f3">experiments</span></p></li>
+<li><p><span style="background-color: #fff2cc">crops</span></p></li>
+<li><p><span style="background-color: #ffffff">cotton</span></p></li>
+</ul>
 </section>
 
     <script type="text/x-thebe-config">
