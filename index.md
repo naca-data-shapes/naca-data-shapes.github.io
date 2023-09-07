@@ -1,6 +1,9 @@
 ~~The NAL Shapes program demonstration area~~ How to integrate agricultural data using data shapes
 ======
 
+Alternative titles:
+- "Integrate research data with data shapes" (shorter than the above)
+
 About this book
 ---------------
 
