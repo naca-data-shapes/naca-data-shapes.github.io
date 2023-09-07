@@ -1,4 +1,4 @@
-Introduction
+The challenge of data variety
 ============
 
 # Objective
