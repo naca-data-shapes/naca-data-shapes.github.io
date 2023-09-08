@@ -1,4 +1,6 @@
-## Linked data, RDF and the web of data
+## Integrate data with <<Shapes>>
+
+Was: Linked data, RDF and the web of data
 
 These days more and more devices generate data automatically and it is relatively easy to develop applications in different domains backed by databases and exposing data to the Web. The amount and diversity of data produced clearly exceeds our capacity to consume it.
 
