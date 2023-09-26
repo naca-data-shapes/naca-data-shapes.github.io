@@ -18,7 +18,7 @@ This book is an ["executable book"](https://jupyterbook.org/) -- a publication f
      style="border-style: none;" alt="Public Domain Mark" />
 </a>
 <br />
-This work (<span property="dct:title">Feld mit reifer Baumwolle</span>, by <span resource="[_:creator]" rel="dct:creator"><span property="dct:title">David Nance</span></span>), identified by <a href="https://commons.wikimedia.org/" rel="dct:publisher">https://commons.wikimedia.org/</a>, is free of known copyright restrictions.
+This image (<span property="dct:title">Feld mit reifer Baumwolle</span>, by <span resource="[_:creator]" rel="dct:creator"><span property="dct:title">David Nance</span></span>), available from <a href="https://commons.wikimedia.org/" rel="dct:publisher">https://commons.wikimedia.org/</a>, is in the public domain because it contains materials that originally came from the <a href="https://en.wikipedia.org/wiki/Agricultural_Research_Service">Agricultural Research Service</a>, the research agency of the <a href="https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture">United States Department of Agriculture</a>.
 </p>
 
 Issues: 
