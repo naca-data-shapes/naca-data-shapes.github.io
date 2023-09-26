@@ -1,4 +1,4 @@
-How to integrate agricultural data using data shapes
+Integrating agricultural data with data shapes
 ======
 
 About this book
@@ -24,7 +24,7 @@ This image (<span property="dct:title">Feld mit reifer Baumwolle</span>, by <spa
 Issues: 
 - [Nishad Thalhath](https://scholia.toolforge.org/author/Q95616366) originally listed as contributor - still relevant?
 - Alternative titles:
-  - "Integrate research data with data shapes" (shorter than the above)
+  - "How to integrate agricultural data using data shapes"
   - "The NAL Shapes program demonstration area" (original title)
 
 Release v0.0.7 (2023-09-06)
