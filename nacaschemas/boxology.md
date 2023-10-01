@@ -19,27 +19,27 @@ The figures below were drafted in regular online meetings, using a mix of availa
 # Boxology Figures
 
 <div>
-  <a href="../_images/boxology_final.png" target="_blank">
-    <img src="../_images/boxology_final.png" alt="Boxology Final" style="width:100%">
+  <a href="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_final.png" target="_blank">
+    <img src="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_final.png" alt="Boxology Final" style="width:100%">
   </a>
 </div>
 
 # Previous versions
 
 <div class="thumbnails" style="display:flex;justify-content:space-around;margin-top:20px;">
-  <a href="../_images/boxology_1.png" target="_blank" style="flex:1;">
-    <img src="../_images/boxology_1.png" alt="Boxology 1" style="width:100%">
+  <a href="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_1.png" target="_blank" style="flex:1;">
+    <img src="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_1.png" alt="Boxology 1" style="width:100%">
   </a>
 
-  <a href="../_images/boxology_2.png" target="_blank" style="flex:1;">
-    <img src="../_images/boxology_2.png" alt="Boxology 2" style="width:100%">
+  <a href="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_2.png" target="_blank" style="flex:1;">
+    <img src="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_2.png" alt="Boxology 2" style="width:100%">
   </a>
 
-  <a href="../_images/boxology_3.png" target="_blank" style="flex:1;">
-    <img src="../_images/boxology_3.png" alt="Boxology 3" style="width:100%">
+  <a href=".https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_3.png" target="_blank" style="flex:1;">
+    <img src="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_3.png" alt="Boxology 3" style="width:100%">
   </a>
 
-  <a href="../_images/boxology_4.png" target="_blank" style="flex:1;">
-    <img src="../_images/boxology_4.png" alt="Boxology 4" style="width:100%">
+  <a href="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_4.png" target="_blank" style="flex:1;">
+    <img src="https://raw.githubusercontent.com/naca-data-shapes/naca-data-shapes.github.io/main/nacaschemas/pix/boxology_4.png" alt="Boxology 4" style="width:100%">
   </a>
 </div>
