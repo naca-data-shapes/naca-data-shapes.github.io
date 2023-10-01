@@ -1,30 +1,13 @@
-Integrating agricultural data with data shapes
-======
+NALT as the central Concept Space for linked agricultural data
+=================
 
-About this book
----------------
+<div style="text-align:center">
+    <img src="_images/andrawaag_harvesting_data_soil_and_weather_and_data_in_the_styl_c6256edb-59b3-4511-864b-435bce8c36d6.png" alt="Generated with Midjourney with prompt harvesting data, soil and weather and data in the style of Mary Cassatt" style="max-width:50%; height:auto;"/>
+</div>
 
-This book illustrates and explains a method for integrating agricultural data of diverse types, from diverse sources, and in diverse formats, for the purpose of scientific analysis.
+Welcome to the NACA Data Shapes project. The intention of the executable book is to guide the reader towards the extensive use of NALT concepts
+in the building of agricultural data shapes. The book is intended to be read in a linear fashion, but it is also possible to jump to a specific chapter.
 
-This method is being applied in NAL Shapes, a project of the USDA National Agricultural Library (NAL) in collaboration with the [WESO Research Group](https://www.weso.es/) of the University of Oviedo, Spain. Project team members who have contributed to this book are [Andra Waagmeester](https://scholia.toolforge.org/author/Q19845625), [Katherine Thornton](https://scholia.toolforge.org/author/Q41533116), [Jose Emilio Labra Gayo](https://scholia.toolforge.org/author/Q51602692), [Eric Prud'hommeaux](https://scholia.toolforge.org/author/Q28914639), [Josh Moore](https://orcid.org/0000-0003-4028-811X), [Tom Baker](http://orcid.org/0000-0003-3741-6977), and [Jennifer Woodward-Greene](https://orcid.org/0000-0003-3236-2711). 
 
-This book is an ["executable book"](https://jupyterbook.org/) -- a publication form that integrates example data with relevant schemas and executable code. It is intended to serve as a "living book" -- one that will grow with new examples and code snippets that readers of this book will be able to adapt for their own analytical goals.
-
-![logo]( https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Feld_mit_reifer_Baumwolle.jpeg/640px-Feld_mit_reifer_Baumwolle.jpeg "Cotton")
-
-<p xmlns:dct="http://purl.org/dc/terms/">
-<a rel="license" href="http://creativecommons.org/publicdomain/mark/1.0/">
-<img src="https://licensebuttons.net/p/mark/1.0/88x31.png"
-     style="border-style: none;" alt="Public Domain Mark" />
-</a>
-<br />
-This image (<span property="dct:title">Feld mit reifer Baumwolle</span>, by <span resource="[_:creator]" rel="dct:creator"><span property="dct:title">David Nance</span></span>), available from <a href="https://commons.wikimedia.org/" rel="dct:publisher">https://commons.wikimedia.org/</a>, is in the public domain because it contains materials that originally came from the <a href="https://en.wikipedia.org/wiki/Agricultural_Research_Service">Agricultural Research Service</a>, the research agency of the <a href="https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture">United States Department of Agriculture</a>.
-</p>
-
-Issues: 
-- [Nishad Thalhath](https://scholia.toolforge.org/author/Q95616366) originally listed as contributor - still relevant?
-- Alternative titles:
-  - "How to integrate agricultural data using data shapes"
-  - "The NAL Shapes program demonstration area" (original title)
-
-Release v0.1.0 (2023-10-01)
+```{tableofcontents}
+```{toctree}
