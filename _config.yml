@@ -43,3 +43,7 @@ sphinx:
 
 exclude_patterns:
 - venv/*
+
+parse:
+  myst_enable_extensions:
+    - html_image    # for raw <img> tags in markdown
