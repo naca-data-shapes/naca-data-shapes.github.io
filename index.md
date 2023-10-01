@@ -8,6 +8,6 @@ NALT as the central Concept Space for linked agricultural data
 Welcome to the NACA Data Shapes project. The intention of the executable book is to guide the reader towards the extensive use of NALT concepts
 in the building of agricultural data shapes. The book is intended to be read in a linear fashion, but it is also possible to jump to a specific chapter.
 
-
+Version: 0.1.1 (2023-10-01)
 ```{tableofcontents}
 ```{toctree}
