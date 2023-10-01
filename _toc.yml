@@ -2,20 +2,32 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: index
+root: intro
 chapters:
-- file: introduction/index.md
+- file: preamble/intro.md
   sections:
-  - file: introduction/intro.md
-  - file: introduction/linkeddata_rdf_web_of_data.md
-  - file: introduction/benefits.md
-  - file: introduction/challenges.md
+  - file: preamble/5star.md
+  - file: preamble/ld.md
+  - file: preamble/nalt_skos_dc.md
+  - file: preamble/shapes.md
 
-- file: semantic-modelling/index.md
+- file: wikidata/intro.md
+  sections:
+  - file: wikidata/nalt.md
+  - file: wikidata/experts.md
+  - file: wikidata/cotton.md
+  - file: wikidata/weather.md
+  - file: wikidata/soil.md
 
-- file: creating-rdf/cotton/index.md
+- file: nacaschemas/intro.md
+  sections:
+  - file: nacaschemas/byod.md
+  - file: nacaschemas/usecases.md
+  - file: nacaschemas/boxology.md
+  - file: nacaschemas/domainmodel.md
+  - file: nacaschemas/queries.md
 
-- file: creating-rdf/weather/index.md
+- file: introduction/index.md
 
 - file: queries/index.md
   sections:

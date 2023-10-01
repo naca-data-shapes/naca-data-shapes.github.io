@@ -6,9 +6,9 @@
 #######################################################################################
 # Book settings
 title                       : NAL Shapes Resource Guide on Cotton
-author                      : Andra Waagmeester, Kat Thornton, Jose Labra, Eric Prud'hommeaux, Josh Moore, Tom Baker, Nishad Thalhath, Jennifer Woodward
+author                      : Andra Waagmeester, Eric Prud'hommeaux, Kat Thornton, Jose Labra, Josh Moore, Tom Baker, Derek Whitelock, Chris Delholm, Jennifer Woodward
 copyright                   : "2023"
-logo                        : logo.png
+logo                        : pix/logo.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
@@ -40,3 +40,6 @@ html:
 sphinx:
   extra_extensions:
     - sphinxcontrib.mermaid
+
+exclude_patterns:
+- venv/*

@@ -27,4 +27,4 @@ Issues:
   - "How to integrate agricultural data using data shapes"
   - "The NAL Shapes program demonstration area" (original title)
 
-Release v0.0.7 (2023-09-06)
+Release v0.1.0 (2023-10-01)
