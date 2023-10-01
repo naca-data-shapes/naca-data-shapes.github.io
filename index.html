@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
-    <title>Integrating agricultural data with data shapes &#8212; NAL Shapes Resource Guide on Cotton</title>
+    <title>NALT as the central Concept Space for linked agricultural data &#8212; NAL Shapes Resource Guide on Cotton</title>
   
   
   
@@ -65,6 +65,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preamble" href="preamble/intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -139,7 +140,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="sidebar-primary-item">
   
 
-<a class="navbar-brand logo" href="intro.html">
+<a class="navbar-brand logo" href="#">
   
   
   
@@ -158,8 +159,8 @@ const thebe_selector_output = ".output, .cell_output"
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1">
-                <a class="reference internal" href="intro.html">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
                     NALT as the central Concept Space for linked agricultural data
                 </a>
             </li>
@@ -390,9 +391,7 @@ document.write(`
   </button>
 `);
 </script>
-<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
-    <span class="fa-solid fa-list"></span>
-</label>
+
 </div></div>
       
     </div>
@@ -403,19 +402,11 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Integrating agricultural data with data shapes</h1>
+    <h1>NALT as the central Concept Space for linked agricultural data</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
-            <div>
-                <h2> Contents </h2>
-            </div>
-            <nav aria-label="Page">
-                <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-book">About this book</a></li>
-</ul>
-            </nav>
         </div>
     </div>
 </div>
@@ -425,34 +416,15 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article" role="main">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="integrating-agricultural-data-with-data-shapes">
-<h1>Integrating agricultural data with data shapes<a class="headerlink" href="#integrating-agricultural-data-with-data-shapes" title="Permalink to this heading">#</a></h1>
-<section id="about-this-book">
-<h2>About this book<a class="headerlink" href="#about-this-book" title="Permalink to this heading">#</a></h2>
-<p>This book illustrates and explains a method for integrating agricultural data of diverse types, from diverse sources, and in diverse formats, for the purpose of scientific analysis.</p>
-<p>This method is being applied in NAL Shapes, a project of the USDA National Agricultural Library (NAL) in collaboration with the <a class="reference external" href="https://www.weso.es/">WESO Research Group</a> of the University of Oviedo, Spain. Project team members who have contributed to this book are <a class="reference external" href="https://scholia.toolforge.org/author/Q19845625">Andra Waagmeester</a>, <a class="reference external" href="https://scholia.toolforge.org/author/Q41533116">Katherine Thornton</a>, <a class="reference external" href="https://scholia.toolforge.org/author/Q51602692">Jose Emilio Labra Gayo</a>, <a class="reference external" href="https://scholia.toolforge.org/author/Q28914639">Eric Prud’hommeaux</a>, <a class="reference external" href="https://orcid.org/0000-0003-4028-811X">Josh Moore</a>, <a class="reference external" href="http://orcid.org/0000-0003-3741-6977">Tom Baker</a>, and <a class="reference external" href="https://orcid.org/0000-0003-3236-2711">Jennifer Woodward-Greene</a>.</p>
-<p>This book is an <a class="reference external" href="https://jupyterbook.org/">“executable book”</a> – a publication form that integrates example data with relevant schemas and executable code. It is intended to serve as a “living book” – one that will grow with new examples and code snippets that readers of this book will be able to adapt for their own analytical goals.</p>
-<p><img alt="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Feld_mit_reifer_Baumwolle.jpeg/640px-Feld_mit_reifer_Baumwolle.jpeg" /></p>
-<p xmlns:dct="http://purl.org/dc/terms/">
-<a rel="license" href="http://creativecommons.org/publicdomain/mark/1.0/">
-<img src="https://licensebuttons.net/p/mark/1.0/88x31.png"
-     style="border-style: none;" alt="Public Domain Mark" />
-</a>
-<br />
-This image (<span property="dct:title">Feld mit reifer Baumwolle</span>, by <span resource="[_:creator]" rel="dct:creator"><span property="dct:title">David Nance</span></span>), available from <a href="https://commons.wikimedia.org/" rel="dct:publisher">https://commons.wikimedia.org/</a>, is in the public domain because it contains materials that originally came from the <a href="https://en.wikipedia.org/wiki/Agricultural_Research_Service">Agricultural Research Service</a>, the research agency of the <a href="https://en.wikipedia.org/wiki/United_States_Department_of_Agriculture">United States Department of Agriculture</a>.
-</p>
-<p>Issues:</p>
-<ul class="simple">
-<li><p><a class="reference external" href="https://scholia.toolforge.org/author/Q95616366">Nishad Thalhath</a> originally listed as contributor - still relevant?</p></li>
-<li><p>Alternative titles:</p>
-<ul>
-<li><p>“How to integrate agricultural data using data shapes”</p></li>
-<li><p>“The NAL Shapes program demonstration area” (original title)</p></li>
-</ul>
-</li>
-</ul>
-<p>Release v0.1.0 (2023-10-01)</p>
-</section>
+  <section id="nalt-as-the-central-concept-space-for-linked-agricultural-data">
+<h1>NALT as the central Concept Space for linked agricultural data<a class="headerlink" href="#nalt-as-the-central-concept-space-for-linked-agricultural-data" title="Permalink to this heading">#</a></h1>
+<div style="text-align:center">
+    <img src="_images/andrawaag_harvesting_data_soil_and_weather_and_data_in_the_styl_c6256edb-59b3-4511-864b-435bce8c36d6.png" alt="Generated with Midjourney with prompt harvesting data, soil and weather and data in the style of Mary Cassatt" style="max-width:50%; height:auto;"/>
+</div>
+<p>Welcome to the NACA Data Shapes project. The intention of the executable book is to guide the reader towards the extensive use of NALT concepts
+in the building of agricultural data shapes. The book is intended to be read in a linear fashion, but it is also possible to jump to a specific chapter.</p>
+<div class="toctree-wrapper compound">
+</div>
 </section>
 
     <script type="text/x-thebe-config">
@@ -485,26 +457,21 @@ This image (<span property="dct:title">Feld mit reifer Baumwolle</span>, by <spa
                 <footer class="prev-next-footer">
                   <!-- Previous / next buttons -->
 <div class="prev-next-area">
+    <a class="right-next"
+       href="preamble/intro.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Preamble</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-  <div class="sidebar-secondary-item">
-  <div class="page-toc tocsection onthispage">
-    <i class="fa-solid fa-list"></i> Contents
-  </div>
-  <nav class="bd-toc-nav page-toc">
-    <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-book">About this book</a></li>
-</ul>
-  </nav></div>
-
-</div></div>
               
             
           </div>
