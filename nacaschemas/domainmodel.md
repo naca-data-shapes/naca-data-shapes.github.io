@@ -15,14 +15,15 @@ Building the boxology, roughly, the steps you will perform will be:
 1. Familiarize yourself with the Core model; consider how it intersects with your data capture needs.
 2. Pick a cross-domain model, e.g. Crop or Livestock, that encompasses your domain. 
 3. Develop a list of domain-specific entities. For an example, see the Cotton example in the [boxology](index.md).
-4. Express your domain-model in ShEx; see the [Cotton.shex](https://github.com/agschemas/shapesdemo/blob/main/cotton-2023-05-10/schemas/Cotton.shex) for refernce.
-5. Many properties in your domain model will already be defined in NALT. Use those NALT terms where possible.
-6. Where no NALT terms exist, use descriptive property labels. e.g. `MeasuredMicronair`, as placeholders until theNALT curators can add them to NALT.
+4. Express your domain-model in ShEx; see the [Cotton.shex](https://github.com/agschemas/shapesdemo/blob/main/cotton-2023-05-10/schemas/Cotton.shex) for reference.
+5. Many properties in your domain model will already be defined in [NALT](https://agclass.nal.usda.gov/). Use those NALT terms where possible.
+6. Where no NALT terms exist, use descriptive property labels. e.g. `MeasuredMicronaire`, as placeholders until the NALT curators can add them to NALT.
 
 ## Extension of cross-domain models
+
 Modeling requires iteration and evaluation.
-You may feel that your domain model includes attributes that should are common to other domains.
-If they are commont to everything within e.g. Crops or Livestoc, propose the ammending that model.
+You may feel that your domain model includes attributes that should be common to other domains.
+If they are common to everything within e.g. Crops or Livestoc, propose the ammending of that model.
 
 ### Creating new cross-domain models
 If your domain attributes are shared with a small subsets of the other domains in your cross-domain model, you can develop new models to be shared between those domains.
