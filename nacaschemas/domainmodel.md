@@ -26,5 +26,6 @@ You may feel that your domain model includes attributes that should be common to
 If they are common to everything within e.g. Crops or Livestoc, propose the ammending of that model.
 
 ### Creating new cross-domain models
-If your domain attributes are shared with a small subsets of the other domains in your cross-domain model, you can develop new models to be shared between those domains.
-For example, it is likely that the development of model for sheep farming and sheering will include factoring a fiber model with attributes shared with Cotton.
+
+If your domain attributes are shared with a small subset of the other domains in your cross-domain model, you can develop new models to be shared between those domains.
+For example, it is likely that the development of a model for sheep farming and sheering will include factoring a fiber model with attributes shared with Cotton.
