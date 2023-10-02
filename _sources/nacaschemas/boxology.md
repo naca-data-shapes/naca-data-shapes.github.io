@@ -1,6 +1,7 @@
 Boxologies
 ===========
-With the use cases identified, the next step is to draft the data shapes. These data shapes eventually will be expressed in the Shape Expression language (ShEx).
+With the use cases identified, the next step is to draft the data shapes. 
+These data shapes eventually will be expressed in the [Shape Expression language](https://shex.io/) (ShEx).
 However, ShEx is more geared towards users with a computer science background or requires a steep learning curve for users with a 
 domain science background. As was stated in the previous chapter, domain experts are essential contributors to the development of data shapes. 
 
